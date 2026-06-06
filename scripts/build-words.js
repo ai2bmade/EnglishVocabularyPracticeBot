@@ -3,6 +3,33 @@ import path from "node:path";
 
 const sourceDir = process.argv[2] || "content/source";
 const outputPath = process.argv[3] || "content/words.json";
+const stopWords = new Set([
+  "about",
+  "action",
+  "another",
+  "brief",
+  "category",
+  "concept",
+  "concrete",
+  "context",
+  "different",
+  "everyday",
+  "from",
+  "into",
+  "object",
+  "physical",
+  "practical",
+  "routine",
+  "separate",
+  "simple",
+  "task",
+  "that",
+  "thing",
+  "this",
+  "very",
+  "with",
+  "without"
+]);
 
 const rows = [];
 for (const fileName of fs.readdirSync(sourceDir).sort()) {
@@ -123,6 +150,7 @@ function placeAnswerAt(word, targetAnswer) {
 
   word.choices = newChoices;
   word.answer = targetAnswer;
+  harmonizeChoiceStyles(word);
   balanceChoiceLengths(word);
 }
 
@@ -158,12 +186,12 @@ function balanceChoiceLengths(word) {
 
 function extendDistractor(choice, targetLength, seedText) {
   const endings = [
-    "in a different context",
-    "under another interpretation",
-    "as an unrelated alternative",
-    "in a separate situation",
-    "for a different purpose",
-    "within another category"
+    "as a separate unrelated concept",
+    "in a different semantic category",
+    "as another possible but incorrect meaning",
+    "in a context unrelated to the word",
+    "as a distractor from another topic",
+    "within a different area of meaning"
   ].sort((left, right) => hash(`${seedText}:${left}`) - hash(`${seedText}:${right}`));
 
   let result = choice;
@@ -177,4 +205,35 @@ function extendDistractor(choice, targetLength, seedText) {
 
 function visibleLength(value) {
   return value.replace(/\s+/g, " ").trim().length;
+}
+
+function harmonizeChoiceStyles(word) {
+  word.choices = word.choices.map((choice, index) => {
+    if (choiceStyle(choice) === "term") {
+      return makeDefinitionDistractor(choice, `${word.id}:${index}`);
+    }
+    return choice;
+  });
+}
+
+function choiceStyle(choice) {
+  const normalized = choice.replace(/\s+/g, " ").trim();
+  const tokenCount = normalized.split(" ").filter(Boolean).length;
+  const definitionStarters = /^(a|an|the|to|in|with|without|by|for|from|under|within|related|not|very|able|having|being)\b/i;
+
+  if (tokenCount === 1 && !definitionStarters.test(normalized) && visibleLength(normalized) <= 22) {
+    return "term";
+  }
+  return "definition";
+}
+
+function makeDefinitionDistractor(choice, seedText) {
+  const templates = [
+    `a different concept related to ${choice}`,
+    `an unrelated idea involving ${choice}`,
+    `a separate meaning connected with ${choice}`,
+    `another category associated with ${choice}`
+  ].sort((left, right) => hash(`${seedText}:${left}`) - hash(`${seedText}:${right}`));
+
+  return templates[0];
 }

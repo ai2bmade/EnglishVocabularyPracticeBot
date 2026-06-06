@@ -4,6 +4,7 @@ import path from "node:path";
 const sourceDir = process.argv[2] || "content/source";
 const issues = [];
 const lengthIssues = [];
+const styleIssues = [];
 
 for (const fileName of fs.readdirSync(sourceDir).sort()) {
   if (!fileName.endsWith(".csv")) {
@@ -48,6 +49,16 @@ if (fs.existsSync(wordsPath)) {
         longestWrongLength
       });
     }
+
+    const styles = word.choices.map(choiceStyle);
+    if (styles.some((style) => style !== styles[correctIndex])) {
+      styleIssues.push({
+        id: word.id,
+        word: word.word,
+        styles,
+        choices: word.choices
+      });
+    }
   }
 }
 
@@ -71,6 +82,17 @@ if (lengthIssues.length > 0) {
   }
   if (lengthIssues.length > 100) {
     console.error(`...and ${lengthIssues.length - 100} more.`);
+  }
+  process.exit(1);
+}
+
+if (styleIssues.length > 0) {
+  console.error(`Found ${styleIssues.length} mixed choice-style issue(s):`);
+  for (const issue of styleIssues.slice(0, 100)) {
+    console.error(`${issue.id} ${issue.word} -> ${issue.styles.join(", ")}: ${issue.choices.join(" | ")}`);
+  }
+  if (styleIssues.length > 100) {
+    console.error(`...and ${styleIssues.length - 100} more.`);
   }
   process.exit(1);
 }
@@ -158,6 +180,17 @@ function normalize(value) {
 
 function visibleLength(value) {
   return value.replace(/\s+/g, " ").trim().length;
+}
+
+function choiceStyle(choice) {
+  const normalized = choice.replace(/\s+/g, " ").trim();
+  const tokenCount = normalized.split(" ").filter(Boolean).length;
+  const definitionStarters = /^(a|an|the|to|in|with|without|by|for|from|under|within|related|not|very|able|having|being)\b/i;
+
+  if (tokenCount === 1 && !definitionStarters.test(normalized) && visibleLength(normalized) <= 22) {
+    return "term";
+  }
+  return "definition";
 }
 
 function parseCsv(text) {
