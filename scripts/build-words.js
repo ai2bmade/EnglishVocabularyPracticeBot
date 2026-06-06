@@ -123,6 +123,7 @@ function placeAnswerAt(word, targetAnswer) {
 
   word.choices = newChoices;
   word.answer = targetAnswer;
+  balanceChoiceLengths(word);
 }
 
 function hash(text) {
@@ -132,4 +133,48 @@ function hash(text) {
     value = Math.imul(value, 16777619);
   }
   return value >>> 0;
+}
+
+function balanceChoiceLengths(word) {
+  const correctIndex = word.answer - 1;
+  const correctLength = visibleLength(word.choices[correctIndex]);
+  const wrongIndexes = [0, 1, 2].filter((index) => index !== correctIndex);
+  const longestWrongLength = Math.max(...wrongIndexes.map((index) => visibleLength(word.choices[index])));
+
+  if (correctLength <= longestWrongLength) {
+    return;
+  }
+
+  const targetIndex = wrongIndexes.sort((left, right) => {
+    const lengthDelta = visibleLength(word.choices[left]) - visibleLength(word.choices[right]);
+    if (lengthDelta !== 0) {
+      return lengthDelta;
+    }
+    return hash(`${word.id}:${left}`) - hash(`${word.id}:${right}`);
+  })[0];
+
+  word.choices[targetIndex] = extendDistractor(word.choices[targetIndex], correctLength, `${word.id}:${targetIndex}`);
+}
+
+function extendDistractor(choice, targetLength, seedText) {
+  const endings = [
+    "in a different context",
+    "under another interpretation",
+    "as an unrelated alternative",
+    "in a separate situation",
+    "for a different purpose",
+    "within another category"
+  ].sort((left, right) => hash(`${seedText}:${left}`) - hash(`${seedText}:${right}`));
+
+  let result = choice;
+  let endingIndex = 0;
+  while (visibleLength(result) < targetLength && endingIndex < endings.length) {
+    result = `${result} ${endings[endingIndex]}`;
+    endingIndex += 1;
+  }
+  return result;
+}
+
+function visibleLength(value) {
+  return value.replace(/\s+/g, " ").trim().length;
 }

@@ -3,6 +3,7 @@ import path from "node:path";
 
 const sourceDir = process.argv[2] || "content/source";
 const issues = [];
+const lengthIssues = [];
 
 for (const fileName of fs.readdirSync(sourceDir).sort()) {
   if (!fileName.endsWith(".csv")) {
@@ -30,6 +31,26 @@ for (const fileName of fs.readdirSync(sourceDir).sort()) {
   });
 }
 
+const wordsPath = "content/words.json";
+if (fs.existsSync(wordsPath)) {
+  const words = JSON.parse(fs.readFileSync(wordsPath, "utf8").replace(/^\uFEFF/, "")).words;
+  for (const word of words) {
+    const correctIndex = word.answer - 1;
+    const lengths = word.choices.map(visibleLength);
+    const correctLength = lengths[correctIndex];
+    const longestWrongLength = Math.max(...lengths.filter((_, index) => index !== correctIndex));
+    if (correctLength > longestWrongLength) {
+      lengthIssues.push({
+        id: word.id,
+        word: word.word,
+        correctChoice: word.choices[correctIndex],
+        correctLength,
+        longestWrongLength
+      });
+    }
+  }
+}
+
 if (issues.length > 0) {
   console.error(`Found ${issues.length} giveaway choice issue(s):`);
   for (const issue of issues.slice(0, 100)) {
@@ -37,6 +58,19 @@ if (issues.length > 0) {
   }
   if (issues.length > 100) {
     console.error(`...and ${issues.length - 100} more.`);
+  }
+  process.exit(1);
+}
+
+if (lengthIssues.length > 0) {
+  console.error(`Found ${lengthIssues.length} answer-length giveaway issue(s):`);
+  for (const issue of lengthIssues.slice(0, 100)) {
+    console.error(
+      `${issue.id} ${issue.word} -> correct length ${issue.correctLength}, longest wrong ${issue.longestWrongLength}: "${issue.correctChoice}"`
+    );
+  }
+  if (lengthIssues.length > 100) {
+    console.error(`...and ${lengthIssues.length - 100} more.`);
   }
   process.exit(1);
 }
@@ -120,6 +154,10 @@ function normalize(value) {
     .replace(/[\u0300-\u036f]/g, "")
     .replace(/[^a-z0-9]+/g, " ")
     .trim();
+}
+
+function visibleLength(value) {
+  return value.replace(/\s+/g, " ").trim().length;
 }
 
 function parseCsv(text) {
