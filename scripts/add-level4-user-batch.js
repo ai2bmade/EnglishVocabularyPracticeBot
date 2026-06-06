@@ -282,7 +282,28 @@ const definitions = {
   raze: "to destroy completely",
   rebuke: "to criticize sharply",
   recoil: "to draw back suddenly",
-  redound: "to contribute to a result"
+  redound: "to contribute to a result",
+  inordinate: "excessive or unusually large",
+  insolent: "boldly rude or disrespectful",
+  insubordinate: "refusing to obey authority",
+  insurgent: "a rebel against established authority",
+  insurrection: "a violent uprising against authority",
+  intercede: "to intervene on behalf of another",
+  interlinear: "written between lines of text",
+  interlude: "a short intervening period or performance",
+  intermediary: "a person or thing acting between others",
+  interscholastic: "between schools",
+  interurban: "between cities",
+  intractable: "difficult to control or solve",
+  intramural: "within one institution or school",
+  intraparty: "within a political party",
+  intrastate: "within one state",
+  intrepid: "fearless and adventurous",
+  intricate: "complex and detailed",
+  inundate: "to flood or overwhelm",
+  invigorate: "to give energy or strength",
+  iota: "a very small amount",
+  irreconcilable: "impossible to bring into agreement"
 };
 
 const lines = [];
