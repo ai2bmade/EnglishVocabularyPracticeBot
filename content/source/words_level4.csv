@@ -1,0 +1,437 @@
+level,word,choice_1,choice_2,choice_3,answer,explanation,status
+4,meticulous,very careful and detailed,easily forgotten,open to many people,1,Meticulous means showing great attention to detail.,approved
+4,ambivalent,having mixed feelings,extremely old,quick to forgive,1,Ambivalent means having conflicting feelings about something.,approved
+4,resilient,able to recover,hard to see,morally wrong,1,Resilient means able to recover after difficulty.,approved
+4,absolution,release from guilt blame or punishment,a routine physical object,a brief practical task,1,Absolution means release from guilt blame or punishment.,approved
+4,adversity,serious difficulty or misfortune,a routine physical object,a brief practical task,1,Adversity means serious difficulty or misfortune.,approved
+4,affinity,a natural liking or close connection,a routine physical object,a brief practical task,1,Affinity means a natural liking or close connection.,approved
+4,agitation,anxiety excitement or public disturbance,a routine physical object,a brief practical task,1,Agitation means anxiety excitement or public disturbance.,approved
+4,altruism,unselfish concern for others,a routine physical object,a brief practical task,1,Altruism means unselfish concern for others.,approved
+4,ambiguity,unclear meaning or more than one possible meaning,a routine physical object,a brief practical task,1,Ambiguity means unclear meaning or more than one possible meaning.,approved
+4,animosity,strong hostility or dislike,a routine physical object,a brief practical task,1,Animosity means strong hostility or dislike.,approved
+4,apathy,lack of interest or concern,a routine physical object,a brief practical task,1,Apathy means lack of interest or concern.,approved
+4,aptitude,natural ability or talent,a routine physical object,a brief practical task,1,Aptitude means natural ability or talent.,approved
+4,arbitrariness,the quality of lacking a clear reason or principle,a routine physical object,a brief practical task,1,Arbitrariness means the quality of lacking a clear reason or principle.,approved
+4,assertion,a confident statement,a routine physical object,a brief practical task,1,Assertion means a confident statement.,approved
+4,attrition,gradual reduction through loss or wear,a routine physical object,a brief practical task,1,Attrition means gradual reduction through loss or wear.,approved
+4,belligerence,aggressive or hostile behavior,a routine physical object,a brief practical task,1,Belligerence means aggressive or hostile behavior.,approved
+4,candor,honesty and directness,a routine physical object,a brief practical task,1,Candor means honesty and directness.,approved
+4,cessation,the act of stopping,a routine physical object,a brief practical task,1,Cessation means the act of stopping.,approved
+4,coercion,the use of force or threats to make someone act,a routine physical object,a brief practical task,1,Coercion means the use of force or threats to make someone act.,approved
+4,coherence,logical clarity and connection,a routine physical object,a brief practical task,1,Coherence means logical clarity and connection.,approved
+4,complacency,self-satisfaction that prevents concern or effort,a routine physical object,a brief practical task,1,Complacency means self-satisfaction that prevents concern or effort.,approved
+4,concession,something given up to reach agreement,a routine physical object,a brief practical task,1,Concession means something given up to reach agreement.,approved
+4,connotation,an implied meaning or feeling associated with a word,a routine physical object,a brief practical task,1,Connotation means an implied meaning or feeling associated with a word.,approved
+4,consensus,general agreement,a routine physical object,a brief practical task,1,Consensus means general agreement.,approved
+4,consternation,sudden alarm or confusion,a routine physical object,a brief practical task,1,Consternation means sudden alarm or confusion.,approved
+4,contention,disagreement or a disputed claim,a routine physical object,a brief practical task,1,Contention means disagreement or a disputed claim.,approved
+4,contingency,a possible future event that may require action,a routine physical object,a brief practical task,1,Contingency means a possible future event that may require action.,approved
+4,contrivance,something cleverly planned or artificial,a routine physical object,a brief practical task,1,Contrivance means something cleverly planned or artificial.,approved
+4,conviction,a strong belief or legal finding of guilt,a routine physical object,a brief practical task,1,Conviction means a strong belief or legal finding of guilt.,approved
+4,corroboration,evidence that supports a claim,a routine physical object,a brief practical task,1,Corroboration means evidence that supports a claim.,approved
+4,credibility,the quality of being believable or trusted,a routine physical object,a brief practical task,1,Credibility means the quality of being believable or trusted.,approved
+4,cynicism,distrust of people's motives,a routine physical object,a brief practical task,1,Cynicism means distrust of people's motives.,approved
+4,debacle,a complete failure or disaster,a routine physical object,a brief practical task,1,Debacle means a complete failure or disaster.,approved
+4,deference,respectful submission to another's judgment,a routine physical object,a brief practical task,1,Deference means respectful submission to another's judgment.,approved
+4,deficiency,a lack or shortage,a routine physical object,a brief practical task,1,Deficiency means a lack or shortage.,approved
+4,deliberation,careful thought or discussion,a routine physical object,a brief practical task,1,Deliberation means careful thought or discussion.,approved
+4,denouncement,public condemnation,a routine physical object,a brief practical task,1,Denouncement means public condemnation.,approved
+4,deprivation,lack of something necessary,a routine physical object,a brief practical task,1,Deprivation means lack of something necessary.,approved
+4,derision,mockery or ridicule,a routine physical object,a brief practical task,1,Derision means mockery or ridicule.,approved
+4,deterrence,prevention through fear of consequences,a routine physical object,a brief practical task,1,Deterrence means prevention through fear of consequences.,approved
+4,dexterity,skill in using the hands or mind,a routine physical object,a brief practical task,1,Dexterity means skill in using the hands or mind.,approved
+4,dichotomy,a division into two contrasting parts,a routine physical object,a brief practical task,1,Dichotomy means a division into two contrasting parts.,approved
+4,dilemma,a difficult choice between options,a routine physical object,a brief practical task,1,Dilemma means a difficult choice between options.,approved
+4,disillusionment,loss of belief after disappointment,a routine physical object,a brief practical task,1,Disillusionment means loss of belief after disappointment.,approved
+4,disparity,a significant difference or inequality,a routine physical object,a brief practical task,1,Disparity means a significant difference or inequality.,approved
+4,dissension,disagreement within a group,a routine physical object,a brief practical task,1,Dissension means disagreement within a group.,approved
+4,divergence,movement away from similarity or agreement,a routine physical object,a brief practical task,1,Divergence means movement away from similarity or agreement.,approved
+4,eclecticism,selection from many different sources or styles,a routine physical object,a brief practical task,1,Eclecticism means selection from many different sources or styles.,approved
+4,efficacy,the ability to produce the desired result,a routine physical object,a brief practical task,1,Efficacy means the ability to produce the desired result.,approved
+4,eloquence,clear persuasive expression,a routine physical object,a brief practical task,1,Eloquence means clear persuasive expression.,approved
+4,emancipation,freedom from control or oppression,a routine physical object,a brief practical task,1,Emancipation means freedom from control or oppression.,approved
+4,empathy,the ability to understand another's feelings,a routine physical object,a brief practical task,1,Empathy means the ability to understand another's feelings.,approved
+4,endowment,a gift of money or a natural quality,a routine physical object,a brief practical task,1,Endowment means a gift of money or a natural quality.,approved
+4,enmity,deep hostility,a routine physical object,a brief practical task,1,Enmity means deep hostility.,approved
+4,equivocation,unclear language used to avoid commitment,a routine physical object,a brief practical task,1,Equivocation means unclear language used to avoid commitment.,approved
+4,estrangement,the state of being emotionally separated,a routine physical object,a brief practical task,1,Estrangement means the state of being emotionally separated.,approved
+4,ethics,moral principles,a routine physical object,a brief practical task,1,Ethics means moral principles.,approved
+4,euphoria,intense happiness,a routine physical object,a brief practical task,1,Euphoria means intense happiness.,approved
+4,fallacy,a mistaken belief or faulty argument,a routine physical object,a brief practical task,1,Fallacy means a mistaken belief or faulty argument.,approved
+4,feasibility,the possibility of being done successfully,a routine physical object,a brief practical task,1,Feasibility means the possibility of being done successfully.,approved
+4,fidelity,faithfulness or accuracy,a routine physical object,a brief practical task,1,Fidelity means faithfulness or accuracy.,approved
+4,foresight,the ability to anticipate future events,a routine physical object,a brief practical task,1,Foresight means the ability to anticipate future events.,approved
+4,fragility,the quality of being easily broken or damaged,a routine physical object,a brief practical task,1,Fragility means the quality of being easily broken or damaged.,approved
+4,futility,the quality of being useless or ineffective,a routine physical object,a brief practical task,1,Futility means the quality of being useless or ineffective.,approved
+4,grievance,a complaint about unfair treatment,a routine physical object,a brief practical task,1,Grievance means a complaint about unfair treatment.,approved
+4,hardship,severe difficulty,a routine physical object,a brief practical task,1,Hardship means severe difficulty.,approved
+4,hegemony,dominant influence by one group or state,a routine physical object,a brief practical task,1,Hegemony means dominant influence by one group or state.,approved
+4,hypocrisy,pretending to have virtues one does not have,a routine physical object,a brief practical task,1,Hypocrisy means pretending to have virtues one does not have.,approved
+4,ideology,a system of ideas or beliefs,a routine physical object,a brief practical task,1,Ideology means a system of ideas or beliefs.,approved
+4,impartiality,fairness without bias,a routine physical object,a brief practical task,1,Impartiality means fairness without bias.,approved
+4,impasse,a situation with no clear progress or solution,a routine physical object,a brief practical task,1,Impasse means a situation with no clear progress or solution.,approved
+4,impetus,a force or motivation that causes action,a routine physical object,a brief practical task,1,Impetus means a force or motivation that causes action.,approved
+4,inadequacy,insufficient quality or ability,a routine physical object,a brief practical task,1,Inadequacy means insufficient quality or ability.,approved
+4,inconsistency,lack of agreement or sameness,a routine physical object,a brief practical task,1,Inconsistency means lack of agreement or sameness.,approved
+4,indifference,lack of interest or concern,a routine physical object,a brief practical task,1,Indifference means lack of interest or concern.,approved
+4,inertia,resistance to change or motion,a routine physical object,a brief practical task,1,Inertia means resistance to change or motion.,approved
+4,ingenuity,cleverness and inventiveness,a routine physical object,a brief practical task,1,Ingenuity means cleverness and inventiveness.,approved
+4,integrity,honesty and strong moral principles,a routine physical object,a brief practical task,1,Integrity means honesty and strong moral principles.,approved
+4,intuition,understanding without conscious reasoning,a routine physical object,a brief practical task,1,Intuition means understanding without conscious reasoning.,approved
+4,irony,a contrast between expectation and reality,a routine physical object,a brief practical task,1,Irony means a contrast between expectation and reality.,approved
+4,legitimacy,the quality of being lawful or accepted as valid,a routine physical object,a brief practical task,1,Legitimacy means the quality of being lawful or accepted as valid.,approved
+4,liability,legal responsibility or a source of risk,a routine physical object,a brief practical task,1,Liability means legal responsibility or a source of risk.,approved
+4,longevity,long life or long duration,a routine physical object,a brief practical task,1,Longevity means long life or long duration.,approved
+4,malpractice,improper professional behavior,a routine physical object,a brief practical task,1,Malpractice means improper professional behavior.,approved
+4,mediation,helping opposing sides reach agreement,a routine physical object,a brief practical task,1,Mediation means helping opposing sides reach agreement.,approved
+4,misconception,an incorrect belief,a routine physical object,a brief practical task,1,Misconception means an incorrect belief.,approved
+4,moderation,avoidance of extremes,a routine physical object,a brief practical task,1,Moderation means avoidance of extremes.,approved
+4,negligence,failure to take proper care,a routine physical object,a brief practical task,1,Negligence means failure to take proper care.,approved
+4,neutrality,the state of not supporting either side,a routine physical object,a brief practical task,1,Neutrality means the state of not supporting either side.,approved
+4,notoriety,fame for something bad,a routine physical object,a brief practical task,1,Notoriety means fame for something bad.,approved
+4,nuance,a subtle difference in meaning or expression,a routine physical object,a brief practical task,1,Nuance means a subtle difference in meaning or expression.,approved
+4,obscurity,the state of being unknown or hard to understand,a routine physical object,a brief practical task,1,Obscurity means the state of being unknown or hard to understand.,approved
+4,paradox,a statement or situation that seems contradictory but may be true,a routine physical object,a brief practical task,1,Paradox means a statement or situation that seems contradictory but may be true.,approved
+4,perception,the way something is seen or understood,a routine physical object,a brief practical task,1,Perception means the way something is seen or understood.,approved
+4,perseverance,continued effort despite difficulty,a routine physical object,a brief practical task,1,Perseverance means continued effort despite difficulty.,approved
+4,plausibility,the quality of seeming reasonable or believable,a routine physical object,a brief practical task,1,Plausibility means the quality of seeming reasonable or believable.,approved
+4,polarization,division into strongly opposed groups or views,a routine physical object,a brief practical task,1,Polarization means division into strongly opposed groups or views.,approved
+4,pragmatism,practical thinking focused on results,a routine physical object,a brief practical task,1,Pragmatism means practical thinking focused on results.,approved
+4,precedent,an earlier example used as a guide,a routine physical object,a brief practical task,1,Precedent means an earlier example used as a guide.,approved
+4,predisposition,a tendency to think or act in a certain way,a routine physical object,a brief practical task,1,Predisposition means a tendency to think or act in a certain way.,approved
+4,presumption,an assumption made before proof,a routine physical object,a brief practical task,1,Presumption means an assumption made before proof.,approved
+4,probability,the chance that something will happen,a routine physical object,a brief practical task,1,Probability means the chance that something will happen.,approved
+4,proliferation,rapid increase or spread,a routine physical object,a brief practical task,1,Proliferation means rapid increase or spread.,approved
+4,rationale,the reason behind a decision or action,a routine physical object,a brief practical task,1,Rationale means the reason behind a decision or action.,approved
+4,reciprocity,mutual exchange or response,a routine physical object,a brief practical task,1,Reciprocity means mutual exchange or response.,approved
+4,redundancy,unnecessary repetition or excess,a routine physical object,a brief practical task,1,Redundancy means unnecessary repetition or excess.,approved
+4,rehabilitation,restoration to health ability or reputation,a routine physical object,a brief practical task,1,Rehabilitation means restoration to health ability or reputation.,approved
+4,reluctance,unwillingness or hesitation,a routine physical object,a brief practical task,1,Reluctance means unwillingness or hesitation.,approved
+4,resentment,bitter anger at unfair treatment,a routine physical object,a brief practical task,1,Resentment means bitter anger at unfair treatment.,approved
+4,resilience,the ability to recover from difficulty,a routine physical object,a brief practical task,1,Resilience means the ability to recover from difficulty.,approved
+4,restraint,self-control or a limit,a routine physical object,a brief practical task,1,Restraint means self-control or a limit.,approved
+4,reverence,deep respect,a routine physical object,a brief practical task,1,Reverence means deep respect.,approved
+4,scrutiny,careful examination,a routine physical object,a brief practical task,1,Scrutiny means careful examination.,approved
+4,skepticism,doubt or questioning attitude,a routine physical object,a brief practical task,1,Skepticism means doubt or questioning attitude.,approved
+4,solidarity,unity based on shared interests,a routine physical object,a brief practical task,1,Solidarity means unity based on shared interests.,approved
+4,sophistry,clever but false reasoning,a routine physical object,a brief practical task,1,Sophistry means clever but false reasoning.,approved
+4,stagnation,lack of growth or progress,a routine physical object,a brief practical task,1,Stagnation means lack of growth or progress.,approved
+4,stereotype,an oversimplified fixed idea about a group,a routine physical object,a brief practical task,1,Stereotype means an oversimplified fixed idea about a group.,approved
+4,susceptibility,the state of being easily affected or harmed,a routine physical object,a brief practical task,1,Susceptibility means the state of being easily affected or harmed.,approved
+4,threshold,the point at which something begins or changes,a routine physical object,a brief practical task,1,Threshold means the point at which something begins or changes.,approved
+4,turmoil,great confusion or disorder,a routine physical object,a brief practical task,1,Turmoil means great confusion or disorder.,approved
+4,validity,the quality of being logically or legally sound,a routine physical object,a brief practical task,1,Validity means the quality of being logically or legally sound.,approved
+4,variability,the quality of being likely to change,a routine physical object,a brief practical task,1,Variability means the quality of being likely to change.,approved
+4,verification,the act of proving something is true,a routine physical object,a brief practical task,1,Verification means the act of proving something is true.,approved
+4,viability,the ability to work or succeed,a routine physical object,a brief practical task,1,Viability means the ability to work or succeed.,approved
+4,vindication,proof that someone or something was right,a routine physical object,a brief practical task,1,Vindication means proof that someone or something was right.,approved
+4,vulnerability,openness to harm or attack,a routine physical object,a brief practical task,1,Vulnerability means openness to harm or attack.,approved
+4,anachronism,something placed in the wrong historical time,a routine physical object,a brief practical task,1,Anachronism means something placed in the wrong historical time.,approved
+4,asceticism,strict self-denial for spiritual or moral reasons,a routine physical object,a brief practical task,1,Asceticism means strict self-denial for spiritual or moral reasons.,approved
+4,benevolence,kindness and desire to help others,a routine physical object,a brief practical task,1,Benevolence means kindness and desire to help others.,approved
+4,cacophony,a harsh mixture of sounds,a routine physical object,a brief practical task,1,Cacophony means a harsh mixture of sounds.,approved
+4,capitulation,the act of surrendering,a routine physical object,a brief practical task,1,Capitulation means the act of surrendering.,approved
+4,catharsis,emotional release,a routine physical object,a brief practical task,1,Catharsis means emotional release.,approved
+4,clairvoyance,supposed ability to see future or hidden events,a routine physical object,a brief practical task,1,Clairvoyance means supposed ability to see future or hidden events.,approved
+4,condescension,an attitude of superiority toward others,a routine physical object,a brief practical task,1,Condescension means an attitude of superiority toward others.,approved
+4,conundrum,a difficult problem or puzzle,a routine physical object,a brief practical task,1,Conundrum means a difficult problem or puzzle.,approved
+4,decadence,moral or cultural decline after luxury,a routine physical object,a brief practical task,1,Decadence means moral or cultural decline after luxury.,approved
+4,delineation,clear description or marking of boundaries,a routine physical object,a brief practical task,1,Delineation means clear description or marking of boundaries.,approved
+4,denunciation,public condemnation,a routine physical object,a brief practical task,1,Denunciation means public condemnation.,approved
+4,despotism,rule by an absolute and oppressive power,a routine physical object,a brief practical task,1,Despotism means rule by an absolute and oppressive power.,approved
+4,detachment,emotional distance or separation,a routine physical object,a brief practical task,1,Detachment means emotional distance or separation.,approved
+4,dissonance,lack of harmony or agreement,a routine physical object,a brief practical task,1,Dissonance means lack of harmony or agreement.,approved
+4,dogmatism,stubborn assertion of beliefs as unquestionable,a routine physical object,a brief practical task,1,Dogmatism means stubborn assertion of beliefs as unquestionable.,approved
+4,eccentricity,unusual behavior or quality,a routine physical object,a brief practical task,1,Eccentricity means unusual behavior or quality.,approved
+4,egotism,excessive self-importance,a routine physical object,a brief practical task,1,Egotism means excessive self-importance.,approved
+4,empiricism,belief that knowledge comes from experience and evidence,a routine physical object,a brief practical task,1,Empiricism means belief that knowledge comes from experience and evidence.,approved
+4,endearment,an expression of affection,a routine physical object,a brief practical task,1,Endearment means an expression of affection.,approved
+4,enlightenment,greater knowledge or spiritual insight,a routine physical object,a brief practical task,1,Enlightenment means greater knowledge or spiritual insight.,approved
+4,epiphany,a sudden realization,a routine physical object,a brief practical task,1,Epiphany means a sudden realization.,approved
+4,equanimity,calmness under stress,a routine physical object,a brief practical task,1,Equanimity means calmness under stress.,approved
+4,esotericism,interest in knowledge understood by few,a routine physical object,a brief practical task,1,Esotericism means interest in knowledge understood by few.,approved
+4,fallibility,the ability to make mistakes,a routine physical object,a brief practical task,1,Fallibility means the ability to make mistakes.,approved
+4,fanaticism,extreme and uncritical enthusiasm,a routine physical object,a brief practical task,1,Fanaticism means extreme and uncritical enthusiasm.,approved
+4,fatalism,belief that events are fixed and unavoidable,a routine physical object,a brief practical task,1,Fatalism means belief that events are fixed and unavoidable.,approved
+4,fervor,intense passion or enthusiasm,a routine physical object,a brief practical task,1,Fervor means intense passion or enthusiasm.,approved
+4,fortitude,courage in facing difficulty,a routine physical object,a brief practical task,1,Fortitude means courage in facing difficulty.,approved
+4,grandiosity,exaggerated sense of importance,a routine physical object,a brief practical task,1,Grandiosity means exaggerated sense of importance.,approved
+4,gullibility,tendency to believe things too easily,a routine physical object,a brief practical task,1,Gullibility means tendency to believe things too easily.,approved
+4,hedonism,pursuit of pleasure as the main goal,a routine physical object,a brief practical task,1,Hedonism means pursuit of pleasure as the main goal.,approved
+4,heresy,belief opposed to established doctrine,a routine physical object,a brief practical task,1,Heresy means belief opposed to established doctrine.,approved
+4,hubris,excessive pride,a routine physical object,a brief practical task,1,Hubris means excessive pride.,approved
+4,iconoclasm,attack on established beliefs or institutions,a routine physical object,a brief practical task,1,Iconoclasm means attack on established beliefs or institutions.,approved
+4,idealism,belief in high principles or perfect ideals,a routine physical object,a brief practical task,1,Idealism means belief in high principles or perfect ideals.,approved
+4,idiosyncrasy,a distinctive personal habit or trait,a routine physical object,a brief practical task,1,Idiosyncrasy means a distinctive personal habit or trait.,approved
+4,illusion,a false appearance or belief,a routine physical object,a brief practical task,1,Illusion means a false appearance or belief.,approved
+4,immutability,the quality of being unchangeable,a routine physical object,a brief practical task,1,Immutability means the quality of being unchangeable.,approved
+4,incredulity,unwillingness or inability to believe,a routine physical object,a brief practical task,1,Incredulity means unwillingness or inability to believe.,approved
+4,indoctrination,teaching someone to accept beliefs uncritically,a routine physical object,a brief practical task,1,Indoctrination means teaching someone to accept beliefs uncritically.,approved
+4,insularity,narrowness from being isolated,a routine physical object,a brief practical task,1,Insularity means narrowness from being isolated.,approved
+4,intolerance,unwillingness to accept different views,a routine physical object,a brief practical task,1,Intolerance means unwillingness to accept different views.,approved
+4,irrelevance,lack of connection to the matter,a routine physical object,a brief practical task,1,Irrelevance means lack of connection to the matter.,approved
+4,jurisprudence,the theory or study of law,a routine physical object,a brief practical task,1,Jurisprudence means the theory or study of law.,approved
+4,labyrinth,a complicated maze or system,a routine physical object,a brief practical task,1,Labyrinth means a complicated maze or system.,approved
+4,magnanimity,generosity toward a rival or weaker person,a routine physical object,a brief practical task,1,Magnanimity means generosity toward a rival or weaker person.,approved
+4,malice,desire to harm someone,a routine physical object,a brief practical task,1,Malice means desire to harm someone.,approved
+4,melancholy,deep sadness,a routine physical object,a brief practical task,1,Melancholy means deep sadness.,approved
+4,metaphysics,the study of reality and existence,a routine physical object,a brief practical task,1,Metaphysics means the study of reality and existence.,approved
+4,narcissism,excessive self-love,a routine physical object,a brief practical task,1,Narcissism means excessive self-love.,approved
+4,nihilism,rejection of meaning or moral principles,a routine physical object,a brief practical task,1,Nihilism means rejection of meaning or moral principles.,approved
+4,nostalgia,longing for the past,a routine physical object,a brief practical task,1,Nostalgia means longing for the past.,approved
+4,obfuscation,the act of making something unclear,a routine physical object,a brief practical task,1,Obfuscation means the act of making something unclear.,approved
+4,obstinacy,stubborn refusal to change,a routine physical object,a brief practical task,1,Obstinacy means stubborn refusal to change.,approved
+4,orthodoxy,accepted traditional belief,a routine physical object,a brief practical task,1,Orthodoxy means accepted traditional belief.,approved
+4,paternalism,controlling others while claiming to help them,a routine physical object,a brief practical task,1,Paternalism means controlling others while claiming to help them.,approved
+4,pessimism,expectation of bad outcomes,a routine physical object,a brief practical task,1,Pessimism means expectation of bad outcomes.,approved
+4,philanthropy,charitable giving or concern for human welfare,a routine physical object,a brief practical task,1,Philanthropy means charitable giving or concern for human welfare.,approved
+4,pluralism,acceptance of diverse groups or views,a routine physical object,a brief practical task,1,Pluralism means acceptance of diverse groups or views.,approved
+4,pretense,false appearance or claim,a routine physical object,a brief practical task,1,Pretense means false appearance or claim.,approved
+4,proclivity,a natural tendency,a routine physical object,a brief practical task,1,Proclivity means a natural tendency.,approved
+4,procrastination,delay in doing something,a routine physical object,a brief practical task,1,Procrastination means delay in doing something.,approved
+4,profundity,great depth of thought or meaning,a routine physical object,a brief practical task,1,Profundity means great depth of thought or meaning.,approved
+4,quagmire,a difficult or complicated situation,a routine physical object,a brief practical task,1,Quagmire means a difficult or complicated situation.,approved
+4,rationalism,reliance on reason as the basis for knowledge,a routine physical object,a brief practical task,1,Rationalism means reliance on reason as the basis for knowledge.,approved
+4,realism,practical acceptance of reality,a routine physical object,a brief practical task,1,Realism means practical acceptance of reality.,approved
+4,redemption,the act of being saved or restored,a routine physical object,a brief practical task,1,Redemption means the act of being saved or restored.,approved
+4,rhetoric,persuasive language,a routine physical object,a brief practical task,1,Rhetoric means persuasive language.,approved
+4,rigor,strictness or thoroughness,a routine physical object,a brief practical task,1,Rigor means strictness or thoroughness.,approved
+4,sanctity,sacredness or great importance,a routine physical object,a brief practical task,1,Sanctity means sacredness or great importance.,approved
+4,sarcasm,mocking language that often means the opposite,a routine physical object,a brief practical task,1,Sarcasm means mocking language that often means the opposite.,approved
+4,sectarianism,excessive loyalty to a particular group or sect,a routine physical object,a brief practical task,1,Sectarianism means excessive loyalty to a particular group or sect.,approved
+4,selflessness,concern for others over oneself,a routine physical object,a brief practical task,1,Selflessness means concern for others over oneself.,approved
+4,serendipity,pleasant discovery by chance,a routine physical object,a brief practical task,1,Serendipity means pleasant discovery by chance.,approved
+4,spirituality,concern with the spirit or sacred matters,a routine physical object,a brief practical task,1,Spirituality means concern with the spirit or sacred matters.,approved
+4,stoicism,calm endurance of pain or difficulty,a routine physical object,a brief practical task,1,Stoicism means calm endurance of pain or difficulty.,approved
+4,subservience,excessive willingness to obey,a routine physical object,a brief practical task,1,Subservience means excessive willingness to obey.,approved
+4,tenacity,persistent determination,a routine physical object,a brief practical task,1,Tenacity means persistent determination.,approved
+4,transcendence,existence beyond ordinary limits,a routine physical object,a brief practical task,1,Transcendence means existence beyond ordinary limits.,approved
+4,ubiquity,presence everywhere,a routine physical object,a brief practical task,1,Ubiquity means presence everywhere.,approved
+4,utilitarianism,belief that actions should maximize overall usefulness,a routine physical object,a brief practical task,1,Utilitarianism means belief that actions should maximize overall usefulness.,approved
+4,vanity,excessive pride in appearance or achievement,a routine physical object,a brief practical task,1,Vanity means excessive pride in appearance or achievement.,approved
+4,veracity,truthfulness,a routine physical object,a brief practical task,1,Veracity means truthfulness.,approved
+4,vigilance,careful watchfulness,a routine physical object,a brief practical task,1,Vigilance means careful watchfulness.,approved
+4,virtue,moral goodness,a routine physical object,a brief practical task,1,Virtue means moral goodness.,approved
+4,whimsicality,playful or unpredictable quality,a routine physical object,a brief practical task,1,Whimsicality means playful or unpredictable quality.,approved
+4,zealotry,extreme fanatical devotion,a routine physical object,a brief practical task,1,Zealotry means extreme fanatical devotion.,approved
+4,absolutism,belief in absolute principles or unlimited authority,a routine physical object,a brief practical task,1,Absolutism means belief in absolute principles or unlimited authority.,approved
+4,adaptationism,the view that traits are chiefly shaped by adaptation,a routine physical object,a brief practical task,1,Adaptationism means the view that traits are chiefly shaped by adaptation.,approved
+4,antagonism,active opposition or hostility,a routine physical object,a brief practical task,1,Antagonism means active opposition or hostility.,approved
+4,authoritarianism,support for strict authority and obedience,a routine physical object,a brief practical task,1,Authoritarianism means support for strict authority and obedience.,approved
+4,collectivism,priority of the group over the individual,a routine physical object,a brief practical task,1,Collectivism means priority of the group over the individual.,approved
+4,constructivism,the view that knowledge or meaning is constructed,a routine physical object,a brief practical task,1,Constructivism means the view that knowledge or meaning is constructed.,approved
+4,determinism,belief that events are caused by prior conditions,a routine physical object,a brief practical task,1,Determinism means belief that events are caused by prior conditions.,approved
+4,exceptionalism,belief that something is uniquely special,a routine physical object,a brief practical task,1,Exceptionalism means belief that something is uniquely special.,approved
+4,existentialism,philosophy focused on individual existence and choice,a routine physical object,a brief practical task,1,Existentialism means philosophy focused on individual existence and choice.,approved
+4,fundamentalism,strict adherence to basic doctrines,a routine physical object,a brief practical task,1,Fundamentalism means strict adherence to basic doctrines.,approved
+4,individualism,priority of individual freedom and responsibility,a routine physical object,a brief practical task,1,Individualism means priority of individual freedom and responsibility.,approved
+4,materialism,focus on material things or the view that matter is primary,a routine physical object,a brief practical task,1,Materialism means focus on material things or the view that matter is primary.,approved
+4,relativism,belief that truth or value depends on context,a routine physical object,a brief practical task,1,Relativism means belief that truth or value depends on context.,approved
+4,abnegation,self-denial or rejection of one's own interests,a routine physical object,a brief practical task,1,Abnegation means self-denial or rejection of one's own interests.,approved
+4,acumen,quick and accurate judgment,a routine physical object,a brief practical task,1,Acumen means quick and accurate judgment.,approved
+4,ambivalence,mixed or conflicting feelings,a routine physical object,a brief practical task,1,Ambivalence means mixed or conflicting feelings.,approved
+4,anathema,something strongly disliked or condemned,a routine physical object,a brief practical task,1,Anathema means something strongly disliked or condemned.,approved
+4,animus,hostile feeling or intention,a routine physical object,a brief practical task,1,Animus means hostile feeling or intention.,approved
+4,antithesis,the direct opposite of something,a routine physical object,a brief practical task,1,Antithesis means the direct opposite of something.,approved
+4,apotheosis,the highest point or perfect example,a routine physical object,a brief practical task,1,Apotheosis means the highest point or perfect example.,approved
+4,ascendance,a position of rising power or influence,a routine physical object,a brief practical task,1,Ascendance means a position of rising power or influence.,approved
+4,audacity,boldness that may seem rude or risky,a routine physical object,a brief practical task,1,Audacity means boldness that may seem rude or risky.,approved
+4,austerity,strict economy or severe simplicity,a routine physical object,a brief practical task,1,Austerity means strict economy or severe simplicity.,approved
+4,avarice,extreme greed for wealth,a routine physical object,a brief practical task,1,Avarice means extreme greed for wealth.,approved
+4,brevity,briefness or short duration,a routine physical object,a brief practical task,1,Brevity means briefness or short duration.,approved
+4,caprice,a sudden unpredictable change of mind,a routine physical object,a brief practical task,1,Caprice means a sudden unpredictable change of mind.,approved
+4,censure,strong official criticism,a routine physical object,a brief practical task,1,Censure means strong official criticism.,approved
+4,cogency,the quality of being clear logical and convincing,a routine physical object,a brief practical task,1,Cogency means the quality of being clear logical and convincing.,approved
+4,conciliation,the act of reducing hostility and restoring goodwill,a routine physical object,a brief practical task,1,Conciliation means the act of reducing hostility and restoring goodwill.,approved
+4,constancy,steadfastness or unchanging loyalty,a routine physical object,a brief practical task,1,Constancy means steadfastness or unchanging loyalty.,approved
+4,contrition,deep regret for wrongdoing,a routine physical object,a brief practical task,1,Contrition means deep regret for wrongdoing.,approved
+4,credulity,readiness to believe too easily,a routine physical object,a brief practical task,1,Credulity means readiness to believe too easily.,approved
+4,decorum,proper and polite behavior,a routine physical object,a brief practical task,1,Decorum means proper and polite behavior.,approved
+4,defiance,open resistance or refusal to obey,a routine physical object,a brief practical task,1,Defiance means open resistance or refusal to obey.,approved
+4,denigration,unfair criticism that damages reputation,a routine physical object,a brief practical task,1,Denigration means unfair criticism that damages reputation.,approved
+4,desolation,emptiness sadness or ruin,a routine physical object,a brief practical task,1,Desolation means emptiness sadness or ruin.,approved
+4,despondency,deep discouragement or hopelessness,a routine physical object,a brief practical task,1,Despondency means deep discouragement or hopelessness.,approved
+4,diffidence,lack of confidence,a routine physical object,a brief practical task,1,Diffidence means lack of confidence.,approved
+4,disarray,disorder or confusion,a routine physical object,a brief practical task,1,Disarray means disorder or confusion.,approved
+4,discontent,dissatisfaction,a routine physical object,a brief practical task,1,Discontent means dissatisfaction.,approved
+4,disparagement,criticism that lowers respect for someone or something,a routine physical object,a brief practical task,1,Disparagement means criticism that lowers respect for someone or something.,approved
+4,doggedness,persistent determination,a routine physical object,a brief practical task,1,Doggedness means persistent determination.,approved
+4,duplicity,deceitfulness or double dealing,a routine physical object,a brief practical task,1,Duplicity means deceitfulness or double dealing.,approved
+4,effrontery,shameless boldness,a routine physical object,a brief practical task,1,Effrontery means shameless boldness.,approved
+4,enigma,something mysterious or difficult to understand,a routine physical object,a brief practical task,1,Enigma means something mysterious or difficult to understand.,approved
+4,ephemerality,the quality of lasting only briefly,a routine physical object,a brief practical task,1,Ephemerality means the quality of lasting only briefly.,approved
+4,erosion,gradual wearing away or weakening,a routine physical object,a brief practical task,1,Erosion means gradual wearing away or weakening.,approved
+4,exasperation,intense irritation or frustration,a routine physical object,a brief practical task,1,Exasperation means intense irritation or frustration.,approved
+4,fecundity,fruitfulness or ability to produce abundantly,a routine physical object,a brief practical task,1,Fecundity means fruitfulness or ability to produce abundantly.,approved
+4,heterogeneity,the quality of being diverse in kind,a routine physical object,a brief practical task,1,Heterogeneity means the quality of being diverse in kind.,approved
+4,homogeneity,the quality of being uniform or similar,a routine physical object,a brief practical task,1,Homogeneity means the quality of being uniform or similar.,approved
+4,impropriety,improper or unsuitable behavior,a routine physical object,a brief practical task,1,Impropriety means improper or unsuitable behavior.,approved
+4,incongruity,lack of harmony or suitability,a routine physical object,a brief practical task,1,Incongruity means lack of harmony or suitability.,approved
+4,indolence,laziness or avoidance of effort,a routine physical object,a brief practical task,1,Indolence means laziness or avoidance of effort.,approved
+4,inefficacy,lack of effectiveness,a routine physical object,a brief practical task,1,Inefficacy means lack of effectiveness.,approved
+4,infallibility,the quality of being unable to make mistakes,a routine physical object,a brief practical task,1,Infallibility means the quality of being unable to make mistakes.,approved
+4,intrepidity,fearless courage,a routine physical object,a brief practical task,1,Intrepidity means fearless courage.,approved
+4,irreverence,lack of proper respect,a routine physical object,a brief practical task,1,Irreverence means lack of proper respect.,approved
+4,lethargy,lack of energy or enthusiasm,a routine physical object,a brief practical task,1,Lethargy means lack of energy or enthusiasm.,approved
+4,malevolence,desire to harm others,a routine physical object,a brief practical task,1,Malevolence means desire to harm others.,approved
+4,mendacity,untruthfulness,a routine physical object,a brief practical task,1,Mendacity means untruthfulness.,approved
+4,meritocracy,a system where success is based on ability and merit,a routine physical object,a brief practical task,1,Meritocracy means a system where success is based on ability and merit.,approved
+4,metamorphosis,a major transformation,a routine physical object,a brief practical task,1,Metamorphosis means a major transformation.,approved
+4,minutiae,small precise details,a routine physical object,a brief practical task,1,Minutiae means small precise details.,approved
+4,misanthropy,dislike or distrust of humankind,a routine physical object,a brief practical task,1,Misanthropy means dislike or distrust of humankind.,approved
+4,myopia,narrow-mindedness or short-sightedness,a routine physical object,a brief practical task,1,Myopia means narrow-mindedness or short-sightedness.,approved
+4,nebulosity,vagueness or cloudiness,a routine physical object,a brief practical task,1,Nebulosity means vagueness or cloudiness.,approved
+4,obduracy,stubborn refusal to change,a routine physical object,a brief practical task,1,Obduracy means stubborn refusal to change.,approved
+4,opprobrium,harsh public criticism or disgrace,a routine physical object,a brief practical task,1,Opprobrium means harsh public criticism or disgrace.,approved
+4,ostentation,showy display meant to impress,a routine physical object,a brief practical task,1,Ostentation means showy display meant to impress.,approved
+4,parsimony,extreme unwillingness to spend money or resources,a routine physical object,a brief practical task,1,Parsimony means extreme unwillingness to spend money or resources.,approved
+4,perfidy,treachery or betrayal of trust,a routine physical object,a brief practical task,1,Perfidy means treachery or betrayal of trust.,approved
+4,perniciousness,the quality of causing serious harm,a routine physical object,a brief practical task,1,Perniciousness means the quality of causing serious harm.,approved
+4,placidity,calmness or peacefulness,a routine physical object,a brief practical task,1,Placidity means calmness or peacefulness.,approved
+4,polarity,opposition between two contrasting forces or ideas,a routine physical object,a brief practical task,1,Polarity means opposition between two contrasting forces or ideas.,approved
+4,precariousness,lack of security or stability,a routine physical object,a brief practical task,1,Precariousness means lack of security or stability.,approved
+4,propriety,correct or proper behavior,a routine physical object,a brief practical task,1,Propriety means correct or proper behavior.,approved
+4,quiescence,a state of quiet inactivity,a routine physical object,a brief practical task,1,Quiescence means a state of quiet inactivity.,approved
+4,rancor,deep bitter resentment,a routine physical object,a brief practical task,1,Rancor means deep bitter resentment.,approved
+4,rectitude,moral correctness,a routine physical object,a brief practical task,1,Rectitude means moral correctness.,approved
+4,reticence,reserve or unwillingness to speak freely,a routine physical object,a brief practical task,1,Reticence means reserve or unwillingness to speak freely.,approved
+4,sanctimony,false or excessive display of moral superiority,a routine physical object,a brief practical task,1,Sanctimony means false or excessive display of moral superiority.,approved
+4,solipsism,the view that only one's own mind is certain to exist,a routine physical object,a brief practical task,1,Solipsism means the view that only one's own mind is certain to exist.,approved
+4,steadfastness,firm loyalty or determination,a routine physical object,a brief practical task,1,Steadfastness means firm loyalty or determination.,approved
+4,vacuity,emptiness or lack of thought,a routine physical object,a brief practical task,1,Vacuity means emptiness or lack of thought.,approved
+4,volatility,the quality of changing suddenly or unpredictably,a routine physical object,a brief practical task,1,Volatility means the quality of changing suddenly or unpredictably.,approved
+4,abeyance,temporary suspension or inactivity,a routine physical object,a brief practical task,1,Abeyance means temporary suspension or inactivity.,approved
+4,abjuration,formal rejection or renunciation,a routine physical object,a brief practical task,1,Abjuration means formal rejection or renunciation.,approved
+4,acculturation,adaptation to a different culture,a routine physical object,a brief practical task,1,Acculturation means adaptation to a different culture.,approved
+4,adulation,excessive praise,a routine physical object,a brief practical task,1,Adulation means excessive praise.,approved
+4,aggrandizement,the act of increasing power status or wealth,a routine physical object,a brief practical task,1,Aggrandizement means the act of increasing power status or wealth.,approved
+4,alienation,a feeling of isolation or separation,a routine physical object,a brief practical task,1,Alienation means a feeling of isolation or separation.,approved
+4,anthropocentrism,the belief that humans are central or most important,a routine physical object,a brief practical task,1,Anthropocentrism means the belief that humans are central or most important.,approved
+4,antinomy,a contradiction between two reasonable principles,a routine physical object,a brief practical task,1,Antinomy means a contradiction between two reasonable principles.,approved
+4,asperity,harshness of tone manner or condition,a routine physical object,a brief practical task,1,Asperity means harshness of tone manner or condition.,approved
+4,attenuation,weakening or reduction in force,a routine physical object,a brief practical task,1,Attenuation means weakening or reduction in force.,approved
+4,beatification,the act of declaring someone blessed or highly honored,a routine physical object,a brief practical task,1,Beatification means the act of declaring someone blessed or highly honored.,approved
+4,circumlocution,indirect or wordy expression,a routine physical object,a brief practical task,1,Circumlocution means indirect or wordy expression.,approved
+4,codification,the act of arranging rules into a system,a routine physical object,a brief practical task,1,Codification means the act of arranging rules into a system.,approved
+4,commensurability,the quality of being measurable by a common standard,a routine physical object,a brief practical task,1,Commensurability means the quality of being measurable by a common standard.,approved
+4,concupiscence,strong desire especially sensual desire,a routine physical object,a brief practical task,1,Concupiscence means strong desire especially sensual desire.,approved
+4,conflagration,a large destructive fire or conflict,a routine physical object,a brief practical task,1,Conflagration means a large destructive fire or conflict.,approved
+4,consequentialism,the view that outcomes determine moral value,a routine physical object,a brief practical task,1,Consequentialism means the view that outcomes determine moral value.,approved
+4,consilience,agreement between evidence from different fields,a routine physical object,a brief practical task,1,Consilience means agreement between evidence from different fields.,approved
+4,counterfactual,a statement about what did not happen but could have,a routine physical object,a brief practical task,1,Counterfactual means a statement about what did not happen but could have.,approved
+4,declension,decline or downward change,a routine physical object,a brief practical task,1,Declension means decline or downward change.,approved
+4,dehumanization,the act of treating people as less than human,a routine physical object,a brief practical task,1,Dehumanization means the act of treating people as less than human.,approved
+4,demagoguery,political appeal to prejudice and emotion,a routine physical object,a brief practical task,1,Demagoguery means political appeal to prejudice and emotion.,approved
+4,denouement,the final resolution of a story or situation,a routine physical object,a brief practical task,1,Denouement means the final resolution of a story or situation.,approved
+4,deontology,ethical theory based on duty and rules,a routine physical object,a brief practical task,1,Deontology means ethical theory based on duty and rules.,approved
+4,depersonalization,loss of personal identity or individual quality,a routine physical object,a brief practical task,1,Depersonalization means loss of personal identity or individual quality.,approved
+4,dialectic,reasoning through opposing ideas,a routine physical object,a brief practical task,1,Dialectic means reasoning through opposing ideas.,approved
+4,disaffection,loss of loyalty or affection,a routine physical object,a brief practical task,1,Disaffection means loss of loyalty or affection.,approved
+4,disenchantment,loss of idealism or belief,a routine physical object,a brief practical task,1,Disenchantment means loss of idealism or belief.,approved
+4,dissimulation,concealment of true feelings or intentions,a routine physical object,a brief practical task,1,Dissimulation means concealment of true feelings or intentions.,approved
+4,egalitarianism,belief in equality for all people,a routine physical object,a brief practical task,1,Egalitarianism means belief in equality for all people.,approved
+4,emanation,something that flows out or originates from a source,a routine physical object,a brief practical task,1,Emanation means something that flows out or originates from a source.,approved
+4,encomium,high praise,a routine physical object,a brief practical task,1,Encomium means high praise.,approved
+4,entelechy,the realization of potential,a routine physical object,a brief practical task,1,Entelechy means the realization of potential.,approved
+4,epistemology,the study of knowledge,a routine physical object,a brief practical task,1,Epistemology means the study of knowledge.,approved
+4,eschatology,the study of final events or ultimate destiny,a routine physical object,a brief practical task,1,Eschatology means the study of final events or ultimate destiny.,approved
+4,essentialism,belief in fixed essential qualities,a routine physical object,a brief practical task,1,Essentialism means belief in fixed essential qualities.,approved
+4,ethnocentrism,judging other cultures by one's own culture,a routine physical object,a brief practical task,1,Ethnocentrism means judging other cultures by one's own culture.,approved
+4,eugenics,the discredited attempt to improve populations by controlling reproduction,a routine physical object,a brief practical task,1,Eugenics means the discredited attempt to improve populations by controlling reproduction.,approved
+4,exegesis,critical explanation of a text,a routine physical object,a brief practical task,1,Exegesis means critical explanation of a text.,approved
+4,externality,an outside effect of an action or transaction,a routine physical object,a brief practical task,1,Externality means an outside effect of an action or transaction.,approved
+4,factionalism,division into competing groups,a routine physical object,a brief practical task,1,Factionalism means division into competing groups.,approved
+4,fallibilism,the view that knowledge may be mistaken,a routine physical object,a brief practical task,1,Fallibilism means the view that knowledge may be mistaken.,approved
+4,federalism,a system dividing power between central and regional governments,a routine physical object,a brief practical task,1,Federalism means a system dividing power between central and regional governments.,approved
+4,fideism,reliance on faith rather than reason,a routine physical object,a brief practical task,1,Fideism means reliance on faith rather than reason.,approved
+4,finitude,the state of having limits,a routine physical object,a brief practical task,1,Finitude means the state of having limits.,approved
+4,formalism,emphasis on form rules or structure,a routine physical object,a brief practical task,1,Formalism means emphasis on form rules or structure.,approved
+4,gentrification,neighborhood change caused by wealthier residents moving in,a routine physical object,a brief practical task,1,Gentrification means neighborhood change caused by wealthier residents moving in.,approved
+4,hermeneutics,the theory of interpretation,a routine physical object,a brief practical task,1,Hermeneutics means the theory of interpretation.,approved
+4,historicism,interpretation through historical context,a routine physical object,a brief practical task,1,Historicism means interpretation through historical context.,approved
+4,hypostasis,treating an abstract idea as a concrete reality,a routine physical object,a brief practical task,1,Hypostasis means treating an abstract idea as a concrete reality.,approved
+4,idealization,the act of imagining something as better than it is,a routine physical object,a brief practical task,1,Idealization means the act of imagining something as better than it is.,approved
+4,indeterminacy,the state of being uncertain or not fixed,a routine physical object,a brief practical task,1,Indeterminacy means the state of being uncertain or not fixed.,approved
+4,intransigence,refusal to compromise,a routine physical object,a brief practical task,1,Intransigence means refusal to compromise.,approved
+4,irredentism,claiming territory based on historical or ethnic ties,a routine physical object,a brief practical task,1,Irredentism means claiming territory based on historical or ethnic ties.,approved
+4,localization,adaptation to a particular place or culture,a routine physical object,a brief practical task,1,Localization means adaptation to a particular place or culture.,approved
+4,marginalization,the act of pushing a group to the edge of society,a routine physical object,a brief practical task,1,Marginalization means the act of pushing a group to the edge of society.,approved
+4,mercantilism,economic policy focused on national trade advantage,a routine physical object,a brief practical task,1,Mercantilism means economic policy focused on national trade advantage.,approved
+4,modernization,the process of making something modern,a routine physical object,a brief practical task,1,Modernization means the process of making something modern.,approved
+4,monotheism,belief in one god,a routine physical object,a brief practical task,1,Monotheism means belief in one god.,approved
+4,mutualism,a relationship that benefits both sides,a routine physical object,a brief practical task,1,Mutualism means a relationship that benefits both sides.,approved
+4,naturalism,the view that everything arises from natural causes,a routine physical object,a brief practical task,1,Naturalism means the view that everything arises from natural causes.,approved
+4,nominalism,the view that universal concepts are only names,a routine physical object,a brief practical task,1,Nominalism means the view that universal concepts are only names.,approved
+4,objectivism,the view that reality or values exist independently of perception,a routine physical object,a brief practical task,1,Objectivism means the view that reality or values exist independently of perception.,approved
+4,orientalism,stereotyped Western representation of Eastern cultures,a routine physical object,a brief practical task,1,Orientalism means stereotyped Western representation of Eastern cultures.,approved
+4,particularism,focus on specific cases over universal rules,a routine physical object,a brief practical task,1,Particularism means focus on specific cases over universal rules.,approved
+4,phenomenology,the study of conscious experience,a routine physical object,a brief practical task,1,Phenomenology means the study of conscious experience.,approved
+4,polytheism,belief in many gods,a routine physical object,a brief practical task,1,Polytheism means belief in many gods.,approved
+4,positivism,the view that knowledge should be based on observable facts,a routine physical object,a brief practical task,1,Positivism means the view that knowledge should be based on observable facts.,approved
+4,postmodernism,skepticism toward universal truths and grand narratives,a routine physical object,a brief practical task,1,Postmodernism means skepticism toward universal truths and grand narratives.,approved
+4,predestination,the belief that events are determined in advance,a routine physical object,a brief practical task,1,Predestination means the belief that events are determined in advance.,approved
+4,presentism,judging the past by present-day values,a routine physical object,a brief practical task,1,Presentism means judging the past by present-day values.,approved
+4,proceduralism,emphasis on correct procedures,a routine physical object,a brief practical task,1,Proceduralism means emphasis on correct procedures.,approved
+4,reductionism,explaining something complex by reducing it to simpler parts,a routine physical object,a brief practical task,1,Reductionism means explaining something complex by reducing it to simpler parts.,approved
+4,republicanism,political theory emphasizing representative government and civic virtue,a routine physical object,a brief practical task,1,Republicanism means political theory emphasizing representative government and civic virtue.,approved
+4,reification,treating an abstract idea as a concrete thing,a routine physical object,a brief practical task,1,Reification means treating an abstract idea as a concrete thing.,approved
+4,scholasticism,medieval method of learning based on logic and theology,a routine physical object,a brief practical task,1,Scholasticism means medieval method of learning based on logic and theology.,approved
+4,secularization,the process of becoming less religious,a routine physical object,a brief practical task,1,Secularization means the process of becoming less religious.,approved
+4,sensationalism,use of shocking details to attract attention,a routine physical object,a brief practical task,1,Sensationalism means use of shocking details to attract attention.,approved
+4,structuralism,analysis based on underlying systems and structures,a routine physical object,a brief practical task,1,Structuralism means analysis based on underlying systems and structures.,approved
+4,subjectivism,the view that truth or value depends on individual perspective,a routine physical object,a brief practical task,1,Subjectivism means the view that truth or value depends on individual perspective.,approved
+4,teleology,explanation by purpose or final cause,a routine physical object,a brief practical task,1,Teleology means explanation by purpose or final cause.,approved
+4,totalitarianism,centralized control over nearly all aspects of life,a routine physical object,a brief practical task,1,Totalitarianism means centralized control over nearly all aspects of life.,approved
+4,transcendentalism,belief in spiritual truth beyond experience,a routine physical object,a brief practical task,1,Transcendentalism means belief in spiritual truth beyond experience.,approved
+4,universalism,belief in universal principles or application to all,a routine physical object,a brief practical task,1,Universalism means belief in universal principles or application to all.,approved
+4,verificationism,the view that meaning depends on possible verification,a routine physical object,a brief practical task,1,Verificationism means the view that meaning depends on possible verification.,approved
+4,voluntarism,emphasis on will or voluntary action,a routine physical object,a brief practical task,1,Voluntarism means emphasis on will or voluntary action.,approved
+4,backpropagation,an algorithm for updating neural network weights by error gradients,a routine physical object,a brief practical task,1,Backpropagation means an algorithm for updating neural network weights by error gradients.,approved
+4,checksum,a value used to verify data integrity,a routine physical object,a brief practical task,1,Checksum means a value used to verify data integrity.,approved
+4,daemon,a background process that runs without direct user control,a routine physical object,a brief practical task,1,Daemon means a background process that runs without direct user control.,approved
+4,deadlock,a state where processes wait forever for each other,a routine physical object,a brief practical task,1,Deadlock means a state where processes wait forever for each other.,approved
+4,hashing,mapping data to a fixed-size value,a routine physical object,a brief practical task,1,Hashing means mapping data to a fixed-size value.,approved
+4,hypervisor,software that creates and manages virtual machines,a routine physical object,a brief practical task,1,Hypervisor means software that creates and manages virtual machines.,approved
+4,idempotency,the property of producing the same result when repeated,a routine physical object,a brief practical task,1,Idempotency means the property of producing the same result when repeated.,approved
+4,kernel,the core part of an operating system,a routine physical object,a brief practical task,1,Kernel means the core part of an operating system.,approved
+4,mutex,a lock that allows only one thread to access a resource,a routine physical object,a brief practical task,1,Mutex means a lock that allows only one thread to access a resource.,approved
+4,namespace,a scope that organizes identifiers and prevents naming conflicts,a routine physical object,a brief practical task,1,Namespace means a scope that organizes identifiers and prevents naming conflicts.,approved
+4,overfitting,model learning training data too closely and generalizing poorly,a routine physical object,a brief practical task,1,Overfitting means model learning training data too closely and generalizing poorly.,approved
+4,payload,the main data carried by a message or request,a routine physical object,a brief practical task,1,Payload means the main data carried by a message or request.,approved
+4,polymorphism,the ability of one interface to represent different types,a routine physical object,a brief practical task,1,Polymorphism means the ability of one interface to represent different types.,approved
+4,quantization,reducing numerical precision to make computation or storage smaller,a routine physical object,a brief practical task,1,Quantization means reducing numerical precision to make computation or storage smaller.,approved
+4,sandboxing,isolating code so it cannot affect the wider system,a routine physical object,a brief practical task,1,Sandboxing means isolating code so it cannot affect the wider system.,approved
+4,sharding,splitting data across multiple databases or servers,a routine physical object,a brief practical task,1,Sharding means splitting data across multiple databases or servers.,approved
+4,throughput,the amount processed in a given time,a routine physical object,a brief practical task,1,Throughput means the amount processed in a given time.,approved
+4,tokenizer,a tool that splits text into smaller units,a routine physical object,a brief practical task,1,Tokenizer means a tool that splits text into smaller units.,approved
+4,vectorization,representing data as vectors or using vector operations,a routine physical object,a brief practical task,1,Vectorization means representing data as vectors or using vector operations.,approved
+4,virtualization,creating virtual versions of computing resources,a routine physical object,a brief practical task,1,Virtualization means creating virtual versions of computing resources.,approved
+4,alignment,making AI behavior match intended goals or values,a routine physical object,a brief practical task,1,Alignment means making AI behavior match intended goals or values.,approved
+4,autoregression,prediction based on previous outputs in a sequence,a routine physical object,a brief practical task,1,Autoregression means prediction based on previous outputs in a sequence.,approved
+4,classifier,a model that assigns items to categories,a routine physical object,a brief practical task,1,Classifier means a model that assigns items to categories.,approved
+4,clustering,grouping similar data points without preset labels,a routine physical object,a brief practical task,1,Clustering means grouping similar data points without preset labels.,approved
+4,distillation,training a smaller model to imitate a larger model,a routine physical object,a brief practical task,1,Distillation means training a smaller model to imitate a larger model.,approved
+4,embedding,a vector representation of data meaning,a routine physical object,a brief practical task,1,Embedding means a vector representation of data meaning.,approved
+4,hallucination,an AI output that is plausible but false,a routine physical object,a brief practical task,1,Hallucination means an AI output that is plausible but false.,approved
+4,inference,using a trained model to produce outputs,a routine physical object,a brief practical task,1,Inference means using a trained model to produce outputs.,approved
+4,multimodality,ability to process multiple kinds of input such as text images or audio,a routine physical object,a brief practical task,1,Multimodality means ability to process multiple kinds of input such as text images or audio.,approved
+4,perplexity,a measure of how well a language model predicts text,a routine physical object,a brief practical task,1,Perplexity means a measure of how well a language model predicts text.,approved
+4,retrieval,finding relevant information from a data source,a routine physical object,a brief practical task,1,Retrieval means finding relevant information from a data source.,approved
+4,tokenization,splitting text into tokens for model processing,a routine physical object,a brief practical task,1,Tokenization means splitting text into tokens for model processing.,approved
+4,transformer,a neural network architecture based on attention,a routine physical object,a brief practical task,1,Transformer means a neural network architecture based on attention.,approved
+4,allophone,a variant pronunciation of the same phoneme,a routine physical object,a brief practical task,1,Allophone means a variant pronunciation of the same phoneme.,approved
+4,deixis,language whose meaning depends on context such as here or you,a routine physical object,a brief practical task,1,Deixis means language whose meaning depends on context such as here or you.,approved
+4,diglossia,use of two language varieties in different social contexts,a routine physical object,a brief practical task,1,Diglossia means use of two language varieties in different social contexts.,approved
+4,ergativity,a grammatical pattern treating subjects of intransitive verbs like objects,a routine physical object,a brief practical task,1,Ergativity means a grammatical pattern treating subjects of intransitive verbs like objects.,approved
+4,lexeme,a basic unit of lexical meaning,a routine physical object,a brief practical task,1,Lexeme means a basic unit of lexical meaning.,approved
+4,morpheme,the smallest meaningful unit in a language,a routine physical object,a brief practical task,1,Morpheme means the smallest meaningful unit in a language.,approved
+4,phoneme,the smallest sound unit that can distinguish meaning,a routine physical object,a brief practical task,1,Phoneme means the smallest sound unit that can distinguish meaning.,approved
+4,pragmatics,the study of language meaning in context,a routine physical object,a brief practical task,1,Pragmatics means the study of language meaning in context.,approved
+4,syntax,the rules for arranging words in sentences,a routine physical object,a brief practical task,1,Syntax means the rules for arranging words in sentences.,approved
+4,aporia,an unresolved puzzle or internal contradiction,a routine physical object,a brief practical task,1,Aporia means an unresolved puzzle or internal contradiction.,approved
+4,qualia,subjective qualities of experience,a routine physical object,a brief practical task,1,Qualia means subjective qualities of experience.,approved
+4,theodicy,defense of divine goodness despite the existence of evil,a routine physical object,a brief practical task,1,Theodicy means defense of divine goodness despite the existence of evil.,approved
+4,anomie,social instability caused by lack of norms,a routine physical object,a brief practical task,1,Anomie means social instability caused by lack of norms.,approved
+4,disenfranchisement,deprivation of rights especially voting rights,a routine physical object,a brief practical task,1,Disenfranchisement means deprivation of rights especially voting rights.,approved
+4,intersectionality,overlapping effects of social identities and systems of inequality,a routine physical object,a brief practical task,1,Intersectionality means overlapping effects of social identities and systems of inequality.,approved
+4,patriarchy,a social system dominated by men,a routine physical object,a brief practical task,1,Patriarchy means a social system dominated by men.,approved

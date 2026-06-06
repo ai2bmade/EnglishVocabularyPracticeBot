@@ -1,0 +1,577 @@
+level,word,choice_1,choice_2,choice_3,answer,explanation,status
+1,happy,sad,glad,angry,2,Happy means feeling glad or pleased.,approved
+1,cold,not warm,very fast,full of light,1,Cold means having a low temperature.,approved
+1,walk,to eat quickly,to move on foot,to sleep deeply,2,Walk means to move using your feet at a regular pace.,approved
+1,achieve,to get something by effort,to sleep for a long time,to draw a picture,1,Achieve means to get something by working for it.,approved
+1,allow,to stop someone,to let someone do something,to write a letter,2,Allow means to let someone do something.,approved
+1,appear,to become visible,to drink water,to clean a room,1,Appear means to become visible or be seen.,approved
+1,apply,to use or ask officially,to run very fast,to close a door,1,Apply means to use something or ask for something officially.,approved
+1,arrive,to lose a bag,to reach a place,to cook food,2,Arrive means to reach a place.,approved
+1,ask,to sleep deeply,to move slowly,to say a question,3,Ask means to say a question.,approved
+1,avoid,to stay away from,to buy something,to speak loudly,1,Avoid means to stay away from someone or something.,approved
+1,become,to start to be,to open a box,to hit a ball,1,Become means to start to be something.,approved
+1,begin,to finish early,to start doing something,to share food,2,Begin means to start.,approved
+1,believe,to think something is true,to clean the floor,to carry a bag,1,Believe means to think that something is true.,approved
+1,break,to make something separate or stop working,to answer a question,to visit a friend,1,Break means to damage something or make it stop working.,approved
+1,bring,to take something to someone,to forget a name,to sleep late,1,Bring means to take something with you to a place or person.,approved
+1,build,to make something,to smell food,to ask a question,1,Build means to make something by putting parts together.,approved
+1,buy,to read a book,to get something by paying money,to teach a class,2,Buy means to get something by paying money.,approved
+1,call,to phone or name someone,to wash clothes,to lose money,1,Call means to phone someone or give a name to someone.,approved
+1,change,to make or become different,to stay in bed,to taste soup,1,Change means to make something different or become different.,approved
+1,check,to look to make sure,to drive a car,to grow taller,1,Check means to look at something to make sure it is right.,approved
+1,clean,to make not dirty,to move very fast,to forget something,1,Clean means to make something not dirty.,approved
+1,complete,to start a trip,to finish something,to smell flowers,2,Complete means to finish something.,approved
+1,continue,to stop forever,to keep going,to break a cup,2,Continue means to keep doing something.,approved
+1,cook,to make food with heat,to write your name,to leave a room,1,Cook means to make food using heat.,approved
+1,cover,to put something over,to spend money,to learn a song,1,Cover means to put something over something else.,approved
+1,create,to make something new,to sit quietly,to pay money,1,Create means to make something new.,approved
+1,decide,to choose after thinking,to smell bad,to close your eyes,1,Decide means to choose what to do.,approved
+1,describe,to say what something is like,to sleep at night,to pull a rope,1,Describe means to say what someone or something is like.,approved
+1,discover,to find something new,to work slowly,to send a letter,1,Discover means to find something for the first time.,approved
+1,discuss,to open a window,to talk about something,to taste food,2,Discuss means to talk about something with others.,approved
+1,drive,to control a car,to clean a desk,to read quietly,1,Drive means to control a car or other vehicle.,approved
+1,earn,to get money for work,to lose a game,to smell smoke,1,Earn means to get money by working.,approved
+1,end,to stop or finish,to begin a meal,to bring a book,1,End means to stop or finish.,approved
+1,exercise,to move your body for health,to write a story,to buy a ticket,1,Exercise means to move your body to stay healthy.,approved
+1,expect,to think something will happen,to wash your hands,to open a gift,1,Expect means to think something will happen.,approved
+1,experience,to have something happen to you,to cook rice,to turn left,1,Experience means to have something happen to you.,approved
+1,explain,to make something clear,to carry a chair,to win a race,1,Explain means to make something easy to understand.,approved
+1,face,to deal with something,to smell a flower,to read a sign,1,Face means to deal with a problem or situation.,approved
+1,feel,to touch or have an emotion,to save money,to build a house,1,Feel means to touch something or have an emotion.,approved
+1,find,to see or get after looking,to start sleeping,to clean a window,1,Find means to see or get something after looking.,approved
+1,finish,to complete something,to begin again,to spend money,1,Finish means to complete something.,approved
+1,forget,to not remember,to write clearly,to arrive early,1,Forget means to not remember something.,approved
+1,get,to receive or obtain,to stop moving,to teach a lesson,1,Get means to receive or obtain something.,approved
+1,give,to hand something to someone,to hide a key,to taste bread,1,Give means to hand something to someone.,approved
+1,go,to move to another place,to ask politely,to cook dinner,1,Go means to move or travel to another place.,approved
+1,grow,to become bigger,to read aloud,to pay a bill,1,Grow means to become bigger.,approved
+1,have,to own or hold,to lose quickly,to clean badly,1,Have means to own or hold something.,approved
+1,help,to make it easier for someone,to break a plate,to turn off,1,Help means to make it easier for someone to do something.,approved
+1,hit,to strike something,to learn a word,to open a shop,1,Hit means to strike someone or something.,approved
+1,hire,to give someone a job,to clean a room,to sleep early,1,Hire means to give someone a job.,approved
+1,join,to become part of a group,to sleep late,to smell food,1,Join means to become part of a group or activity.,approved
+1,keep,to continue to have,to throw away,to ask twice,1,Keep means to continue to have something.,approved
+1,know,to have information in your mind,to clean shoes,to spend time,1,Know means to have information in your mind.,approved
+1,learn,to get knowledge or skill,to close a book,to taste tea,1,Learn means to get knowledge or skill.,approved
+1,leave,to go away from a place,to bring closer,to start cooking,1,Leave means to go away from a place.,approved
+1,lend,to give for a short time,to buy forever,to sleep outside,1,Lend means to give something for a short time.,approved
+1,let,to allow,to win,to smell,1,Let means to allow someone to do something.,approved
+1,like,to enjoy,to break,to forget,1,Like means to enjoy someone or something.,approved
+1,live,to have your home,to pay a bill,to read fast,1,Live means to have your home in a place.,approved
+1,look,to use your eyes,to clean your room,to earn money,1,Look means to use your eyes to see.,approved
+1,lose,to no longer have,to open slowly,to teach well,1,Lose means to no longer have something.,approved
+1,make,to create or produce,to sleep deeply,to ask loudly,1,Make means to create or produce something.,approved
+1,meet,to see someone by plan or chance,to cover a box,to spend money,1,Meet means to see and talk to someone.,approved
+1,move,to change place or position,to read a page,to taste soup,1,Move means to change place or position.,approved
+1,need,to require,to publish,to hit,1,Need means to require something.,approved
+1,notice,to see or become aware of,to clean with water,to drive home,1,Notice means to see or become aware of something.,approved
+1,offer,to say you will give or do something,to forget a word,to close a bag,1,Offer means to say you will give or do something.,approved
+1,open,to make not closed,to turn cold,to sleep soon,1,Open means to make something not closed.,approved
+1,order,to ask to buy or arrange,to break loudly,to smell sweet,1,Order means to ask to buy something or put things in order.,approved
+1,organize,to put in order,to make dirty,to leave quickly,1,Organize means to put things in order.,approved
+1,pass,to go past or succeed,to cook slowly,to forget easily,1,Pass means to go past something or succeed in a test.,approved
+1,pay,to give money,to grow fast,to watch TV,1,Pay means to give money for something.,approved
+1,play,to do a game or sport,to sleep in class,to clean a cup,1,Play means to do a game or sport for fun.,approved
+1,prepare,to get ready,to smell smoke,to close a road,1,Prepare means to get ready for something.,approved
+1,protect,to keep safe,to ask again,to drive fast,1,Protect means to keep someone or something safe.,approved
+1,provide,to give what is needed,to break in half,to look angry,1,Provide means to give something that is needed.,approved
+1,publish,to make public,to cook badly,to sleep more,1,Publish means to make writing or information public.,approved
+1,pull,to move something toward you,to send a message,to earn money,1,Pull means to move something toward you.,approved
+1,raise,to lift up or increase,to forget names,to taste food,1,Raise means to lift something up or increase something.,approved
+1,read,to look at words and understand,to clean a table,to play music,1,Read means to look at written words and understand them.,approved
+1,receive,to get something given or sent,to run away,to cook fish,1,Receive means to get something that is given or sent.,approved
+1,remember,to keep in your mind,to break a glass,to open a box,1,Remember means to keep something in your mind.,approved
+1,replace,to put a new thing in place of old one,to win a game,to sleep late,1,Replace means to put something new where another thing was.,approved
+1,respond,to answer,to pull hard,to cook fast,1,Respond means to answer or react.,approved
+1,return,to go or give back,to start a fire,to smell nice,1,Return means to go back or give something back.,approved
+1,save,to keep safe or store,to spend all money,to forget quickly,1,Save means to keep something safe or store it for later.,approved
+1,search,to look for something,to close a window,to teach music,1,Search means to look for something.,approved
+1,seem,to appear to be,to break apart,to buy food,1,Seem means to appear to be a certain way.,approved
+1,send,to make something go to someone,to keep at home,to sleep outside,1,Send means to make something go to another person or place.,approved
+1,share,to use or have together,to win alone,to clean quickly,1,Share means to use or have something with others.,approved
+1,show,to let someone see,to hide a box,to smell flowers,1,Show means to let someone see something.,approved
+1,sign,to write your name,to drive slowly,to cook rice,1,Sign means to write your name on something.,approved
+1,sleep,to rest with eyes closed,to ask a question,to earn money,1,Sleep means to rest with your eyes closed.,approved
+1,slow,to become less fast,to grow taller,to read louder,1,Slow means to become or make less fast.,approved
+1,smell,to notice with your nose,to write a test,to move a chair,1,Smell means to notice something with your nose.,approved
+1,solve,to find an answer,to cook a meal,to wait outside,1,Solve means to find an answer to a problem.,approved
+1,speak,to say words,to clean shoes,to lose money,1,Speak means to say words.,approved
+1,spend,to use money or time,to bring a gift,to sleep deeply,1,Spend means to use money or time.,approved
+1,start,to begin,to finish,to forget,1,Start means to begin.,approved
+1,stay,to remain in a place,to move away,to break open,1,Stay means to remain in a place.,approved
+1,stop,to not continue,to grow fast,to cook dinner,1,Stop means to not continue.,approved
+1,study,to learn by reading or practice,to sleep at noon,to buy shoes,1,Study means to learn by reading or practice.,approved
+1,submit,to send for review,to smell bad,to hit hard,1,Submit means to send work for review.,approved
+1,suggest,to give an idea,to close a box,to run home,1,Suggest means to give an idea or advice.,approved
+1,support,to help,to forget,to taste,1,Support means to help someone or something.,approved
+1,suppose,to think something is true,to clean a room,to play a game,1,Suppose means to think something is true.,approved
+1,surprise,to make someone feel unexpected wonder,to pay a bill,to read a map,1,Surprise means to make someone feel something unexpected.,approved
+1,take,to get or carry,to sleep quietly,to cook soup,1,Take means to get or carry something.,approved
+1,talk,to speak with someone,to smell smoke,to close a door,1,Talk means to speak with someone.,approved
+1,taste,to notice flavor with your mouth,to build a wall,to leave school,1,Taste means to notice flavor with your mouth.,approved
+1,teach,to help someone learn,to buy a book,to sleep late,1,Teach means to help someone learn something.,approved
+1,tell,to say information to someone,to clean the floor,to win money,1,Tell means to say information to someone.,approved
+1,test,to check knowledge or quality,to play outside,to smell food,1,Test means to check knowledge or quality.,approved
+1,thank,to say you are grateful,to break a chair,to go away,1,Thank means to say that you are grateful.,approved
+1,travel,to go from place to place,to stay still,to cook rice,1,Travel means to go from one place to another.,approved
+1,try,to make an effort,to sleep more,to lose a key,1,Try means to make an effort to do something.,approved
+1,turn,to change direction,to read slowly,to pay later,1,Turn means to change direction or position.,approved
+1,update,to make current,to make dirty,to hide carefully,1,Update means to make something current or newer.,approved
+1,use,to do something with a thing,to break a rule,to smell a flower,1,Use means to do something with a tool or object.,approved
+1,visit,to go see a person or place,to cook dinner,to sleep outside,1,Visit means to go see a person or place.,approved
+1,wait,to stay until something happens,to run quickly,to clean a cup,1,Wait means to stay until something happens.,approved
+1,want,to wish to have or do,to lose on purpose,to smell badly,1,Want means to wish to have or do something.,approved
+1,warn,to tell about danger,to buy a gift,to sleep early,1,Warn means to tell someone about danger or a problem.,approved
+1,watch,to look at for some time,to cook with fire,to forget a date,1,Watch means to look at something for some time.,approved
+1,win,to succeed in a game or contest,to pay for food,to close a window,1,Win means to succeed in a game or contest.,approved
+1,wish,to want something to happen,to clean a plate,to teach math,1,Wish means to want something to happen.,approved
+1,work,to do a job or task,to sleep all day,to taste water,1,Work means to do a job or task.,approved
+1,write,to make words with a pen or keyboard,to smell flowers,to turn cold,1,Write means to make words with a pen or keyboard.,approved
+1,good,pleasant or right,very late,full of noise,1,Good means pleasant correct or of high quality.,approved
+1,bad,not good,very clean,early in time,1,Bad means not good.,approved
+1,nice,pleasant or kind,very heavy,hard to find,1,Nice means pleasant or kind.,approved
+1,fine,good enough or well,very angry,far away,1,Fine means good enough or in good health.,approved
+1,calm,quiet and not worried,very dirty,late again,1,Calm means quiet and not worried.,approved
+1,healthy,well and not sick,broken and old,hard to open,1,Healthy means well and not sick.,approved
+1,quiet,not noisy,very rich,full of color,1,Quiet means making little noise.,approved
+1,famous,known by many people,small and weak,hard to carry,1,Famous means known by many people.,approved
+1,tired,needing rest,very new,full of water,1,Tired means needing rest or sleep.,approved
+1,hot,very warm,very slow,not real,1,Hot means having a high temperature.,approved
+1,new,not old,not safe,not useful,1,New means not old or recently made.,approved
+1,old,not new or young,very fast,full of light,1,Old means not new or not young.,approved
+1,early,before the usual time,very heavy,not private,1,Early means before the usual or expected time.,approved
+1,late,after the expected time,very clean,full of water,1,Late means after the expected or usual time.,approved
+1,busy,having a lot to do,not true,very cold,1,Busy means having many things to do.,approved
+1,fresh,new or recently made,late for a meeting,hard to carry,1,Fresh means new clean or recently made.,approved
+1,local,from a nearby area,from another country,very difficult,1,Local means from or related to a nearby area.,approved
+1,strong,having power,very quiet,not ready,1,Strong means having power or strength.,approved
+1,small,little in size,very angry,full of water,1,Small means little in size.,approved
+1,large,big in size,quiet in sound,early in time,1,Large means big in size.,approved
+1,young,not old,not useful,very late,1,Young means not old.,approved
+1,practical,useful in real life,full of danger,hard to hear,1,Practical means useful in real situations.,approved
+1,affordable,not too expensive,not allowed,very old,1,Affordable means not too expensive.,approved
+1,normal,usual or regular,very famous,hard to break,1,Normal means usual or regular.,approved
+1,better,more good,less safe,more tired,1,Better means more good than before or than another thing.,approved
+1,simple,easy and not complicated,very noisy,not public,1,Simple means easy and not complicated.,approved
+1,important,needing attention,very small,not fresh,1,Important means needing attention or having great value.,approved
+1,confident,sure about yourself,very cheap,hard to smell,1,Confident means sure about yourself or your ability.,approved
+1,electric,using electricity,from a farm,not finished,1,Electric means using or related to electricity.,approved
+1,heavy,hard to lift,very early,not true,1,Heavy means having a lot of weight.,approved
+1,final,last,dirty,young,1,Final means last.,approved
+1,main,most important,very cold,hard to hear,1,Main means most important.,approved
+1,technical,related to machines or special skills,very friendly,not expensive,1,Technical means related to machines science or special skills.,approved
+1,regional,related to an area,full of money,not clean,1,Regional means related to a particular area.,approved
+1,domestic,inside one country or home,very surprising,hard to understand,1,Domestic means related to one country or to the home.,approved
+1,international,between countries,inside one room,not useful,1,International means involving more than one country.,approved
+1,urban,related to a city,related to the sea,not finished,1,Urban means related to a city.,approved
+1,rural,related to the countryside,related to a machine,very loud,1,Rural means related to the countryside.,approved
+1,direct,straight or without another step,late and tired,not safe,1,Direct means straight or without another step.,approved
+1,public,for everyone,for one person only,not real,1,Public means open to everyone.,approved
+1,private,for one person or group only,known by all,very heavy,1,Private means not public or for only certain people.,approved
+1,available,ready to use or get,broken forever,hard to taste,1,Available means ready to use or get.,approved
+1,ready,prepared,broken,angry,1,Ready means prepared for something.,approved
+1,safe,not dangerous,very busy,not new,1,Safe means not dangerous.,approved
+1,popular,liked by many people,hard to carry,not enough,1,Popular means liked by many people.,approved
+1,rich,having a lot of money,very late,not clean,1,Rich means having a lot of money or resources.,approved
+1,poor,having little money,very famous,not possible,1,Poor means having little money or low quality.,approved
+1,friendly,kind and pleasant,very expensive,hard to see,1,Friendly means kind and pleasant to others.,approved
+1,difficult,not easy,very cheap,not real,1,Difficult means not easy.,approved
+1,easy,not difficult,very old,full of danger,1,Easy means not difficult.,approved
+1,common,happening often or shared by many,very private,hard to lift,1,Common means usual or shared by many people.,approved
+1,regular,usual or repeated,very unusual,not safe,1,Regular means usual or happening again and again.,approved
+1,recent,happening not long ago,very old,hard to use,1,Recent means happening not long ago.,approved
+1,real,true and not fake,late and tired,small and round,1,Real means true or not fake.,approved
+1,free,not costing money,badly broken,very heavy,1,Free means not costing any money.,approved
+1,useful,helpful,not real,very dirty,1,Useful means helpful for doing something.,approved
+1,again,one more time,very far,not clean,1,Again means one more time.,approved
+1,already,before now,very slowly,not safely,1,Already means before now or before a certain time.,approved
+1,also,too or in addition,never before,with danger,1,Also means too or in addition.,approved
+1,always,at all times,only once,with difficulty,1,Always means at all times.,approved
+1,carefully,with care,very loudly,not at all,1,Carefully means in a careful way.,approved
+1,certainly,surely,rarely,quietly,1,Certainly means surely or without doubt.,approved
+1,clearly,in an easy to understand way,with no money,after a long time,1,Clearly means in a way that is easy to see or understand.,approved
+1,completely,fully or totally,only a little,never again,1,Completely means fully or totally.,approved
+1,directly,straight or without delay,by mistake,not often,1,Directly means straight or without delay.,approved
+1,easily,without difficulty,with danger,not yet,1,Easily means without difficulty.,approved
+1,especially,more than usual or particularly,never,too late,1,Especially means particularly or more than usual.,approved
+1,ever,at any time,only outside,with anger,1,Ever means at any time.,approved
+1,finally,at last,at first,by chance,1,Finally means at last or in the end.,approved
+1,frequently,often,never,only once,1,Frequently means often.,approved
+1,generally,usually or in most cases,with great speed,not honestly,1,Generally means usually or in most cases.,approved
+1,gradually,little by little,all at once,never again,1,Gradually means slowly over time.,approved
+1,greatly,very much,not enough,only once,1,Greatly means very much.,approved
+1,hard,with much effort,very softly,not soon,1,Hard can mean with much effort.,approved
+1,immediately,right away,once a year,not clearly,1,Immediately means right away.,approved
+1,just,only or very recently,with danger,too early,1,Just can mean only or very recently.,approved
+1,likely,probably,never,with care,1,Likely means probably or expected to happen.,approved
+1,maybe,perhaps,always,too much,1,Maybe means perhaps or possibly.,approved
+1,naturally,in a natural way,with no reason,never before,1,Naturally means in a natural way.,approved
+1,nearly,almost,never,too loudly,1,Nearly means almost.,approved
+1,never,not at any time,again and again,very well,1,Never means not at any time.,approved
+1,normally,usually,by accident,not clearly,1,Normally means usually.,approved
+1,often,many times,not once,too slowly,1,Often means many times.,approved
+1,personally,by yourself or in your opinion,with no sound,after a year,1,Personally means by yourself or according to your own opinion.,approved
+1,probably,likely or almost surely,never,not enough,1,Probably means likely to happen or be true.,approved
+1,quickly,fast,late,quietly,1,Quickly means fast.,approved
+1,rarely,not often,always,too much,1,Rarely means not often.,approved
+1,really,truly or very,never,late,1,Really means truly or very.,approved
+1,recently,not long ago,very slowly,never before,1,Recently means not long ago.,approved
+1,simply,in an easy way or only,with danger,not yet,1,Simply means in an easy way or only.,approved
+1,slowly,not quickly,with anger,too early,1,Slowly means not quickly.,approved
+1,sometimes,on some occasions,always,not ever,1,Sometimes means on some occasions but not always.,approved
+1,soon,after a short time,never,with difficulty,1,Soon means after a short time.,approved
+1,still,continuing until now,only once,by mistake,1,Still means continuing until now.,approved
+1,successfully,with success,without trying,too late,1,Successfully means with success.,approved
+1,usually,in most cases,never,only once,1,Usually means in most cases.,approved
+1,well,in a good way,not often,too early,1,Well means in a good or satisfactory way.,approved
+1,yet,up to now or still,always,very quickly,1,Yet means up to now or still in negative questions and statements.,approved
+1,accident,something bad that happens by chance,a planned success,a quiet place,1,An accident is something bad that happens by chance.,approved
+1,action,something someone does,a kind of weather,a small room,1,An action is something someone does.,approved
+1,activity,something people do,a broken rule,a heavy bag,1,An activity is something people do.,approved
+1,address,the place where someone lives or works,a short mistake,a kind of food,1,An address is the place where someone lives or works.,approved
+1,advice,an idea about what someone should do,a loud sound,a small payment,1,Advice is an idea about what someone should do.,approved
+1,agreement,a decision made together,a bad smell,a private road,1,An agreement is a decision or promise made together.,approved
+1,answer,a reply or solution,a travel bag,a type of chair,1,An answer is a reply or solution.,approved
+1,argument,a disagreement,a happy song,a clean table,1,An argument is a disagreement.,approved
+1,article,a piece of writing,a cooking tool,a short sleep,1,An article is a piece of writing.,approved
+1,attention,careful listening or looking,a work desk,a kind of fruit,1,Attention is careful listening looking or thinking.,approved
+1,background,past experience or the area behind something,a final price,a quiet voice,1,Background means past experience or what is behind something.,approved
+1,behavior,the way someone acts,a travel ticket,a cooking pot,1,Behavior is the way someone acts.,approved
+1,benefit,a good result or help,a broken machine,a late bus,1,A benefit is a good result or help.,approved
+1,career,a person's working life,a short question,a weather problem,1,A career is a person's working life.,approved
+1,challenge,a difficult task,a simple color,a sleeping place,1,A challenge is a difficult task or problem.,approved
+1,chance,an opportunity or possibility,a written rule,a loud noise,1,A chance is an opportunity or possibility.,approved
+1,choice,something chosen,a dirty cup,a strong smell,1,A choice is something you choose.,approved
+1,claim,a statement that something is true,a food order,a short walk,1,A claim is a statement that something is true.,approved
+1,comment,a spoken or written opinion,a bus ticket,a dangerous road,1,A comment is a spoken or written opinion.,approved
+1,community,a group of people connected by place or interest,a private key,a kind of meal,1,A community is a group of people connected by place or interest.,approved
+1,complaint,a statement that something is wrong,a good result,a clean room,1,A complaint is a statement that something is wrong.,approved
+1,condition,the state of something or a rule,a small gift,a happy sound,1,A condition is the state of something or a rule.,approved
+1,connection,a link between things,a broken plate,a final test,1,A connection is a link between things or people.,approved
+1,contact,communication or a person you communicate with,a new shoe,a cold drink,1,Contact means communication or a person you communicate with.,approved
+1,contest,a competition,a quiet meal,a safe room,1,A contest is a competition.,approved
+1,conversation,a talk between people,a heavy door,a red light,1,A conversation is a talk between people.,approved
+1,decision,a choice made after thinking,a bad smell,a large plate,1,A decision is a choice made after thinking.,approved
+1,definition,the meaning of a word,a travel plan,a kind of music,1,A definition is the meaning of a word.,approved
+1,delay,a late start or wait,a fast car,a good meal,1,A delay is a late start or a wait.,approved
+1,detail,a small piece of information,a cooking fire,a small animal,1,A detail is a small piece of information.,approved
+1,difference,a way that things are not the same,a new message,a busy street,1,A difference is a way that things are not the same.,approved
+1,difficulty,a problem or hard thing,a safe choice,a free ticket,1,A difficulty is a problem or something hard.,approved
+1,direction,the way to go,a broken cup,a kind answer,1,Direction means the way to go.,approved
+1,discussion,a talk about something,a clean shirt,a local bus,1,A discussion is a talk about something.,approved
+1,effort,hard work or trying,a final page,a public door,1,Effort means hard work or trying.,approved
+1,emotion,a feeling,a money plan,a long road,1,An emotion is a feeling.,approved
+1,energy,the power to do work or move,a written note,a small office,1,Energy is the power to do work or move.,approved
+1,event,something that happens,a small color,a food bowl,1,An event is something that happens.,approved
+1,example,something that shows what you mean,a locked door,a quiet road,1,An example shows what you mean.,approved
+1,fact,something true,a kind of shoe,a late train,1,A fact is something true.,approved
+1,failure,a lack of success,a nice smell,a clean answer,1,Failure means not succeeding.,approved
+1,feature,an important part or quality,a cooking smell,a quick nap,1,A feature is an important part or quality.,approved
+1,feedback,comments about how well something was done,a heavy bag,a travel seat,1,Feedback is comments about how well something was done.,approved
+1,goal,something you want to achieve,a small cup,a bad road,1,A goal is something you want to achieve.,approved
+1,growth,the act of becoming bigger or better,a short sound,a private note,1,Growth is the act of becoming bigger or better.,approved
+1,habit,something you do often,a new building,a strong wind,1,A habit is something you do often.,approved
+1,harm,damage or hurt,a good plan,a safe place,1,Harm means damage or hurt.,approved
+1,idea,a thought or plan,a red bag,a cold room,1,An idea is a thought or plan.,approved
+1,improvement,a change that makes something better,a long mistake,a sleeping place,1,An improvement is a change that makes something better.,approved
+1,influence,the power to affect someone or something,a short meal,a final answer,1,Influence is the power to affect someone or something.,approved
+1,issue,a problem or topic,a clean window,a small fruit,1,An issue is a problem or topic.,approved
+1,job,work that someone does,a kind of weather,a long chair,1,A job is work that someone does.,approved
+1,knowledge,information and understanding,a dangerous trip,a loud color,1,Knowledge means information and understanding.,approved
+1,leader,a person who guides others,a broken box,a short song,1,A leader is a person who guides others.,approved
+1,lesson,something taught or learned,a hot drink,a late train,1,A lesson is something taught or learned.,approved
+1,limit,the highest amount or point,a kind of bread,a safe message,1,A limit is the highest amount or point allowed.,approved
+1,manner,a way of doing something,a closed room,a long ticket,1,Manner means a way of doing something.,approved
+1,meeting,a planned time to talk or gather,a kind of fruit,a heavy tool,1,A meeting is a planned time to talk or gather.,approved
+1,memory,something remembered or the ability to remember,a clean floor,a public bus,1,A memory is something remembered or the ability to remember.,approved
+1,message,words sent or given to someone,a work chair,a small road,1,A message is words sent or given to someone.,approved
+1,mistake,something wrong,a good smell,a full cup,1,A mistake is something wrong.,approved
+1,moment,a short time,a new rule,a heavy box,1,A moment is a short time.,approved
+1,note,a short written message,a hot meal,a noisy street,1,A note is a short written message.,approved
+1,opinion,what someone thinks,a final cost,a broken chair,1,An opinion is what someone thinks.,approved
+1,option,a choice,a warning sound,a work desk,1,An option is a choice.,approved
+1,outcome,a result,a private room,a clean bowl,1,An outcome is a result.,approved
+1,plan,an idea for what to do,a cooking tool,a quiet sound,1,A plan is an idea for what to do.,approved
+1,point,an idea or exact place,a long meal,a happy color,1,A point is an idea or exact place.,approved
+1,practice,repeated work to improve,a dangerous rule,a short delay,1,Practice is repeated work to improve.,approved
+1,problem,something difficult or wrong,a good price,a safe answer,1,A problem is something difficult or wrong.,approved
+1,process,a series of steps,a red light,a quick meal,1,A process is a series of steps.,approved
+1,project,a planned piece of work,a kind of fruit,a sleeping time,1,A project is a planned piece of work.,approved
+1,purpose,the reason for doing something,a new sound,a local bus,1,A purpose is the reason for doing something.,approved
+1,quality,how good or bad something is,a travel route,a heavy smell,1,Quality means how good or bad something is.,approved
+1,question,words asking for information,a hot day,a small tool,1,A question asks for information.,approved
+1,reason,why something happens or why someone does something,a quiet table,a final page,1,A reason is why something happens or why someone does something.,approved
+1,relationship,a connection between people or things,a public ticket,a broken window,1,A relationship is a connection between people or things.,approved
+1,report,information written or spoken,a red cup,a clean road,1,A report is information written or spoken.,approved
+1,research,careful study to find facts,a short sleep,a type of food,1,Research is careful study to find facts.,approved
+1,response,an answer or reaction,a new shirt,a heavy chair,1,A response is an answer or reaction.,approved
+1,result,what happens because of something,a kind sound,a private room,1,A result is what happens because of something.,approved
+1,risk,a chance of danger or loss,a clean answer,a small success,1,A risk is a chance of danger or loss.,approved
+1,role,a part or job someone has,a cooking pot,a long street,1,A role is a part or job someone has.,approved
+1,rule,an instruction about what is allowed,a quiet drink,a broken bag,1,A rule is an instruction about what is allowed.,approved
+1,schedule,a plan of times,a kind of food,a strong smell,1,A schedule is a plan of times.,approved
+1,service,work done for others,a small problem,a hot sound,1,A service is work done for others.,approved
+1,signal,a sign or action that gives information,a late meal,a heavy door,1,A signal is a sign or action that gives information.,approved
+1,situation,the facts or conditions at a time,a blue table,a quiet song,1,A situation is the facts or conditions at a time.,approved
+1,skill,an ability to do something well,a final warning,a busy road,1,A skill is an ability to do something well.,approved
+1,solution,an answer to a problem,a public chair,a short trip,1,A solution is an answer to a problem.,approved
+1,source,the place something comes from,a clean room,a noisy cup,1,A source is the place something comes from.,approved
+1,standard,a level of quality or rule,a small taste,a travel bag,1,A standard is a level of quality or a rule.,approved
+1,step,one action in a process,a cold drink,a long chair,1,A step is one action in a process.,approved
+1,story,a description of events,a work tool,a quiet road,1,A story is a description of events.,approved
+1,strategy,a plan to reach a goal,a kind smell,a broken cup,1,A strategy is a plan to reach a goal.,approved
+1,strength,power or a good quality,a late answer,a small cost,1,Strength means power or a good quality.,approved
+1,stress,worry or pressure,a good smell,a clean office,1,Stress means worry or pressure.,approved
+1,success,a good result,a bad habit,a heavy note,1,Success is a good result or achievement.,approved
+1,suggestion,an idea or advice,a short mistake,a cold room,1,A suggestion is an idea or advice.,approved
+1,system,a set of connected parts,a small meal,a private sound,1,A system is a set of connected parts.,approved
+1,task,a piece of work to do,a hot drink,a red sign,1,A task is a piece of work to do.,approved
+1,team,a group working or playing together,a broken rule,a quiet mistake,1,A team is a group working or playing together.,approved
+1,technique,a way of doing something,a private warning,a food order,1,A technique is a way of doing something.,approved
+1,thought,an idea in the mind,a dirty window,a large sound,1,A thought is an idea in the mind.,approved
+1,topic,a subject people talk or write about,a safe road,a heavy bag,1,A topic is a subject people talk or write about.,approved
+1,tradition,a custom passed down over time,a quick mistake,a private email,1,A tradition is a custom passed down over time.,approved
+1,trend,a general direction of change,a short note,a final answer,1,A trend is a general direction of change.,approved
+1,trouble,a problem or difficulty,a happy result,a clean plate,1,Trouble means a problem or difficulty.,approved
+1,value,importance or worth,a loud mistake,a local road,1,Value means importance or worth.,approved
+1,warning,a notice about danger,a good habit,a clean report,1,A warning is a notice about danger or a problem.,approved
+1,weakness,a lack of strength,a rich person,a short meeting,1,A weakness is a lack of strength or a weak point.,approved
+1,wealth,a large amount of money or valuable things,a small problem,a safe message,1,Wealth means a large amount of money or valuable things.,approved
+1,worry,a feeling of concern,a public rule,a final cost,1,A worry is a feeling of concern.,approved
+1,ability,the power or skill to do something,a travel ticket,a bad smell,1,Ability is the power or skill to do something.,approved
+1,account,a record or service for money or access,a hot meal,a short trip,1,An account is a record or service used for money information or access.,approved
+1,act,something done,a quiet place,a small price,1,An act is something someone does.,approved
+1,advantage,something that helps you,a broken tool,a late answer,1,An advantage is something that helps you succeed.,approved
+1,age,how old someone or something is,a work plan,a clean road,1,Age means how old someone or something is.,approved
+1,amount,how much there is,a public room,a bad habit,1,An amount is how much there is of something.,approved
+1,appearance,the way someone or something looks,a work delay,a travel rule,1,Appearance is the way someone or something looks.,approved
+1,area,a place or part of a place,a final mistake,a quiet sound,1,An area is a place or part of a place.,approved
+1,attitude,the way someone thinks or feels,a small tool,a road sign,1,Attitude is the way someone thinks or feels.,approved
+1,balance,an even state or amount,a noisy chair,a private note,1,Balance is an even or steady state.,approved
+1,base,the bottom or main support,a quick answer,a kind of food,1,A base is the bottom or main support of something.,approved
+1,battle,a fight or struggle,a happy meeting,a safe choice,1,A battle is a fight or struggle.,approved
+1,branch,a part of a tree or organization,a small mistake,a hot drink,1,A branch is a part of a tree or an organization.,approved
+1,budget,a plan for spending money,a road map,a sleeping time,1,A budget is a plan for spending money.,approved
+1,campaign,organized actions for a goal,a quiet table,a broken window,1,A campaign is a planned set of actions for a goal.,approved
+1,capacity,the amount something can hold or do,a cold room,a final page,1,Capacity is the amount something can hold or do.,approved
+1,case,a situation or example,a public bus,a cooking fire,1,A case is a situation example or matter.,approved
+1,cause,the reason something happens,a clean desk,a short song,1,A cause is the reason something happens.,approved
+1,character,a person in a story or someone's qualities,a local train,a long payment,1,Character means a person in a story or someone's qualities.,approved
+1,circumstance,a fact or condition around a situation,a small plate,a friendly sound,1,A circumstance is a fact or condition connected with a situation.,approved
+1,class,a group of students or a lesson,a broken bag,a late dinner,1,A class is a group of students or a lesson.,approved
+1,climate,the usual weather of a place,a job title,a quiet mistake,1,Climate is the usual weather of a place.,approved
+1,clue,information that helps solve something,a private road,a heavy cost,1,A clue is information that helps solve a problem.,approved
+1,coast,land next to the sea,a written answer,a small office,1,A coast is land next to the sea.,approved
+1,communication,the act of sharing information,a final price,a damaged tool,1,Communication is the act of sharing information.,approved
+1,comparison,looking at how things are similar or different,a hot meal,a safe door,1,Comparison is looking at how things are similar or different.,approved
+1,concern,a worry or important matter,a red cup,a short path,1,A concern is a worry or important matter.,approved
+1,confidence,belief in yourself or something,a local bus,a heavy smell,1,Confidence is belief in yourself or something.,approved
+1,conflict,a serious disagreement,a clean window,a small meal,1,A conflict is a serious disagreement.,approved
+1,consequence,a result of an action,a quiet road,a new shirt,1,A consequence is a result of an action.,approved
+1,control,the power to direct something,a final note,a bad smell,1,Control is the power to direct or manage something.,approved
+1,cost,the amount of money needed,a happy story,a safe color,1,Cost is the amount of money needed to buy or do something.,approved
+1,courage,the ability to face fear,a small mistake,a work table,1,Courage is the ability to face fear or danger.,approved
+1,course,a class or direction,a hot sound,a private key,1,A course is a class or a direction of movement.,approved
+1,crisis,a very serious problem,a clean answer,a short trip,1,A crisis is a very serious problem or dangerous time.,approved
+1,culture,the ideas customs and art of a group,a cold drink,a broken chair,1,Culture means the ideas customs and art of a group.,approved
+1,damage,harm or injury,a good result,a quiet plan,1,Damage means harm or injury.,approved
+1,danger,the chance of being hurt,a kind answer,a small gift,1,Danger is the chance of being hurt or harmed.,approved
+1,debate,a formal discussion with different opinions,a travel bag,a clean plate,1,A debate is a formal discussion with different opinions.,approved
+1,demand,a strong request or need,a short sleep,a red sign,1,Demand is a strong request or need.,approved
+1,department,a part of an organization,a food bowl,a happy habit,1,A department is a part of an organization.,approved
+1,design,a plan or style of something,a late answer,a noisy street,1,A design is a plan or style of something.,approved
+1,desire,a strong wish,a small cost,a safe rule,1,A desire is a strong wish.,approved
+1,destination,the place someone is going to,a clean window,a final error,1,A destination is the place someone is going to.,approved
+1,development,growth or improvement,a broken road,a quiet meal,1,Development means growth or improvement.,approved
+1,device,a tool or machine,a public idea,a heavy question,1,A device is a tool or machine.,approved
+1,diet,the food someone usually eats,a work delay,a safe address,1,A diet is the food someone usually eats.,approved
+1,duty,something you must do,a short song,a cold plate,1,A duty is something you must do.,approved
+1,edge,the side or border of something,a final plan,a loud message,1,An edge is the side or border of something.,approved
+1,effect,a result or change caused by something,a small ticket,a private chair,1,An effect is a result or change caused by something.,approved
+1,element,one part of something,a local road,a hot drink,1,An element is one part of something.,approved
+1,emergency,a sudden dangerous situation,a quiet event,a new habit,1,An emergency is a sudden dangerous situation.,approved
+1,environment,the surroundings or natural world,a final cost,a clean book,1,The environment is the surroundings or natural world.,approved
+1,error,a mistake,a success,a good smell,1,An error is a mistake.,approved
+1,exchange,the act of giving and receiving,a sleeping place,a broken tool,1,An exchange is the act of giving and receiving.,approved
+1,excuse,a reason given for something,a small office,a happy color,1,An excuse is a reason given for something.,approved
+1,expense,the money spent on something,a safe signal,a short meeting,1,An expense is money spent on something.,approved
+1,experiment,a test to learn something,a kind of food,a quiet street,1,An experiment is a test done to learn something.,approved
+1,expression,a look on a face or a phrase,a work chair,a travel rule,1,An expression is a look on a face or a phrase.,approved
+1,factor,something that affects a result,a clean room,a final warning,1,A factor is something that affects a result.,approved
+1,favor,a kind act or support,a heavy error,a late road,1,A favor is a kind act or support.,approved
+1,field,an area of land or study,a hot cup,a private song,1,A field is an area of land or an area of study.,approved
+1,focus,the center of attention,a noisy answer,a small debt,1,Focus is the center of attention.,approved
+1,force,power or strength,a quiet plan,a local bus,1,Force means power or strength.,approved
+1,future,the time after now,a broken note,a clean table,1,The future is the time after now.,approved
+1,generation,a group of people born around the same time,a safe room,a short meal,1,A generation is a group of people born around the same time.,approved
+1,grade,a score or level,a cooking tool,a private delay,1,A grade is a score or level.,approved
+1,guide,a person or thing that helps show the way,a late result,a bad smell,1,A guide helps show the way or explain what to do.,approved
+1,history,past events,a small payment,a clean shirt,1,History means past events.,approved
+1,impact,a strong effect,a quiet dinner,a travel bag,1,An impact is a strong effect.,approved
+1,importance,the state of being important,a red cup,a broken promise,1,Importance means the state of being important.,approved
+1,incident,an event especially a problem,a happy choice,a clean road,1,An incident is an event especially a problem.,approved
+1,income,money received,a short lesson,a safe chair,1,Income is money received.,approved
+1,independence,the state of being free from control,a small mistake,a work table,1,Independence is the state of being free from control by others.,approved
+1,individual,one person,a group rule,a long road,1,An individual is one person.,approved
+1,industry,a type of business,a cold drink,a private note,1,An industry is a type of business.,approved
+1,instruction,information telling how to do something,a noisy street,a final price,1,An instruction tells how to do something.,approved
+1,interest,a feeling of wanting to know or a money charge,a broken box,a safe meal,1,Interest means wanting to know about something or a money charge.,approved
+1,journey,a trip from one place to another,a clean window,a job title,1,A journey is a trip from one place to another.,approved
+1,judge,a person who decides in court or a contest,a travel cost,a small sound,1,A judge is a person who decides in court or a contest.,approved
+1,justice,fair treatment,a short message,a hot plate,1,Justice means fair treatment.,approved
+1,key,a thing used to open a lock or something important,a late train,a quiet habit,1,A key opens a lock or means something important.,approved
+1,lack,not enough of something,a good result,a clean room,1,Lack means not enough of something.,approved
+1,language,words people use to communicate,a red sign,a heavy rule,1,A language is words people use to communicate.,approved
+1,law,a rule made by a government,a small taste,a work desk,1,A law is a rule made by a government.,approved
+1,level,a position or amount on a scale,a broken chair,a private meal,1,A level is a position or amount on a scale.,approved
+1,lifestyle,the way a person lives,a final cost,a cold message,1,Lifestyle means the way a person lives.,approved
+1,location,a place or position,a quiet answer,a heavy cup,1,A location is a place or position.,approved
+1,loss,the fact of losing something,a clean road,a public gift,1,Loss means the fact of losing something.,approved
+1,luck,good or bad things happening by chance,a written rule,a small office,1,Luck means good or bad things happening by chance.,approved
+1,market,a place or system for buying and selling,a sleeping habit,a broken signal,1,A market is a place or system for buying and selling.,approved
+1,material,what something is made of,a final question,a public smile,1,Material is what something is made of.,approved
+1,matter,a subject or problem,a clean bowl,a hot sound,1,A matter is a subject or problem.,approved
+1,method,a way of doing something,a small mistake,a private road,1,A method is a way of doing something.,approved
+1,model,an example or small copy,a late meal,a loud note,1,A model is an example or small copy of something.,approved
+1,nation,a country,a work table,a fresh drink,1,A nation is a country.,approved
+1,nature,the natural world or basic quality,a final bill,a city office,1,Nature means the natural world or the basic quality of something.,approved
+1,neighbor,a person living near you,a long document,a broken plan,1,A neighbor is a person living near you.,approved
+1,occasion,a special time or event,a safe chair,a hot message,1,An occasion is a special time or event.,approved
+1,office,a place where people work,a kind of food,a short problem,1,An office is a place where people work.,approved
+1,operation,the act or process of working,a clean answer,a private cup,1,An operation is the act or process of working.,approved
+1,organization,a group with a purpose or the act of arranging,a heavy road,a quiet mistake,1,An organization is a group with a purpose or the act of arranging things.,approved
+1,pain,a hurt feeling in the body,a good habit,a public ticket,1,Pain is a hurt feeling in the body.,approved
+1,passage,a section of writing or a way through,a small payment,a broken cup,1,A passage is a section of writing or a way through.,approved
+1,path,a way or track,a work idea,a clean rule,1,A path is a way or track.,approved
+1,pattern,a repeated design or way something happens,a late warning,a cold meal,1,A pattern is a repeated design or way something happens.,approved
+1,payment,money paid,a short story,a safe road,1,A payment is money paid.,approved
+1,performance,how well someone does something,a private habit,a heavy smell,1,Performance is how well someone does something.,approved
+1,personality,the usual qualities of a person,a final report,a clean dish,1,Personality means the usual qualities of a person.,approved
+1,phase,a stage in a process,a noisy chair,a travel key,1,A phase is a stage in a process.,approved
+1,policy,a rule or plan of action,a hot drink,a broken message,1,A policy is a rule or plan of action.,approved
+1,population,the number of people in a place,a small mistake,a safe answer,1,Population means the number of people in a place.,approved
+1,position,a place or job,a quiet meal,a cold warning,1,A position is a place or job.,approved
+1,pressure,force or stress,a clean shirt,a happy rule,1,Pressure means force or stress.,approved
+1,principle,a basic rule or belief,a local ticket,a late cup,1,A principle is a basic rule or belief.,approved
+1,progress,improvement or movement forward,a bad smell,a private sound,1,Progress means improvement or movement forward.,approved
+1,property,something owned or land,a short mistake,a public answer,1,Property means something owned or land.,approved
+1,protection,the act of keeping safe,a travel delay,a small noise,1,Protection is the act of keeping someone or something safe.,approved
+1,reaction,a response to something,a final chair,a clean road,1,A reaction is a response to something.,approved
+1,reality,what is real,a hot meal,a broken song,1,Reality means what is real.,approved
+1,region,an area,a small note,a private habit,1,A region is an area.,approved
+1,resource,something useful or needed,a late color,a quiet mistake,1,A resource is something useful or needed.,approved
+1,access,the way to enter or use something,a final meal,a quiet habit,1,Access is the way to enter or use something.,approved
+1,achievement,something successfully done,a broken plate,a late bus,1,An achievement is something successfully done.,approved
+1,admission,permission to enter,a small mistake,a cooking tool,1,Admission is permission to enter a place or event.,approved
+1,adventure,an exciting experience,a quiet office,a short payment,1,An adventure is an exciting experience.,approved
+1,affair,a matter or event,a clean cup,a local road,1,An affair is a matter event or situation.,approved
+1,aid,help,a final answer,a bad smell,1,Aid means help.,approved
+1,aim,a goal or purpose,a travel chair,a hot message,1,An aim is a goal or purpose.,approved
+1,alarm,a warning sound or feeling,a happy story,a clean table,1,An alarm is a warning sound or feeling.,approved
+1,alternative,another choice,a broken rule,a quiet street,1,An alternative is another choice.,approved
+1,appeal,a request or attraction,a small payment,a cold drink,1,An appeal is a request or something attractive.,approved
+1,approach,a way of doing something or moving closer,a final cost,a private song,1,An approach is a way of doing something or moving closer.,approved
+1,arrangement,a plan or order,a bad smell,a travel seat,1,An arrangement is a plan or the way things are organized.,approved
+1,aspect,one part of something,a clean road,a loud mistake,1,An aspect is one part of something.,approved
+1,assignment,a task given to someone,a safe cup,a local train,1,An assignment is a task given to someone.,approved
+1,assistance,help,a public sound,a broken answer,1,Assistance means help.,approved
+1,association,a connection or group,a short meal,a heavy cost,1,An association is a connection or a group of people.,approved
+1,atmosphere,the feeling of a place or the air around earth,a small chair,a written rule,1,Atmosphere means the feeling of a place or the air around Earth.,approved
+1,attempt,an effort to do something,a hot sign,a quiet office,1,An attempt is an effort to do something.,approved
+1,attraction,something interesting or enjoyable,a broken bus,a private error,1,An attraction is something interesting or enjoyable.,approved
+1,authority,the power to make decisions,a clean plate,a short story,1,Authority is the power to make decisions or give orders.,approved
+1,average,the usual amount or middle value,a heavy warning,a final road,1,An average is the usual amount or middle value.,approved
+1,awareness,knowledge that something exists,a small debt,a quiet meal,1,Awareness is knowledge that something exists.,approved
+1,barrier,something that blocks or stops movement,a good result,a happy habit,1,A barrier is something that blocks or stops movement.,approved
+1,basis,the main reason or support,a late ticket,a cooking smell,1,A basis is the main reason or support for something.,approved
+1,birth,the time when someone is born,a small office,a broken plan,1,Birth is the time when someone is born.,approved
+1,bond,a close connection,a cold answer,a public bus,1,A bond is a close connection between people or things.,approved
+1,boundary,a line that marks a limit,a safe idea,a quick meal,1,A boundary is a line that marks a limit.,approved
+1,brief,a short report or instruction,a heavy plate,a noisy street,1,A brief is a short report or instruction.,approved
+1,burden,a heavy responsibility or problem,a fresh drink,a final smile,1,A burden is a heavy responsibility or problem.,approved
+1,candidate,a person considered for a job or position,a small danger,a clean song,1,A candidate is a person considered for a job or position.,approved
+1,category,a group of similar things,a broken window,a late note,1,A category is a group of similar things.,approved
+1,celebration,a happy event for something special,a quiet rule,a short delay,1,A celebration is a happy event for something special.,approved
+1,channel,a way for information or water to pass,a cold meal,a private cost,1,A channel is a way for information or water to pass.,approved
+1,citizen,a person who belongs to a country or city,a final page,a work tool,1,A citizen is a person who belongs to a country or city.,approved
+1,collection,a group of things gathered together,a bad habit,a safe road,1,A collection is a group of things gathered together.,approved
+1,comfort,a feeling of ease or relief,a small warning,a broken chair,1,Comfort is a feeling of ease or relief.,approved
+1,command,an order,a happy mistake,a clean price,1,A command is an order.,approved
+1,commitment,a promise or responsibility,a travel sound,a hot plate,1,A commitment is a promise or responsibility.,approved
+1,competition,a contest or rivalry,a short answer,a private cup,1,Competition is a contest or rivalry.,approved
+1,conclusion,the end or final idea,a clean shirt,a local office,1,A conclusion is the end or final idea.,approved
+1,consideration,careful thought,a broken sound,a small bus,1,Consideration means careful thought.,approved
+1,contribution,something given to help,a cold room,a late warning,1,A contribution is something given to help.,approved
+1,convenience,ease or usefulness,a difficult rule,a public mistake,1,Convenience means ease or usefulness.,approved
+1,cooperation,working together,a final cost,a noisy road,1,Cooperation means working together.,approved
+1,core,the central or most important part,a safe ticket,a small smell,1,The core is the central or most important part.,approved
+1,creation,something made or the act of making,a broken meeting,a quiet price,1,Creation is something made or the act of making.,approved
+1,credit,praise or money available to borrow,a hot mistake,a travel table,1,Credit can mean praise or money available to borrow.,approved
+1,crew,a group working together,a single chair,a cold message,1,A crew is a group of people working together.,approved
+1,criticism,comments about problems or faults,a good habit,a final road,1,Criticism is comments about problems or faults.,approved
+1,crowd,a large group of people,a clean rule,a short delay,1,A crowd is a large group of people.,approved
+1,decade,ten years,a small task,a private office,1,A decade is ten years.,approved
+1,decline,a decrease,a useful answer,a happy meal,1,A decline is a decrease.,approved
+1,defense,protection against attack or harm,a broken page,a quiet song,1,Defense means protection against attack or harm.,approved
+1,delight,great pleasure,a serious danger,a cold road,1,Delight means great pleasure.,approved
+1,delivery,the act of bringing something,a small error,a safe habit,1,Delivery is the act of bringing something to someone.,approved
+1,departure,the act of leaving,a clean window,a hot message,1,Departure is the act of leaving.,approved
+1,depth,how deep something is,a travel warning,a public smile,1,Depth means how deep something is.,approved
+1,description,words that say what something is like,a heavy bag,a local rule,1,A description says what something is like.,approved
+1,determination,a strong decision to continue,a short sound,a private meal,1,Determination is a strong decision to continue trying.,approved
+1,disappointment,a sad feeling when hopes are not met,a good result,a clean signal,1,Disappointment is sadness when hopes are not met.,approved
+1,discipline,training or control,a broken habit,a fresh road,1,Discipline means training control or orderly behavior.,approved
+1,discovery,the act of finding something new,a hot plate,a final rule,1,Discovery is the act of finding something new.,approved
+1,dispute,a disagreement,a safe answer,a quiet cup,1,A dispute is a disagreement.,approved
+1,distance,how far apart things are,a small payment,a clean shirt,1,Distance means how far apart things are.,approved
+1,district,an area of a city or country,a broken song,a quick habit,1,A district is an area of a city or country.,approved
+1,division,a part or the act of separating,a kind meal,a final smile,1,Division means a part or the act of separating.,approved
+1,drama,a play or exciting situation,a work price,a cold rule,1,Drama means a play or an exciting situation.,approved
+1,economy,the system of money and business,a short road,a private chair,1,An economy is the system of money trade and business.,approved
+1,edition,a version of a book or publication,a noisy habit,a safe ticket,1,An edition is a version of a book or publication.,approved
+1,efficiency,doing things without waste,a broken signal,a hot answer,1,Efficiency means doing things without wasting time or resources.,approved
+1,election,a vote to choose someone,a clean desk,a small cost,1,An election is a vote to choose someone.,approved
+1,encounter,a meeting or experience,a local price,a quiet rule,1,An encounter is a meeting or experience.,approved
+1,engagement,involvement or a plan to marry,a bad road,a cold note,1,Engagement means involvement or a plan to marry.,approved
+1,entrance,a place to enter,a final mistake,a safe drink,1,An entrance is a place where you enter.,approved
+1,episode,one part of a story or event,a broken office,a heavy smell,1,An episode is one part of a story series or event.,approved
+1,equality,the state of being equal,a short answer,a travel chair,1,Equality is the state of being equal.,approved
+1,estimate,a rough guess,a public sound,a clean dish,1,An estimate is a rough guess based on information.,approved
+1,evidence,information showing something is true,a happy habit,a late cup,1,Evidence is information showing something is true.,approved
+1,exception,something not included in a rule,a usual result,a red table,1,An exception is something not included in a rule.,approved
+1,existence,the state of being real or alive,a small delay,a private ticket,1,Existence is the state of being real or alive.,approved
+1,expectation,a belief about what will happen,a broken room,a clean sound,1,An expectation is a belief about what will happen.,approved
+1,exploration,the act of looking for or learning about something,a final payment,a quiet mistake,1,Exploration is the act of looking for or learning about something.,approved
+1,exposure,the state of being shown or not protected,a happy meal,a small office,1,Exposure is the state of being shown or not protected.,approved
+1,extent,the amount or degree of something,a travel bowl,a safe sound,1,Extent means the amount or degree of something.,approved
+1,facility,a place or equipment for a purpose,a short habit,a broken answer,1,A facility is a place or equipment for a purpose.,approved
+1,faith,strong belief or trust,a cold price,a final road,1,Faith means strong belief or trust.,approved
+1,fault,a mistake or responsibility for a problem,a clean note,a public smile,1,A fault is a mistake or responsibility for a problem.,approved
+1,foundation,the base or support for something,a small ticket,a hot warning,1,A foundation is the base or support for something.,approved
+1,freedom,the state of being free,a broken cup,a local rule,1,Freedom is the state of being free.,approved
+1,friendship,a relationship between friends,a late cost,a safe door,1,Friendship is a relationship between friends.,approved
+1,function,the purpose or job of something,a quiet mistake,a travel road,1,A function is the purpose or job of something.,approved
+1,gap,a space or difference between things,a hot answer,a clean bus,1,A gap is a space or difference between things.,approved
+1,gathering,a meeting of people,a final price,a small smell,1,A gathering is a meeting of people.,approved
+1,gesture,a movement that shows meaning or feeling,a broken chair,a public road,1,A gesture is a movement that shows meaning or feeling.,approved
+1,guidance,help or advice,a cold meal,a short debt,1,Guidance means help or advice.,approved
+1,highlight,the most important or interesting part,a safe mistake,a quiet cup,1,A highlight is the most important or interesting part.,approved
+1,honor,respect or an award,a dirty road,a small habit,1,Honor means respect or an award.,approved
+1,identity,who someone is,a final signal,a hot table,1,Identity means who someone is.,approved
+1,illustration,a picture or example,a private cost,a broken plan,1,An illustration is a picture or example.,approved
+1,imagination,the ability to think of new ideas,a clean rule,a short ticket,1,Imagination is the ability to think of new ideas.,approved
+1,impression,an idea or feeling about something,a local meal,a heavy answer,1,An impression is an idea or feeling about something.,approved
+1,indication,a sign that shows something,a broken office,a safe price,1,An indication is a sign that shows something.,approved
+1,insight,a deep understanding,a small chair,a cold message,1,Insight is a deep understanding of something.,approved
+1,instance,an example or case,a public smell,a final road,1,An instance is an example or case.,approved
+1,intention,a plan or purpose,a broken bus,a clean answer,1,An intention is a plan or purpose.,approved
+1,interaction,communication or action between people or things,a hot rule,a small ticket,1,Interaction is communication or action between people or things.,approved
+1,investigation,a careful search for facts,a quiet meal,a red chair,1,An investigation is a careful search for facts.,approved
+1,invitation,a request to come or join,a broken habit,a final price,1,An invitation is a request to come or join.,approved
+1,isolation,the state of being alone or separate,a public sound,a clean story,1,Isolation is the state of being alone or separate.,approved
+1,judgment,an opinion or decision,a safe table,a short smell,1,Judgment is an opinion or decision.,approved
+1,legacy,something left from the past,a noisy payment,a small road,1,A legacy is something left from the past.,approved
+1,liberty,freedom,a cold mistake,a travel cup,1,Liberty means freedom.,approved
+1,limitation,a limit or restriction,a clean meal,a happy rule,1,A limitation is a limit or restriction.,approved
+1,majority,more than half,a final mistake,a private song,1,A majority is more than half of a group.,approved
+1,measure,an action taken or a way to find size,a hot answer,a broken road,1,A measure is an action taken or a way to find size or amount.,approved

@@ -1,0 +1,17 @@
+{
+  "name": "english-vocabulary-practice-bot",
+  "version": "1.0.0",
+  "description": "EN_WORD_Practice Telegram bot for five-level English vocabulary practice.",
+  "main": "src/bot.js",
+  "type": "module",
+  "scripts": {
+    "start": "node src/bot.js",
+    "build:words": "node scripts/build-words.js",
+    "content:report": "node scripts/content-report.js",
+    "check": "node --check src/bot.js && node --check scripts/build-words.js && node --check scripts/content-report.js"
+  },
+  "engines": {
+    "node": ">=20"
+  },
+  "license": "MIT"
+}

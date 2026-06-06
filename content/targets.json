@@ -1,0 +1,25 @@
+{
+  "levels": {
+    "1": {
+      "name": "Level 1 - Non-native Beginner",
+      "target": 1000
+    },
+    "2": {
+      "name": "Level 2 - Non-native Intermediate",
+      "target": 3000
+    },
+    "3": {
+      "name": "Level 3 - Non-native Advanced",
+      "target": 5000
+    },
+    "4": {
+      "name": "Level 4 - SAT Level",
+      "target": 10000
+    },
+    "5": {
+      "name": "Level 5 - GRE & Challenge Me Level",
+      "target": 20000
+    }
+  },
+  "totalTarget": 39000
+}

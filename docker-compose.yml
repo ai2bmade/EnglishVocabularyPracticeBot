@@ -1,0 +1,14 @@
+services:
+  english-vocabulary-practice-bot:
+    build: .
+    restart: unless-stopped
+    environment:
+      TELEGRAM_BOT_TOKEN: ${TELEGRAM_BOT_TOKEN}
+      WORDS_PATH: content/words.json
+      USER_DATA_PATH: data/users.json
+      POLL_TIMEOUT_SECONDS: 30
+    volumes:
+      - english_vocabulary_practice_bot_data:/app/data
+
+volumes:
+  english_vocabulary_practice_bot_data:
