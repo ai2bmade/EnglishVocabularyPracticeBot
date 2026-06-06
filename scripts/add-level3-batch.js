@@ -220,7 +220,29 @@ const definitions = {
   manual: "done by hand or a handbook",
   manuscript: "a written or typed draft",
   mandate: "an official order",
-  mediate: "to help settle a disagreement"
+  mediate: "to help settle a disagreement",
+  profuse: "very abundant or given freely",
+  project: "a planned piece of work or to estimate forward",
+  prologue: "an introductory section of a work",
+  prominent: "important or easily noticed",
+  prompt: "quick to act or to cause action",
+  propel: "to push or drive forward",
+  prospect: "a possibility or expected chance",
+  province: "a region or area of responsibility",
+  provisional: "temporary until final approval",
+  provoke: "to cause a reaction",
+  prudent: "careful and sensible",
+  punctual: "on time",
+  puncture: "to make a small hole in",
+  questionable: "doubtful or uncertain",
+  rational: "based on reason",
+  rebel: "to resist authority",
+  reckless: "careless about danger",
+  reconcilable: "able to be made consistent or friendly again",
+  reconcile: "to restore agreement or make consistent",
+  recurrent: "happening repeatedly",
+  redundant: "unnecessary because more than enough exists",
+  quench: "to satisfy thirst or put out fire"
 };
 
 const lines = [];
