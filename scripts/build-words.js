@@ -14,7 +14,7 @@ for (const fileName of fs.readdirSync(sourceDir).sort()) {
 }
 
 const levelCounts = {};
-const words = rows
+const words = balanceAnswerPositions(rows
   .filter((row) => row.status === "approved")
   .map((row) => {
     const level = Number(row.level);
@@ -30,7 +30,7 @@ const words = rows
       status: row.status
     };
   })
-  .map(validateWord);
+  .map(validateWord));
 
 fs.mkdirSync(path.dirname(outputPath), { recursive: true });
 fs.writeFileSync(outputPath, `${JSON.stringify({ words }, null, 2)}\n`);
@@ -97,4 +97,39 @@ function validateWord(word) {
     throw new Error(`Answer must be 1, 2, or 3 for ${word.id}`);
   }
   return word;
+}
+
+function balanceAnswerPositions(words) {
+  const positions = words.map((_, index) => (index % 3) + 1);
+  const randomizedWords = [...words].sort((left, right) => hash(left.id) - hash(right.id));
+
+  randomizedWords.forEach((word, index) => {
+    placeAnswerAt(word, positions[index]);
+  });
+
+  return words.map(validateWord);
+}
+
+function placeAnswerAt(word, targetAnswer) {
+  const correctChoice = word.choices[word.answer - 1];
+  const wrongChoices = word.choices
+    .filter((choice, index) => index !== word.answer - 1)
+    .sort((left, right) => hash(`${word.id}:${left}`) - hash(`${word.id}:${right}`));
+
+  const newChoices = [];
+  for (let position = 1; position <= 3; position += 1) {
+    newChoices.push(position === targetAnswer ? correctChoice : wrongChoices.shift());
+  }
+
+  word.choices = newChoices;
+  word.answer = targetAnswer;
+}
+
+function hash(text) {
+  let value = 2166136261;
+  for (let index = 0; index < text.length; index += 1) {
+    value ^= text.charCodeAt(index);
+    value = Math.imul(value, 16777619);
+  }
+  return value >>> 0;
 }
