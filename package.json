@@ -8,7 +8,8 @@
     "start": "node src/bot.js",
     "build:words": "node scripts/build-words.js",
     "content:report": "node scripts/content-report.js",
-    "check": "node --check src/bot.js && node --check scripts/build-words.js && node --check scripts/content-report.js"
+    "content:quality": "node scripts/content-quality.js",
+    "check": "node --check src/bot.js && node --check scripts/build-words.js && node --check scripts/content-report.js && node --check scripts/content-quality.js"
   },
   "engines": {
     "node": ">=20"

@@ -161,7 +161,7 @@ level,word,choice_1,choice_2,choice_3,answer,explanation,status
 4,heresy,belief opposed to established doctrine,a routine physical object,a brief practical task,1,Heresy means belief opposed to established doctrine.,approved
 4,hubris,excessive pride,a routine physical object,a brief practical task,1,Hubris means excessive pride.,approved
 4,iconoclasm,attack on established beliefs or institutions,a routine physical object,a brief practical task,1,Iconoclasm means attack on established beliefs or institutions.,approved
-4,idealism,belief in high principles or perfect ideals,a routine physical object,a brief practical task,1,Idealism means belief in high principles or perfect ideals.,approved
+4,idealism,belief in noble principles over practical limits,a routine physical object,a brief practical task,1,Idealism means belief in high principles or perfect ideals.,approved
 4,idiosyncrasy,a distinctive personal habit or trait,a routine physical object,a brief practical task,1,Idiosyncrasy means a distinctive personal habit or trait.,approved
 4,illusion,a false appearance or belief,a routine physical object,a brief practical task,1,Illusion means a false appearance or belief.,approved
 4,immutability,the quality of being unchangeable,a routine physical object,a brief practical task,1,Immutability means the quality of being unchangeable.,approved
@@ -192,7 +192,7 @@ level,word,choice_1,choice_2,choice_3,answer,explanation,status
 4,profundity,great depth of thought or meaning,a routine physical object,a brief practical task,1,Profundity means great depth of thought or meaning.,approved
 4,quagmire,a difficult or complicated situation,a routine physical object,a brief practical task,1,Quagmire means a difficult or complicated situation.,approved
 4,rationalism,reliance on reason as the basis for knowledge,a routine physical object,a brief practical task,1,Rationalism means reliance on reason as the basis for knowledge.,approved
-4,realism,practical acceptance of reality,a routine physical object,a brief practical task,1,Realism means practical acceptance of reality.,approved
+4,realism,practical acceptance of facts as they are,a routine physical object,a brief practical task,1,Realism means practical acceptance of reality.,approved
 4,redemption,the act of being saved or restored,a routine physical object,a brief practical task,1,Redemption means the act of being saved or restored.,approved
 4,rhetoric,persuasive language,a routine physical object,a brief practical task,1,Rhetoric means persuasive language.,approved
 4,rigor,strictness or thoroughness,a routine physical object,a brief practical task,1,Rigor means strictness or thoroughness.,approved
@@ -215,7 +215,7 @@ level,word,choice_1,choice_2,choice_3,answer,explanation,status
 4,whimsicality,playful or unpredictable quality,a routine physical object,a brief practical task,1,Whimsicality means playful or unpredictable quality.,approved
 4,zealotry,extreme fanatical devotion,a routine physical object,a brief practical task,1,Zealotry means extreme fanatical devotion.,approved
 4,absolutism,belief in absolute principles or unlimited authority,a routine physical object,a brief practical task,1,Absolutism means belief in absolute principles or unlimited authority.,approved
-4,adaptationism,the view that traits are chiefly shaped by adaptation,a routine physical object,a brief practical task,1,Adaptationism means the view that traits are chiefly shaped by adaptation.,approved
+4,adaptationism,the view that traits are chiefly shaped by evolutionary adjustment,a routine physical object,a brief practical task,1,Adaptationism means the view that traits are chiefly shaped by adaptation.,approved
 4,antagonism,active opposition or hostility,a routine physical object,a brief practical task,1,Antagonism means active opposition or hostility.,approved
 4,authoritarianism,support for strict authority and obedience,a routine physical object,a brief practical task,1,Authoritarianism means support for strict authority and obedience.,approved
 4,collectivism,priority of the group over the individual,a routine physical object,a brief practical task,1,Collectivism means priority of the group over the individual.,approved
@@ -224,8 +224,8 @@ level,word,choice_1,choice_2,choice_3,answer,explanation,status
 4,exceptionalism,belief that something is uniquely special,a routine physical object,a brief practical task,1,Exceptionalism means belief that something is uniquely special.,approved
 4,existentialism,philosophy focused on individual existence and choice,a routine physical object,a brief practical task,1,Existentialism means philosophy focused on individual existence and choice.,approved
 4,fundamentalism,strict adherence to basic doctrines,a routine physical object,a brief practical task,1,Fundamentalism means strict adherence to basic doctrines.,approved
-4,individualism,priority of individual freedom and responsibility,a routine physical object,a brief practical task,1,Individualism means priority of individual freedom and responsibility.,approved
-4,materialism,focus on material things or the view that matter is primary,a routine physical object,a brief practical task,1,Materialism means focus on material things or the view that matter is primary.,approved
+4,individualism,priority of personal freedom and responsibility,a routine physical object,a brief practical task,1,Individualism means priority of individual freedom and responsibility.,approved
+4,materialism,focus on physical things or possessions,a routine physical object,a brief practical task,1,Materialism means focus on material things or the view that matter is primary.,approved
 4,relativism,belief that truth or value depends on context,a routine physical object,a brief practical task,1,Relativism means belief that truth or value depends on context.,approved
 4,abnegation,self-denial or rejection of one's own interests,a routine physical object,a brief practical task,1,Abnegation means self-denial or rejection of one's own interests.,approved
 4,acumen,quick and accurate judgment,a routine physical object,a brief practical task,1,Acumen means quick and accurate judgment.,approved
@@ -335,7 +335,7 @@ level,word,choice_1,choice_2,choice_3,answer,explanation,status
 4,entelechy,the realization of potential,a routine physical object,a brief practical task,1,Entelechy means the realization of potential.,approved
 4,epistemology,the study of knowledge,a routine physical object,a brief practical task,1,Epistemology means the study of knowledge.,approved
 4,eschatology,the study of final events or ultimate destiny,a routine physical object,a brief practical task,1,Eschatology means the study of final events or ultimate destiny.,approved
-4,essentialism,belief in fixed essential qualities,a routine physical object,a brief practical task,1,Essentialism means belief in fixed essential qualities.,approved
+4,essentialism,belief in fixed core qualities,a routine physical object,a brief practical task,1,Essentialism means belief in fixed essential qualities.,approved
 4,ethnocentrism,judging other cultures by one's own culture,a routine physical object,a brief practical task,1,Ethnocentrism means judging other cultures by one's own culture.,approved
 4,eugenics,the discredited attempt to improve populations by controlling reproduction,a routine physical object,a brief practical task,1,Eugenics means the discredited attempt to improve populations by controlling reproduction.,approved
 4,exegesis,critical explanation of a text,a routine physical object,a brief practical task,1,Exegesis means critical explanation of a text.,approved
@@ -348,7 +348,7 @@ level,word,choice_1,choice_2,choice_3,answer,explanation,status
 4,formalism,emphasis on form rules or structure,a routine physical object,a brief practical task,1,Formalism means emphasis on form rules or structure.,approved
 4,gentrification,neighborhood change caused by wealthier residents moving in,a routine physical object,a brief practical task,1,Gentrification means neighborhood change caused by wealthier residents moving in.,approved
 4,hermeneutics,the theory of interpretation,a routine physical object,a brief practical task,1,Hermeneutics means the theory of interpretation.,approved
-4,historicism,interpretation through historical context,a routine physical object,a brief practical task,1,Historicism means interpretation through historical context.,approved
+4,historicism,interpretation through the context of its era,a routine physical object,a brief practical task,1,Historicism means interpretation through historical context.,approved
 4,hypostasis,treating an abstract idea as a concrete reality,a routine physical object,a brief practical task,1,Hypostasis means treating an abstract idea as a concrete reality.,approved
 4,idealization,the act of imagining something as better than it is,a routine physical object,a brief practical task,1,Idealization means the act of imagining something as better than it is.,approved
 4,indeterminacy,the state of being uncertain or not fixed,a routine physical object,a brief practical task,1,Indeterminacy means the state of being uncertain or not fixed.,approved
@@ -357,10 +357,10 @@ level,word,choice_1,choice_2,choice_3,answer,explanation,status
 4,localization,adaptation to a particular place or culture,a routine physical object,a brief practical task,1,Localization means adaptation to a particular place or culture.,approved
 4,marginalization,the act of pushing a group to the edge of society,a routine physical object,a brief practical task,1,Marginalization means the act of pushing a group to the edge of society.,approved
 4,mercantilism,economic policy focused on national trade advantage,a routine physical object,a brief practical task,1,Mercantilism means economic policy focused on national trade advantage.,approved
-4,modernization,the process of making something modern,a routine physical object,a brief practical task,1,Modernization means the process of making something modern.,approved
+4,modernization,updating something to current forms,a routine physical object,a brief practical task,1,Modernization means the process of making something modern.,approved
 4,monotheism,belief in one god,a routine physical object,a brief practical task,1,Monotheism means belief in one god.,approved
 4,mutualism,a relationship that benefits both sides,a routine physical object,a brief practical task,1,Mutualism means a relationship that benefits both sides.,approved
-4,naturalism,the view that everything arises from natural causes,a routine physical object,a brief practical task,1,Naturalism means the view that everything arises from natural causes.,approved
+4,naturalism,the view that phenomena arise from physical causes,a routine physical object,a brief practical task,1,Naturalism means the view that everything arises from natural causes.,approved
 4,nominalism,the view that universal concepts are only names,a routine physical object,a brief practical task,1,Nominalism means the view that universal concepts are only names.,approved
 4,objectivism,the view that reality or values exist independently of perception,a routine physical object,a brief practical task,1,Objectivism means the view that reality or values exist independently of perception.,approved
 4,orientalism,stereotyped Western representation of Eastern cultures,a routine physical object,a brief practical task,1,Orientalism means stereotyped Western representation of Eastern cultures.,approved
@@ -370,7 +370,7 @@ level,word,choice_1,choice_2,choice_3,answer,explanation,status
 4,positivism,the view that knowledge should be based on observable facts,a routine physical object,a brief practical task,1,Positivism means the view that knowledge should be based on observable facts.,approved
 4,postmodernism,skepticism toward universal truths and grand narratives,a routine physical object,a brief practical task,1,Postmodernism means skepticism toward universal truths and grand narratives.,approved
 4,predestination,the belief that events are determined in advance,a routine physical object,a brief practical task,1,Predestination means the belief that events are determined in advance.,approved
-4,presentism,judging the past by present-day values,a routine physical object,a brief practical task,1,Presentism means judging the past by present-day values.,approved
+4,presentism,judging earlier times by today's values,a routine physical object,a brief practical task,1,Presentism means judging the past by present-day values.,approved
 4,proceduralism,emphasis on correct procedures,a routine physical object,a brief practical task,1,Proceduralism means emphasis on correct procedures.,approved
 4,reductionism,explaining something complex by reducing it to simpler parts,a routine physical object,a brief practical task,1,Reductionism means explaining something complex by reducing it to simpler parts.,approved
 4,republicanism,political theory emphasizing representative government and civic virtue,a routine physical object,a brief practical task,1,Republicanism means political theory emphasizing representative government and civic virtue.,approved
@@ -383,9 +383,9 @@ level,word,choice_1,choice_2,choice_3,answer,explanation,status
 4,teleology,explanation by purpose or final cause,a routine physical object,a brief practical task,1,Teleology means explanation by purpose or final cause.,approved
 4,totalitarianism,centralized control over nearly all aspects of life,a routine physical object,a brief practical task,1,Totalitarianism means centralized control over nearly all aspects of life.,approved
 4,transcendentalism,belief in spiritual truth beyond experience,a routine physical object,a brief practical task,1,Transcendentalism means belief in spiritual truth beyond experience.,approved
-4,universalism,belief in universal principles or application to all,a routine physical object,a brief practical task,1,Universalism means belief in universal principles or application to all.,approved
-4,verificationism,the view that meaning depends on possible verification,a routine physical object,a brief practical task,1,Verificationism means the view that meaning depends on possible verification.,approved
-4,voluntarism,emphasis on will or voluntary action,a routine physical object,a brief practical task,1,Voluntarism means emphasis on will or voluntary action.,approved
+4,universalism,belief in principles applying to all cases,a routine physical object,a brief practical task,1,Universalism means belief in universal principles or application to all.,approved
+4,verificationism,the view that meaning depends on observable confirmation,a routine physical object,a brief practical task,1,Verificationism means the view that meaning depends on possible verification.,approved
+4,voluntarism,emphasis on choice or will,a routine physical object,a brief practical task,1,Voluntarism means emphasis on will or voluntary action.,approved
 4,backpropagation,an algorithm for updating neural network weights by error gradients,a routine physical object,a brief practical task,1,Backpropagation means an algorithm for updating neural network weights by error gradients.,approved
 4,checksum,a value used to verify data integrity,a routine physical object,a brief practical task,1,Checksum means a value used to verify data integrity.,approved
 4,daemon,a background process that runs without direct user control,a routine physical object,a brief practical task,1,Daemon means a background process that runs without direct user control.,approved
@@ -404,8 +404,8 @@ level,word,choice_1,choice_2,choice_3,answer,explanation,status
 4,sharding,splitting data across multiple databases or servers,a routine physical object,a brief practical task,1,Sharding means splitting data across multiple databases or servers.,approved
 4,throughput,the amount processed in a given time,a routine physical object,a brief practical task,1,Throughput means the amount processed in a given time.,approved
 4,tokenizer,a tool that splits text into smaller units,a routine physical object,a brief practical task,1,Tokenizer means a tool that splits text into smaller units.,approved
-4,vectorization,representing data as vectors or using vector operations,a routine physical object,a brief practical task,1,Vectorization means representing data as vectors or using vector operations.,approved
-4,virtualization,creating virtual versions of computing resources,a routine physical object,a brief practical task,1,Virtualization means creating virtual versions of computing resources.,approved
+4,vectorization,representing data as arrays of numbers,a routine physical object,a brief practical task,1,Vectorization means representing data as vectors or using vector operations.,approved
+4,virtualization,creating simulated computing resources,a routine physical object,a brief practical task,1,Virtualization means creating virtual versions of computing resources.,approved
 4,alignment,making AI behavior match intended goals or values,a routine physical object,a brief practical task,1,Alignment means making AI behavior match intended goals or values.,approved
 4,autoregression,prediction based on previous outputs in a sequence,a routine physical object,a brief practical task,1,Autoregression means prediction based on previous outputs in a sequence.,approved
 4,classifier,a model that assigns items to categories,a routine physical object,a brief practical task,1,Classifier means a model that assigns items to categories.,approved
@@ -417,7 +417,7 @@ level,word,choice_1,choice_2,choice_3,answer,explanation,status
 4,multimodality,ability to process multiple kinds of input such as text images or audio,a routine physical object,a brief practical task,1,Multimodality means ability to process multiple kinds of input such as text images or audio.,approved
 4,perplexity,a measure of how well a language model predicts text,a routine physical object,a brief practical task,1,Perplexity means a measure of how well a language model predicts text.,approved
 4,retrieval,finding relevant information from a data source,a routine physical object,a brief practical task,1,Retrieval means finding relevant information from a data source.,approved
-4,tokenization,splitting text into tokens for model processing,a routine physical object,a brief practical task,1,Tokenization means splitting text into tokens for model processing.,approved
+4,tokenization,splitting text into model-readable units,a routine physical object,a brief practical task,1,Tokenization means splitting text into tokens for model processing.,approved
 4,transformer,a neural network architecture based on attention,a routine physical object,a brief practical task,1,Transformer means a neural network architecture based on attention.,approved
 4,allophone,a variant pronunciation of the same phoneme,a routine physical object,a brief practical task,1,Allophone means a variant pronunciation of the same phoneme.,approved
 4,deixis,language whose meaning depends on context such as here or you,a routine physical object,a brief practical task,1,Deixis means language whose meaning depends on context such as here or you.,approved

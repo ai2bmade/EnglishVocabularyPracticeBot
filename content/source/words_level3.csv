@@ -123,7 +123,7 @@ level,word,choice_1,choice_2,choice_3,answer,explanation,status
 3,bifurcation,a division into two branches,a complete merger,a repeated habit,1,Bifurcation is a division into two branches or parts.,approved
 3,brokerage,the business of arranging transactions,a legal verdict,a sudden disaster,1,Brokerage is the business of arranging deals between buyers and sellers.,approved
 3,calibration,the adjustment of a tool or scale for accuracy,a casual complaint,a final cancellation,1,Calibration is the adjustment of equipment or measures for accuracy.,approved
-3,capitalization,the use of capital or market value of a company,a biological adaptation,a private invitation,1,Capitalization is the use of capital or the market value of a company.,approved
+3,capitalization,company stock-market value or use of funds,a biological adaptation,a private invitation,1,Capitalization is the use of capital or the market value of a company.,approved
 3,centralization,the concentration of control in one place,a spread of authority,a minor detail,1,Centralization is the concentration of authority or control in one place.,approved
 3,circumvention,the act of avoiding a rule or obstacle directly,a strict compliance,a clear explanation,1,Circumvention is the act of avoiding or getting around a rule or obstacle.,approved
 3,coexistence,the state of existing together,a forced separation,a sudden decline,1,Coexistence is the state of existing together at the same time or place.,approved
@@ -177,12 +177,12 @@ level,word,choice_1,choice_2,choice_3,answer,explanation,status
 3,liberalization,the process of reducing restrictions,a rise in strict control,a private negotiation,1,Liberalization is the process of reducing rules restrictions or controls.,approved
 3,manifestation,a clear sign or expression of something,a hidden assumption,a fixed parameter,1,A manifestation is a clear sign or expression of something.,approved
 3,mediation,the act of helping parties reach agreement,a forced escalation,a random choice,1,Mediation is the process of helping opposing sides reach agreement.,approved
-3,militarization,the process of preparing or organizing for military purposes,a peaceful withdrawal,a business forecast,1,Militarization is the process of making something more military in nature.,approved
+3,militarization,a shift toward armed-force organization,a peaceful withdrawal,a business forecast,1,Militarization is the process of making something more military in nature.,approved
 3,mitigation,the reduction of harm risk or severity,a deliberate intensification,a casual meeting,1,Mitigation is the reduction of harm risk or severity.,approved
 3,moderation,the avoidance of extremes,a sharp polarization,a complete prohibition,1,Moderation is the avoidance of extremes or the act of making less severe.,approved
 3,monopolization,the act of gaining exclusive control over something,a fair distribution,a local adjustment,1,Monopolization is the act of gaining complete or exclusive control.,approved
 3,neutrality,the state of not supporting either side,a strong bias,a legal obligation,1,Neutrality is the state of not supporting either side in a conflict.,approved
-3,normalization,the process of making something normal or accepted,a sudden disruption,a hidden deviation,1,Normalization is the process of making something normal standard or accepted.,approved
+3,normalization,making something accepted as usual,a sudden disruption,a hidden deviation,1,Normalization is the process of making something normal standard or accepted.,approved
 3,obsolescence,the process of becoming outdated,a rapid modernization,a public approval,1,Obsolescence is the process of becoming outdated or no longer useful.,approved
 3,optimization,the process of making something as effective as possible,a deliberate inefficiency,a legal dispute,1,Optimization is the process of making something work as well as possible.,approved
 3,oscillation,repeated movement between states or positions,a permanent stop,a single decision,1,Oscillation is repeated movement back and forth or between states.,approved
@@ -199,7 +199,7 @@ level,word,choice_1,choice_2,choice_3,answer,explanation,status
 3,restraint,self-control or a limit,a rapid escalation,a full release,1,Restraint is self-control or something that limits action.,approved
 3,segregation,the separation of groups or things,integration,cooperation,1,Segregation is the separation of groups or things from one another.,approved
 3,stabilization,the process of making something stable,a sudden collapse,a legal challenge,1,Stabilization is the process of making something steady or stable.,approved
-3,standardization,the process of making things follow the same standard,a growth in variation,a private exception,1,Standardization is the process of making things follow the same rules or form.,approved
+3,standardization,making things uniform under shared rules,a growth in variation,a private exception,1,Standardization is the process of making things follow the same rules or form.,approved
 3,synchronization,the act of making things happen at the same time,a deliberate delay,a random separation,1,Synchronization is making events or systems happen at the same time or rate.,approved
 3,anisotropy,directional dependence of a property,perfect sameness in all directions,a legal classification,1,Anisotropy means a property varies depending on direction.,approved
 3,boson,a particle type that can share the same quantum state,a chemical solvent,a market condition,1,A boson is a particle that can occupy the same quantum state as others.,approved

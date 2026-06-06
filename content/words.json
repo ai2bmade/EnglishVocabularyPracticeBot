@@ -2034,7 +2034,7 @@
       "word": "electric",
       "choices": [
         "not finished",
-        "using electricity",
+        "powered by current",
         "from a farm"
       ],
       "answer": 2,
@@ -2683,7 +2683,7 @@
       "level": 1,
       "word": "naturally",
       "choices": [
-        "in a natural way",
+        "without being forced",
         "with no reason",
         "never before"
       ],
@@ -4062,7 +4062,7 @@
       "word": "signal",
       "choices": [
         "a heavy door",
-        "a sign or action that gives information",
+        "an indication that communicates information",
         "a late meal"
       ],
       "answer": 2,
@@ -5960,7 +5960,7 @@
       "word": "reality",
       "choices": [
         "a broken song",
-        "what is real",
+        "actual existence",
         "a hot meal"
       ],
       "answer": 2,
@@ -6974,7 +6974,7 @@
       "word": "equality",
       "choices": [
         "a short answer",
-        "the state of being equal",
+        "fair treatment or the same rights",
         "a travel chair"
       ],
       "answer": 2,
@@ -7455,7 +7455,7 @@
       "word": "limitation",
       "choices": [
         "a clean meal",
-        "a limit or restriction",
+        "a restriction or boundary",
         "a happy rule"
       ],
       "answer": 2,
@@ -7937,7 +7937,7 @@
       "choices": [
         "to make dirty",
         "to stop helping",
-        "to give information to"
+        "to tell or notify"
       ],
       "answer": 3,
       "explanation": "Inform means to give someone information.",
@@ -9301,7 +9301,7 @@
       "word": "strongly",
       "choices": [
         "not clearly",
-        "with force or strong feeling",
+        "with great force or emotion",
         "without reason"
       ],
       "answer": 2,
@@ -10613,7 +10613,7 @@
       "level": 2,
       "word": "limitation",
       "choices": [
-        "a limit or restriction",
+        "a restriction or boundary",
         "a meeting place",
         "a business award"
       ],
@@ -15620,7 +15620,7 @@
       "choices": [
         "a biological adaptation",
         "a private invitation",
-        "the use of capital or market value of a company"
+        "company stock-market value or use of funds"
       ],
       "answer": 3,
       "explanation": "Capitalization is the use of capital or the market value of a company.",
@@ -16320,7 +16320,7 @@
       "level": 3,
       "word": "militarization",
       "choices": [
-        "the process of preparing or organizing for military purposes",
+        "a shift toward armed-force organization",
         "a business forecast",
         "a peaceful withdrawal"
       ],
@@ -16386,7 +16386,7 @@
       "word": "normalization",
       "choices": [
         "a hidden deviation",
-        "the process of making something normal or accepted",
+        "making something accepted as usual",
         "a sudden disruption"
       ],
       "answer": 2,
@@ -16606,7 +16606,7 @@
       "level": 3,
       "word": "standardization",
       "choices": [
-        "the process of making things follow the same standard",
+        "making things uniform under shared rules",
         "a private exception",
         "a growth in variation"
       ],
@@ -18868,7 +18868,7 @@
       "level": 4,
       "word": "idealism",
       "choices": [
-        "belief in high principles or perfect ideals",
+        "belief in noble principles over practical limits",
         "a brief practical task",
         "a routine physical object"
       ],
@@ -19272,7 +19272,7 @@
       "word": "realism",
       "choices": [
         "a routine physical object",
-        "practical acceptance of reality",
+        "practical acceptance of facts as they are",
         "a brief practical task"
       ],
       "answer": 2,
@@ -19571,7 +19571,7 @@
       "word": "adaptationism",
       "choices": [
         "a brief practical task",
-        "the view that traits are chiefly shaped by adaptation",
+        "the view that traits are chiefly shaped by evolutionary adjustment",
         "a routine physical object"
       ],
       "answer": 2,
@@ -19689,7 +19689,7 @@
       "choices": [
         "a routine physical object",
         "a brief practical task",
-        "priority of individual freedom and responsibility"
+        "priority of personal freedom and responsibility"
       ],
       "answer": 3,
       "explanation": "Individualism means priority of individual freedom and responsibility.",
@@ -19702,7 +19702,7 @@
       "choices": [
         "a brief practical task",
         "a routine physical object",
-        "focus on material things or the view that matter is primary"
+        "focus on physical things or possessions"
       ],
       "answer": 3,
       "explanation": "Materialism means focus on material things or the view that matter is primary.",
@@ -21130,7 +21130,7 @@
       "level": 4,
       "word": "essentialism",
       "choices": [
-        "belief in fixed essential qualities",
+        "belief in fixed core qualities",
         "a routine physical object",
         "a brief practical task"
       ],
@@ -21299,7 +21299,7 @@
       "level": 4,
       "word": "historicism",
       "choices": [
-        "interpretation through historical context",
+        "interpretation through the context of its era",
         "a routine physical object",
         "a brief practical task"
       ],
@@ -21417,7 +21417,7 @@
       "word": "modernization",
       "choices": [
         "a routine physical object",
-        "the process of making something modern",
+        "updating something to current forms",
         "a brief practical task"
       ],
       "answer": 2,
@@ -21455,7 +21455,7 @@
       "level": 4,
       "word": "naturalism",
       "choices": [
-        "the view that everything arises from natural causes",
+        "the view that phenomena arise from physical causes",
         "a routine physical object",
         "a brief practical task"
       ],
@@ -21585,7 +21585,7 @@
       "level": 4,
       "word": "presentism",
       "choices": [
-        "judging the past by present-day values",
+        "judging earlier times by today's values",
         "a brief practical task",
         "a routine physical object"
       ],
@@ -21755,7 +21755,7 @@
       "word": "universalism",
       "choices": [
         "a brief practical task",
-        "belief in universal principles or application to all",
+        "belief in principles applying to all cases",
         "a routine physical object"
       ],
       "answer": 2,
@@ -21768,7 +21768,7 @@
       "word": "verificationism",
       "choices": [
         "a brief practical task",
-        "the view that meaning depends on possible verification",
+        "the view that meaning depends on observable confirmation",
         "a routine physical object"
       ],
       "answer": 2,
@@ -21780,7 +21780,7 @@
       "level": 4,
       "word": "voluntarism",
       "choices": [
-        "emphasis on will or voluntary action",
+        "emphasis on choice or will",
         "a brief practical task",
         "a routine physical object"
       ],
@@ -22029,7 +22029,7 @@
       "choices": [
         "a brief practical task",
         "a routine physical object",
-        "representing data as vectors or using vector operations"
+        "representing data as arrays of numbers"
       ],
       "answer": 3,
       "explanation": "Vectorization means representing data as vectors or using vector operations.",
@@ -22040,7 +22040,7 @@
       "level": 4,
       "word": "virtualization",
       "choices": [
-        "creating virtual versions of computing resources",
+        "creating simulated computing resources",
         "a brief practical task",
         "a routine physical object"
       ],
@@ -22196,7 +22196,7 @@
       "level": 4,
       "word": "tokenization",
       "choices": [
-        "splitting text into tokens for model processing",
+        "splitting text into model-readable units",
         "a routine physical object",
         "a brief practical task"
       ],
@@ -22976,7 +22976,7 @@
       "level": 5,
       "word": "différance",
       "choices": [
-        "Derrida's concept of meaning through difference and deferral",
+        "Derrida's concept of meaning through contrast and deferral",
         "a concrete household object",
         "a simple everyday action"
       ],
@@ -23511,7 +23511,7 @@
       "choices": [
         "a concrete household object",
         "a simple everyday action",
-        "belief in fixed essential properties"
+        "belief in fixed core properties"
       ],
       "answer": 3,
       "explanation": "Essentialism means belief in fixed essential properties.",
@@ -23535,7 +23535,7 @@
       "level": 5,
       "word": "voluntarism",
       "choices": [
-        "emphasis on will or voluntary action",
+        "emphasis on choice or will",
         "a concrete household object",
         "a simple everyday action"
       ],
@@ -23654,7 +23654,7 @@
       "choices": [
         "a simple everyday action",
         "a concrete household object",
-        "the view that only the present exists or judging past by present values"
+        "the view that only now exists or judging earlier eras by today's values"
       ],
       "answer": 3,
       "explanation": "Presentism means the view that only the present exists or judging past by present values.",
@@ -23782,7 +23782,7 @@
       "level": 5,
       "word": "externalism",
       "choices": [
-        "the view that meaning or justification depends partly on external factors",
+        "the view that meaning or justification depends partly on outside factors",
         "a simple everyday action",
         "a concrete household object"
       ],
@@ -23797,7 +23797,7 @@
       "choices": [
         "a concrete household object",
         "a simple everyday action",
-        "the view that justification or mental content depends on internal factors"
+        "the view that justification or mental content depends on inner factors"
       ],
       "answer": 3,
       "explanation": "Internalism means the view that justification or mental content depends on internal factors.",
@@ -23849,7 +23849,7 @@
       "choices": [
         "a simple everyday action",
         "a concrete household object",
-        "the view that meaning depends on possible verification"
+        "the view that meaning depends on observable confirmation"
       ],
       "answer": 3,
       "explanation": "Verificationism means the view that meaning depends on possible verification.",
@@ -23862,7 +23862,7 @@
       "choices": [
         "a concrete household object",
         "a simple everyday action",
-        "the view that scientific claims must be testable by falsification"
+        "the view that scientific claims must be refutable by evidence"
       ],
       "answer": 3,
       "explanation": "Falsificationism means the view that scientific claims must be testable by falsification.",
@@ -23888,7 +23888,7 @@
       "choices": [
         "a concrete household object",
         "a simple everyday action",
-        "interpretation through historical context"
+        "interpretation through the context of its era"
       ],
       "answer": 3,
       "explanation": "Historicism means interpretation through historical context.",
@@ -24588,7 +24588,7 @@
       "level": 5,
       "word": "figuration",
       "choices": [
-        "representation through figures images or forms",
+        "representation through imagery or forms",
         "a concrete household object",
         "a simple everyday action"
       ],

@@ -155,7 +155,7 @@ level,word,choice_1,choice_2,choice_3,answer,explanation,status
 1,simple,easy and not complicated,very noisy,not public,1,Simple means easy and not complicated.,approved
 1,important,needing attention,very small,not fresh,1,Important means needing attention or having great value.,approved
 1,confident,sure about yourself,very cheap,hard to smell,1,Confident means sure about yourself or your ability.,approved
-1,electric,using electricity,from a farm,not finished,1,Electric means using or related to electricity.,approved
+1,electric,powered by current,from a farm,not finished,1,Electric means using or related to electricity.,approved
 1,heavy,hard to lift,very early,not true,1,Heavy means having a lot of weight.,approved
 1,final,last,dirty,young,1,Final means last.,approved
 1,main,most important,very cold,hard to hear,1,Main means most important.,approved
@@ -205,7 +205,7 @@ level,word,choice_1,choice_2,choice_3,answer,explanation,status
 1,just,only or very recently,with danger,too early,1,Just can mean only or very recently.,approved
 1,likely,probably,never,with care,1,Likely means probably or expected to happen.,approved
 1,maybe,perhaps,always,too much,1,Maybe means perhaps or possibly.,approved
-1,naturally,in a natural way,with no reason,never before,1,Naturally means in a natural way.,approved
+1,naturally,without being forced,with no reason,never before,1,Naturally means in a natural way.,approved
 1,nearly,almost,never,too loudly,1,Nearly means almost.,approved
 1,never,not at any time,again and again,very well,1,Never means not at any time.,approved
 1,normally,usually,by accident,not clearly,1,Normally means usually.,approved
@@ -311,7 +311,7 @@ level,word,choice_1,choice_2,choice_3,answer,explanation,status
 1,rule,an instruction about what is allowed,a quiet drink,a broken bag,1,A rule is an instruction about what is allowed.,approved
 1,schedule,a plan of times,a kind of food,a strong smell,1,A schedule is a plan of times.,approved
 1,service,work done for others,a small problem,a hot sound,1,A service is work done for others.,approved
-1,signal,a sign or action that gives information,a late meal,a heavy door,1,A signal is a sign or action that gives information.,approved
+1,signal,an indication that communicates information,a late meal,a heavy door,1,A signal is a sign or action that gives information.,approved
 1,situation,the facts or conditions at a time,a blue table,a quiet song,1,A situation is the facts or conditions at a time.,approved
 1,skill,an ability to do something well,a final warning,a busy road,1,A skill is an ability to do something well.,approved
 1,solution,an answer to a problem,a public chair,a short trip,1,A solution is an answer to a problem.,approved
@@ -457,7 +457,7 @@ level,word,choice_1,choice_2,choice_3,answer,explanation,status
 1,property,something owned or land,a short mistake,a public answer,1,Property means something owned or land.,approved
 1,protection,the act of keeping safe,a travel delay,a small noise,1,Protection is the act of keeping someone or something safe.,approved
 1,reaction,a response to something,a final chair,a clean road,1,A reaction is a response to something.,approved
-1,reality,what is real,a hot meal,a broken song,1,Reality means what is real.,approved
+1,reality,actual existence,a hot meal,a broken song,1,Reality means what is real.,approved
 1,region,an area,a small note,a private habit,1,A region is an area.,approved
 1,resource,something useful or needed,a late color,a quiet mistake,1,A resource is something useful or needed.,approved
 1,access,the way to enter or use something,a final meal,a quiet habit,1,Access is the way to enter or use something.,approved
@@ -535,7 +535,7 @@ level,word,choice_1,choice_2,choice_3,answer,explanation,status
 1,engagement,involvement or a plan to marry,a bad road,a cold note,1,Engagement means involvement or a plan to marry.,approved
 1,entrance,a place to enter,a final mistake,a safe drink,1,An entrance is a place where you enter.,approved
 1,episode,one part of a story or event,a broken office,a heavy smell,1,An episode is one part of a story series or event.,approved
-1,equality,the state of being equal,a short answer,a travel chair,1,Equality is the state of being equal.,approved
+1,equality,fair treatment or the same rights,a short answer,a travel chair,1,Equality is the state of being equal.,approved
 1,estimate,a rough guess,a public sound,a clean dish,1,An estimate is a rough guess based on information.,approved
 1,evidence,information showing something is true,a happy habit,a late cup,1,Evidence is information showing something is true.,approved
 1,exception,something not included in a rule,a usual result,a red table,1,An exception is something not included in a rule.,approved
@@ -572,6 +572,6 @@ level,word,choice_1,choice_2,choice_3,answer,explanation,status
 1,judgment,an opinion or decision,a safe table,a short smell,1,Judgment is an opinion or decision.,approved
 1,legacy,something left from the past,a noisy payment,a small road,1,A legacy is something left from the past.,approved
 1,liberty,freedom,a cold mistake,a travel cup,1,Liberty means freedom.,approved
-1,limitation,a limit or restriction,a clean meal,a happy rule,1,A limitation is a limit or restriction.,approved
+1,limitation,a restriction or boundary,a clean meal,a happy rule,1,A limitation is a limit or restriction.,approved
 1,majority,more than half,a final mistake,a private song,1,A majority is more than half of a group.,approved
 1,measure,an action taken or a way to find size,a hot answer,a broken road,1,A measure is an action taken or a way to find size or amount.,approved

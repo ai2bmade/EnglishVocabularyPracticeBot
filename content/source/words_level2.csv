@@ -33,7 +33,7 @@ level,word,choice_1,choice_2,choice_3,answer,explanation,status
 2,impose,to force a rule or burden on someone,to answer politely,to move freely,1,Impose means to force someone to accept a rule or burden.,approved
 2,include,to have as a part,to remove completely,to paint brightly,1,Include means to have something as part of a whole.,approved
 2,increase,to become or make larger,to return home,to write badly,1,Increase means to become or make greater in size or amount.,approved
-2,inform,to give information to,to stop helping,to make dirty,1,Inform means to give someone information.,approved
+2,inform,to tell or notify,to stop helping,to make dirty,1,Inform means to give someone information.,approved
 2,insist,to say firmly,to cook slowly,to look away,1,Insist means to say something firmly and not accept refusal.,approved
 2,interpret,to explain the meaning of,to close a file,to buy in bulk,1,Interpret means to explain or understand the meaning of something.,approved
 2,interrupt,to stop someone while they are speaking or doing something,to organize neatly,to travel safely,1,Interrupt means to stop someone in the middle of an action or speech.,approved
@@ -138,7 +138,7 @@ level,word,choice_1,choice_2,choice_3,answer,explanation,status
 2,primarily,mainly,rarely,too late,1,Primarily means mainly or chiefly.,approved
 2,rapidly,very quickly,very quietly,not yet,1,Rapidly means very quickly.,approved
 2,significantly,noticeably or importantly,not at all,only outside,1,Significantly means in an important or noticeable way.,approved
-2,strongly,with force or strong feeling,without reason,not clearly,1,Strongly means with force or strong feeling.,approved
+2,strongly,with great force or emotion,without reason,not clearly,1,Strongly means with force or strong feeling.,approved
 2,unexpectedly,in a surprising way,as planned,not often,1,Unexpectedly means in a way that was not expected.,approved
 2,account,a record or service for money or access,a kind of meal,a public road,1,An account is a record or service used for money information or access.,approved
 2,achievement,something successfully done,a short delay,a broken rule,1,An achievement is something completed successfully.,approved
@@ -239,7 +239,7 @@ level,word,choice_1,choice_2,choice_3,answer,explanation,status
 2,judgment,an opinion or decision,a machine tool,a public event,1,Judgment is an opinion or decision after thinking.,approved
 2,knowledge,information and understanding,a private room,a late fee,1,Knowledge is information and understanding.,approved
 2,leadership,the ability to guide people,a printed document,a customer request,1,Leadership is the ability to guide or lead people.,approved
-2,limitation,a limit or restriction,a business award,a meeting place,1,A limitation is a limit or restriction.,approved
+2,limitation,a restriction or boundary,a business award,a meeting place,1,A limitation is a limit or restriction.,approved
 2,location,a place or position,a legal rule,a work habit,1,A location is a place or position.,approved
 2,maintenance,the work of keeping something in good condition,a first meeting,a short description,1,Maintenance is the work of keeping something in good condition.,approved
 2,management,the control or organization of work,a food order,a hidden message,1,Management is the control or organization of people or work.,approved

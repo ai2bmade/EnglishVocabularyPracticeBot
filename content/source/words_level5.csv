@@ -41,7 +41,7 @@ level,word,choice_1,choice_2,choice_3,answer,explanation,status
 5,deterritorialization,the removal of social cultural or spatial boundaries,a simple everyday action,a concrete household object,1,Deterritorialization means the removal of social cultural or spatial boundaries.,approved
 5,reterritorialization,the reestablishment of boundaries or context,a simple everyday action,a concrete household object,1,Reterritorialization means the reestablishment of boundaries or context.,approved
 5,hauntology,the persistence of lost futures or absent presences,a simple everyday action,a concrete household object,1,Hauntology means the persistence of lost futures or absent presences.,approved
-5,différance,Derrida's concept of meaning through difference and deferral,a simple everyday action,a concrete household object,1,Différance means Derrida's concept of meaning through difference and deferral.,approved
+5,différance,Derrida's concept of meaning through contrast and deferral,a simple everyday action,a concrete household object,1,Différance means Derrida's concept of meaning through difference and deferral.,approved
 5,bricolage,creation from diverse available materials,a simple everyday action,a concrete household object,1,Bricolage means creation from diverse available materials.,approved
 5,interpellation,the process by which ideology addresses and forms subjects,a simple everyday action,a concrete household object,1,Interpellation means the process by which ideology addresses and forms subjects.,approved
 5,logocentrism,privileging speech reason or central meaning,a simple everyday action,a concrete household object,1,Logocentrism means privileging speech reason or central meaning.,approved
@@ -82,9 +82,9 @@ level,word,choice_1,choice_2,choice_3,answer,explanation,status
 5,solipsism,the view that only one's own mind is certain,a simple everyday action,a concrete household object,1,Solipsism means the view that only one's own mind is certain.,approved
 5,nominalism,the view that universals are only names,a simple everyday action,a concrete household object,1,Nominalism means the view that universals are only names.,approved
 5,realism,the view that things exist independently of perception,a simple everyday action,a concrete household object,1,Realism means the view that things exist independently of perception.,approved
-5,essentialism,belief in fixed essential properties,a simple everyday action,a concrete household object,1,Essentialism means belief in fixed essential properties.,approved
+5,essentialism,belief in fixed core properties,a simple everyday action,a concrete household object,1,Essentialism means belief in fixed essential properties.,approved
 5,particularism,focus on individual cases rather than universal rules,a simple everyday action,a concrete household object,1,Particularism means focus on individual cases rather than universal rules.,approved
-5,voluntarism,emphasis on will or voluntary action,a simple everyday action,a concrete household object,1,Voluntarism means emphasis on will or voluntary action.,approved
+5,voluntarism,emphasis on choice or will,a simple everyday action,a concrete household object,1,Voluntarism means emphasis on will or voluntary action.,approved
 5,compatibilism,the view that free will and determinism can coexist,a simple everyday action,a concrete household object,1,Compatibilism means the view that free will and determinism can coexist.,approved
 5,incompatibilism,the view that free will and determinism cannot coexist,a simple everyday action,a concrete household object,1,Incompatibilism means the view that free will and determinism cannot coexist.,approved
 5,consequentialism,the view that consequences determine moral value,a simple everyday action,a concrete household object,1,Consequentialism means the view that consequences determine moral value.,approved
@@ -93,7 +93,7 @@ level,word,choice_1,choice_2,choice_3,answer,explanation,status
 5,foundationalism,the view that knowledge rests on basic beliefs,a simple everyday action,a concrete household object,1,Foundationalism means the view that knowledge rests on basic beliefs.,approved
 5,coherentism,the view that beliefs are justified by coherence within a system,a simple everyday action,a concrete household object,1,Coherentism means the view that beliefs are justified by coherence within a system.,approved
 5,infinitism,the view that justification requires an infinite chain of reasons,a simple everyday action,a concrete household object,1,Infinitism means the view that justification requires an infinite chain of reasons.,approved
-5,presentism,the view that only the present exists or judging past by present values,a simple everyday action,a concrete household object,1,Presentism means the view that only the present exists or judging past by present values.,approved
+5,presentism,the view that only now exists or judging earlier eras by today's values,a simple everyday action,a concrete household object,1,Presentism means the view that only the present exists or judging past by present values.,approved
 5,eternalism,the view that past present and future are equally real,a simple everyday action,a concrete household object,1,Eternalism means the view that past present and future are equally real.,approved
 5,mereology,the study of parts and wholes,a simple everyday action,a concrete household object,1,Mereology means the study of parts and wholes.,approved
 5,supervenience,dependence where higher-level properties cannot change without lower-level changes,a simple everyday action,a concrete household object,1,Supervenience means dependence where higher-level properties cannot change without lower-level changes.,approved
@@ -103,15 +103,15 @@ level,word,choice_1,choice_2,choice_3,answer,explanation,status
 5,eliminativism,the view that some common mental concepts should be eliminated,a simple everyday action,a concrete household object,1,Eliminativism means the view that some common mental concepts should be eliminated.,approved
 5,reductionism,explaining complex things by reducing them to simpler parts,a simple everyday action,a concrete household object,1,Reductionism means explaining complex things by reducing them to simpler parts.,approved
 5,emergentism,the view that complex systems have new properties not reducible to parts,a simple everyday action,a concrete household object,1,Emergentism means the view that complex systems have new properties not reducible to parts.,approved
-5,externalism,the view that meaning or justification depends partly on external factors,a simple everyday action,a concrete household object,1,Externalism means the view that meaning or justification depends partly on external factors.,approved
-5,internalism,the view that justification or mental content depends on internal factors,a simple everyday action,a concrete household object,1,Internalism means the view that justification or mental content depends on internal factors.,approved
+5,externalism,the view that meaning or justification depends partly on outside factors,a simple everyday action,a concrete household object,1,Externalism means the view that meaning or justification depends partly on external factors.,approved
+5,internalism,the view that justification or mental content depends on inner factors,a simple everyday action,a concrete household object,1,Internalism means the view that justification or mental content depends on internal factors.,approved
 5,expressivism,the view that moral statements express attitudes,a simple everyday action,a concrete household object,1,Expressivism means the view that moral statements express attitudes.,approved
 5,cognitivism,the view that moral statements express beliefs capable of truth,a simple everyday action,a concrete household object,1,Cognitivism means the view that moral statements express beliefs capable of truth.,approved
 5,noncognitivism,the view that moral statements do not state truth-apt beliefs,a simple everyday action,a concrete household object,1,Noncognitivism means the view that moral statements do not state truth-apt beliefs.,approved
-5,verificationism,the view that meaning depends on possible verification,a simple everyday action,a concrete household object,1,Verificationism means the view that meaning depends on possible verification.,approved
-5,falsificationism,the view that scientific claims must be testable by falsification,a simple everyday action,a concrete household object,1,Falsificationism means the view that scientific claims must be testable by falsification.,approved
+5,verificationism,the view that meaning depends on observable confirmation,a simple everyday action,a concrete household object,1,Verificationism means the view that meaning depends on possible verification.,approved
+5,falsificationism,the view that scientific claims must be refutable by evidence,a simple everyday action,a concrete household object,1,Falsificationism means the view that scientific claims must be testable by falsification.,approved
 5,positivism,the view that knowledge should be based on observable facts,a simple everyday action,a concrete household object,1,Positivism means the view that knowledge should be based on observable facts.,approved
-5,historicism,interpretation through historical context,a simple everyday action,a concrete household object,1,Historicism means interpretation through historical context.,approved
+5,historicism,interpretation through the context of its era,a simple everyday action,a concrete household object,1,Historicism means interpretation through historical context.,approved
 5,perspectivism,the view that knowledge is shaped by perspective,a simple everyday action,a concrete household object,1,Perspectivism means the view that knowledge is shaped by perspective.,approved
 5,constructivism,the view that knowledge or meaning is constructed,a simple everyday action,a concrete household object,1,Constructivism means the view that knowledge or meaning is constructed.,approved
 5,conventionalism,the view that principles depend on convention,a simple everyday action,a concrete household object,1,Conventionalism means the view that principles depend on convention.,approved
@@ -165,7 +165,7 @@ level,word,choice_1,choice_2,choice_3,answer,explanation,status
 5,exegesis,critical explanation of a text,a simple everyday action,a concrete household object,1,Exegesis means critical explanation of a text.,approved
 5,fabulism,a literary mode using fable myth or fantasy,a simple everyday action,a concrete household object,1,Fabulism means a literary mode using fable myth or fantasy.,approved
 5,facticity,the condition of being factual or given,a simple everyday action,a concrete household object,1,Facticity means the condition of being factual or given.,approved
-5,figuration,representation through figures images or forms,a simple everyday action,a concrete household object,1,Figuration means representation through figures images or forms.,approved
+5,figuration,representation through imagery or forms,a simple everyday action,a concrete household object,1,Figuration means representation through figures images or forms.,approved
 5,finitude,the state of being limited,a simple everyday action,a concrete household object,1,Finitude means the state of being limited.,approved
 5,flânerie,idle urban wandering and observation,a simple everyday action,a concrete household object,1,Flânerie means idle urban wandering and observation.,approved
 5,glossolalia,speaking in tongues,a simple everyday action,a concrete household object,1,Glossolalia means speaking in tongues.,approved
