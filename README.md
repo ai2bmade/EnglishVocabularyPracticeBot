@@ -11,12 +11,15 @@ Students choose a level, answer one word at a time, and get immediate feedback. 
 
 ## Features
 
-- `/start`, `/level`, `/quiz`, `/wrong`, `/status`, `/reset`
+- `/start`, `/level`, `/quiz`, `/challenge`, `/wrong`, `/status`, `/reset`
 - Five vocabulary levels
 - Three choices per word, with answers shown as `1`, `2`, or `3`
-- Immediate correct/not-quite feedback and optional explanation
+- Immediate correct/not-quite feedback, optional explanation, and automatic next word delivery
+- Daily Challenge: 10 words total, with 1 from Level 2, 2 from Level 3, 5 from Level 4, and 2 from Level 5
 - Wrong-word list that stores missed words and lets students tap a word to retry it
 - Per-chat progress: level, completed count, correct count, accuracy
+- Free practice limit: 10 regular quiz words every 24 hours
+- Premium unlock by Telegram numeric ID through `PREMIUM_TELEGRAM_IDS`
 - Approved-only content from `content/words.json`
 - CSV-to-JSON build script for content operations
 - Docker and Coolify-ready long polling deployment
@@ -104,6 +107,16 @@ Then copy the exported `words.json` into the repo `content` folder before deploy
 ```text
 TELEGRAM_BOT_TOKEN=BotFather token
 ```
+
+Optional environment variables:
+
+```text
+FREE_QUIZ_LIMIT=10
+BUY_ME_COFFEE_URL=https://buymeacoffee.com/your-page
+PREMIUM_TELEGRAM_IDS=123456789,987654321
+```
+
+Students can open `Status` in the bot to see their Telegram numeric ID. After payment, add that ID to `PREMIUM_TELEGRAM_IDS` in Coolify and redeploy.
 
 4. Deploy. No exposed port is required because the bot uses Telegram long polling.
 

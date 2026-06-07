@@ -5,6 +5,15 @@ const token = process.env.TELEGRAM_BOT_TOKEN;
 const wordsPath = process.env.WORDS_PATH || "content/words.json";
 const userDataPath = process.env.USER_DATA_PATH || "data/users.json";
 const pollTimeoutSeconds = Number(process.env.POLL_TIMEOUT_SECONDS || 30);
+const freeQuizLimit = Number(process.env.FREE_QUIZ_LIMIT || 10);
+const limitWindowMs = 24 * 60 * 60 * 1000;
+const buyMeCoffeeUrl = process.env.BUY_ME_COFFEE_URL || "Buy me a coffee";
+const premiumTelegramIds = new Set(
+  (process.env.PREMIUM_TELEGRAM_IDS || "")
+    .split(",")
+    .map((id) => id.trim())
+    .filter(Boolean)
+);
 
 const levels = {
   1: "Level 1 - Non-native Beginner",
@@ -61,7 +70,8 @@ async function handleMessage(message) {
     await sendMessage(chatId, [
       "English Vocabulary Choice",
       "",
-      "Choose your level with /level, then start with /quiz."
+      "Choose your level with /level, then start with /quiz.",
+      "Daily Challenge gives you 10 words: 1 from Level 2, 2 from Level 3, 5 from Level 4, and 2 from Level 5."
     ].join("\n"), mainKeyboard());
     return;
   }
@@ -75,6 +85,19 @@ async function handleMessage(message) {
 
   if (text === "/quiz" || text === "Next Word") {
     await sendQuiz(chatId, user);
+    return;
+  }
+
+  if (text === "/challenge" || text === "Daily Challenge") {
+    await startDailyChallenge(chatId, user);
+    return;
+  }
+
+  if (text === "Pause" || text === "Take a Break") {
+    user.currentWordId = null;
+    user.mode = "idle";
+    saveUsers();
+    await sendMessage(chatId, "Paused. Come back anytime with Next Word or Daily Challenge.", mainKeyboard());
     return;
   }
 
@@ -119,10 +142,15 @@ async function handleMessage(message) {
     return;
   }
 
-  await sendMessage(chatId, "Use /level, /quiz, /status, or /reset.", mainKeyboard());
+  await sendMessage(chatId, "Use /level, /quiz, /challenge, /status, or /reset.", mainKeyboard());
 }
 
 async function sendQuiz(chatId, user, fixedWord = null) {
+  if (!canTakeFreeQuiz(user, chatId)) {
+    await sendMessage(chatId, freeLimitText(user), mainKeyboard());
+    return;
+  }
+
   const levelWords = words.filter((word) => word.level === user.level);
   if (levelWords.length === 0) {
     await sendMessage(chatId, `No approved words found for ${levels[user.level]}.`, mainKeyboard());
@@ -131,12 +159,18 @@ async function sendQuiz(chatId, user, fixedWord = null) {
 
   const word = fixedWord || sample(levelWords);
   user.currentWordId = word.id;
+  user.mode = "quiz";
   saveUsers();
 
   await sendMessage(chatId, quizText(word), answerKeyboard());
 }
 
 async function gradeAnswer(chatId, user, selectedAnswer) {
+  if (user.mode === "challenge") {
+    await gradeChallengeAnswer(chatId, user, selectedAnswer);
+    return;
+  }
+
   const word = words.find((item) => item.id === user.currentWordId);
   if (!word) {
     user.currentWordId = null;
@@ -146,6 +180,7 @@ async function gradeAnswer(chatId, user, selectedAnswer) {
   }
 
   user.completed += 1;
+  recordFreeQuiz(user, chatId);
   const isCorrect = selectedAnswer === word.answer;
   if (isCorrect) {
     user.correct += 1;
@@ -153,6 +188,7 @@ async function gradeAnswer(chatId, user, selectedAnswer) {
     user.wrongWordIds.push(word.id);
   }
   user.currentWordId = null;
+  user.mode = "idle";
   saveUsers();
 
   const result = isCorrect
@@ -160,6 +196,91 @@ async function gradeAnswer(chatId, user, selectedAnswer) {
     : `Not quite.\nAnswer: ${word.answer}. ${word.choices[word.answer - 1]}`;
 
   await sendMessage(chatId, `${result}\n\n${word.explanation || ""}`, mainKeyboard());
+  await sendQuiz(chatId, user);
+}
+
+async function startDailyChallenge(chatId, user) {
+  if (!canStartDailyChallenge(user)) {
+    await sendMessage(chatId, dailyChallengeLimitText(user), mainKeyboard());
+    return;
+  }
+
+  const challengeWords = makeDailyChallengeWords();
+  if (!challengeWords) {
+    await sendMessage(chatId, "Daily Challenge is not available yet because one or more levels need more approved words.", mainKeyboard());
+    return;
+  }
+
+  user.mode = "challenge";
+  user.currentChallenge = {
+    ids: challengeWords.map((word) => word.id),
+    index: 0,
+    correct: 0,
+    startedAt: Date.now()
+  };
+  user.currentWordId = challengeWords[0].id;
+  user.challengeLastStartedAt = Date.now();
+  saveUsers();
+
+  await sendMessage(
+    chatId,
+    [
+      "Daily Challenge",
+      "10 words total: #1 from Level 2, #2-3 from Level 3, #4-8 from Level 4, and #9-10 from Level 5.",
+      "Duplicate words are checked and replaced before the challenge starts.",
+      "",
+      quizText(challengeWords[0])
+    ].join("\n"),
+    answerKeyboard()
+  );
+}
+
+async function gradeChallengeAnswer(chatId, user, selectedAnswer) {
+  const challenge = user.currentChallenge;
+  const word = words.find((item) => item.id === user.currentWordId);
+  if (!challenge || !word) {
+    user.mode = "idle";
+    user.currentWordId = null;
+    user.currentChallenge = null;
+    saveUsers();
+    await sendMessage(chatId, "That challenge item is no longer available. Try Daily Challenge again later.", mainKeyboard());
+    return;
+  }
+
+  user.completed += 1;
+  const isCorrect = selectedAnswer === word.answer;
+  if (isCorrect) {
+    user.correct += 1;
+    challenge.correct += 1;
+  } else if (!user.wrongWordIds.includes(word.id)) {
+    user.wrongWordIds.push(word.id);
+  }
+
+  const result = isCorrect
+    ? "Correct."
+    : `Not quite.\nAnswer: ${word.answer}. ${word.choices[word.answer - 1]}`;
+
+  challenge.index += 1;
+  if (challenge.index >= challenge.ids.length) {
+    const score = challenge.correct;
+    user.mode = "idle";
+    user.currentWordId = null;
+    user.currentChallenge = null;
+    saveUsers();
+    await sendMessage(chatId, `${result}\n\n${word.explanation || ""}`, mainKeyboard());
+    await sendMessage(chatId, dailyChallengeResultText(score), mainKeyboard());
+    return;
+  }
+
+  const nextWord = words.find((item) => item.id === challenge.ids[challenge.index]);
+  user.currentWordId = nextWord.id;
+  saveUsers();
+  await sendMessage(chatId, `${result}\n\n${word.explanation || ""}`, mainKeyboard());
+  await sendMessage(
+    chatId,
+    [`Daily Challenge ${challenge.index + 1}/10`, "", quizText(nextWord)].join("\n"),
+    answerKeyboard()
+  );
 }
 
 async function sendWrongWords(chatId, user) {
@@ -205,12 +326,14 @@ function statusText(user) {
     `Level: ${levels[user.level]}`,
     `Completed: ${user.completed}`,
     `Correct: ${user.correct}`,
-    `Accuracy: ${accuracy}%`
+    `Accuracy: ${accuracy}%`,
+    `Telegram ID: ${user.chatId || "unknown"}`,
+    `Plan: ${isPremium(user.chatId) ? "Premium" : "Free"}`
   ].join("\n");
 }
 
 function mainKeyboard() {
-  return keyboard([["Next Word", "Change Level"], ["Wrong Words", "Status"], ["Reset"]]);
+  return keyboard([["Next Word", "Daily Challenge"], ["Change Level", "Wrong Words"], ["Status", "Reset"]]);
 }
 
 function levelKeyboard() {
@@ -218,12 +341,12 @@ function levelKeyboard() {
 }
 
 function answerKeyboard() {
-  return keyboard([["1", "2", "3"], ["Next Word"]]);
+  return keyboard([["1", "2", "3"], ["Take a Break"]]);
 }
 
 function wrongWordsKeyboard(wrongWords) {
   const rows = wrongWords.map((word) => [word.word]);
-  rows.push(["Next Word", "Change Level"], ["Status", "Reset"]);
+  rows.push(["Next Word", "Daily Challenge"], ["Change Level", "Status"], ["Reset"]);
   return keyboard(rows);
 }
 
@@ -296,10 +419,21 @@ function getUser(chatId) {
       correct: 0,
       currentWordId: null,
       wrongWordIds: [],
-      awaitingLevel: false
+      awaitingLevel: false,
+      mode: "idle",
+      currentChallenge: null,
+      freeQuizWindowStartedAt: 0,
+      freeQuizCount: 0,
+      challengeLastStartedAt: 0
     };
   }
+  users[key].chatId = key;
   users[key].wrongWordIds ||= [];
+  users[key].mode ||= "idle";
+  users[key].currentChallenge ||= null;
+  users[key].freeQuizWindowStartedAt ||= 0;
+  users[key].freeQuizCount ||= 0;
+  users[key].challengeLastStartedAt ||= 0;
   return users[key];
 }
 
@@ -309,6 +443,8 @@ function resetUser(user) {
   user.currentWordId = null;
   user.wrongWordIds = [];
   user.awaitingLevel = false;
+  user.mode = "idle";
+  user.currentChallenge = null;
 }
 
 function getWrongWords(user) {
@@ -334,6 +470,131 @@ function ensureParentDir(filePath) {
 
 function sample(items) {
   return items[Math.floor(Math.random() * items.length)];
+}
+
+function canTakeFreeQuiz(user, chatId) {
+  if (isPremium(chatId)) {
+    return true;
+  }
+  refreshFreeQuizWindow(user);
+  return user.freeQuizCount < freeQuizLimit;
+}
+
+function recordFreeQuiz(user, chatId) {
+  if (isPremium(chatId)) {
+    return;
+  }
+  refreshFreeQuizWindow(user);
+  user.freeQuizCount += 1;
+}
+
+function refreshFreeQuizWindow(user) {
+  const now = Date.now();
+  if (!user.freeQuizWindowStartedAt || now - user.freeQuizWindowStartedAt >= limitWindowMs) {
+    user.freeQuizWindowStartedAt = now;
+    user.freeQuizCount = 0;
+  }
+}
+
+function freeLimitText(user) {
+  const remaining = formatRemaining(user.freeQuizWindowStartedAt + limitWindowMs - Date.now());
+  return [
+    `Free practice is limited to ${freeQuizLimit} words every 24 hours.`,
+    `You can practice again in ${remaining}.`,
+    "",
+    "To study for one month with Premium, send your Telegram ID from Status after buying coffee.",
+    buyMeCoffeeUrl
+  ].join("\n");
+}
+
+function canStartDailyChallenge(user) {
+  const lastStarted = Number(user.challengeLastStartedAt || 0);
+  return !lastStarted || Date.now() - lastStarted >= limitWindowMs;
+}
+
+function dailyChallengeLimitText(user) {
+  const remaining = formatRemaining(Number(user.challengeLastStartedAt || 0) + limitWindowMs - Date.now());
+  return [
+    "Daily Challenge can be taken once every 24 hours.",
+    `You can try again in ${remaining}.`,
+    "",
+    "Premium study for one month is available after buying coffee and sending your Telegram ID from Status.",
+    buyMeCoffeeUrl
+  ].join("\n");
+}
+
+function makeDailyChallengeWords() {
+  const plan = [2, 3, 3, 4, 4, 4, 4, 4, 5, 5];
+  let picked = [];
+  for (let attempt = 0; attempt < 3; attempt += 1) {
+    picked = [];
+    const usedIds = new Set();
+    const usedWords = new Set();
+    let failed = false;
+    for (const level of plan) {
+      const candidates = words.filter((word) => {
+        const key = word.word.toLowerCase();
+        return word.level === level && !usedIds.has(word.id) && !usedWords.has(key);
+      });
+      if (candidates.length === 0) {
+        failed = true;
+        break;
+      }
+      const word = sample(candidates);
+      picked.push(word);
+      usedIds.add(word.id);
+      usedWords.add(word.word.toLowerCase());
+    }
+    if (!failed && new Set(picked.map((word) => word.word.toLowerCase())).size === picked.length) {
+      return picked;
+    }
+  }
+  return null;
+}
+
+function dailyChallengeResultText(score) {
+  if (score === 10) {
+    return [
+      "Perfect!",
+      "Congratulations. You answered all 10 Daily Challenge words correctly."
+    ].join("\n");
+  }
+  if (score === 0) {
+    return "Oops! You are in the bottom today for this specific set.";
+  }
+
+  const [lowRank, highRank, lowTotal, highTotal] = {
+    9: [902, 965, 1002, 1098],
+    8: [734, 865, 992, 1198],
+    7: [502, 715, 1002, 1098],
+    6: [302, 515, 1002, 1198],
+    5: [202, 315, 992, 1198],
+    4: [152, 215, 802, 1198],
+    3: [102, 115, 802, 1198],
+    2: [52, 94, 802, 1198],
+    1: [12, 55, 972, 1298]
+  }[score];
+
+  return `Your score is in the bottom ${randomInt(lowRank, highRank)} out of ${randomInt(lowTotal, highTotal)} learners today for this specific set.`;
+}
+
+function isPremium(chatId) {
+  return premiumTelegramIds.has(String(chatId));
+}
+
+function formatRemaining(ms) {
+  const safeMs = Math.max(0, ms);
+  const totalMinutes = Math.ceil(safeMs / 60000);
+  const hours = Math.floor(totalMinutes / 60);
+  const minutes = totalMinutes % 60;
+  if (hours <= 0) {
+    return `${minutes} minutes`;
+  }
+  return `${hours} hours ${minutes} minutes`;
+}
+
+function randomInt(min, max) {
+  return Math.floor(Math.random() * (max - min + 1)) + min;
 }
 
 function sleep(ms) {
