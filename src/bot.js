@@ -10,6 +10,9 @@ const freeQuizLimit = Number(process.env.FREE_QUIZ_LIMIT || 10);
 const limitWindowMs = 24 * 60 * 60 * 1000;
 const buyMeCoffeeUrl = process.env.BUY_ME_COFFEE_URL || "Buy me a coffee";
 const premiumDays = Number(process.env.PREMIUM_DAYS || 31);
+const freeReferralGoal = Number(process.env.FREE_REFERRAL_GOAL || 3);
+const paidReferralExtensionDays = Number(process.env.PAID_REFERRAL_EXTENSION_DAYS || 5);
+const botUsername = process.env.BOT_USERNAME || "EnglishVocabularyPracticeBot";
 const premiumTelegramIds = new Set(
   (process.env.PREMIUM_TELEGRAM_IDS || "")
     .split(",")
@@ -85,7 +88,9 @@ async function handleMessage(message) {
     return;
   }
 
-  if (text === "/start") {
+  if (text.startsWith("/start")) {
+    captureReferral(user, text);
+    saveUsers();
     await sendMessage(chatId, [
       "English Vocabulary Choice",
       "",
@@ -114,6 +119,11 @@ async function handleMessage(message) {
 
   if (text === "/premium" || text === "Buy Premium") {
     await sendMessage(chatId, premiumInfoText(user), premiumKeyboard());
+    return;
+  }
+
+  if (text === "/invite" || text === "Invite Friends") {
+    await sendMessage(chatId, inviteText(user), inviteKeyboard());
     return;
   }
 
@@ -190,6 +200,7 @@ async function sendQuiz(chatId, user, fixedWord = null) {
   user.currentWordId = word.id;
   user.mode = "quiz";
   saveUsers();
+  await markPracticeStarted(chatId, user);
 
   await sendMessage(chatId, quizText(word), answerKeyboard());
 }
@@ -250,6 +261,7 @@ async function startDailyChallenge(chatId, user) {
   user.currentWordId = challengeWords[0].id;
   user.challengeLastStartedAt = Date.now();
   saveUsers();
+  await markPracticeStarted(chatId, user);
 
   await sendMessage(
     chatId,
@@ -351,6 +363,7 @@ function levelPrompt() {
 function statusText(user) {
   const accuracy = user.completed === 0 ? 0 : Math.round((user.correct / user.completed) * 100);
   const plan = premiumStatus(user.chatId);
+  const invite = inviteStatus(user);
   return [
     "Status",
     `Level: ${levels[user.level]}`,
@@ -359,12 +372,13 @@ function statusText(user) {
     `Accuracy: ${accuracy}%`,
     `Telegram ID: ${user.chatId || "unknown"}`,
     `Plan: ${plan.label}`,
-    plan.expiresText
+    plan.expiresText,
+    invite
   ].join("\n");
 }
 
 function mainKeyboard() {
-  return keyboard([["Next Word", "Daily Challenge"], ["Change Level", "Wrong Words"], ["Status", "Buy Premium"], ["Reset"]]);
+  return keyboard([["Next Word", "Daily Challenge"], ["Change Level", "Wrong Words"], ["Status", "Invite Friends"], ["Buy Premium", "Reset"]]);
 }
 
 function levelKeyboard() {
@@ -382,7 +396,11 @@ function wrongWordsKeyboard(wrongWords) {
 }
 
 function premiumKeyboard() {
-  return keyboard([["I Paid", "Status"], ["Next Word", "Daily Challenge"]]);
+  return keyboard([["I Paid", "Invite Friends"], ["Status", "Next Word"], ["Daily Challenge"]]);
+}
+
+function inviteKeyboard() {
+  return keyboard([["Next Word", "Daily Challenge"], ["Status", "Buy Premium"]]);
 }
 
 function keyboard(rows) {
@@ -468,7 +486,17 @@ function getUser(chatId) {
       currentChallenge: null,
       freeQuizWindowStartedAt: 0,
       freeQuizCount: 0,
-      challengeLastStartedAt: 0
+      challengeLastStartedAt: 0,
+      createdAt: Date.now(),
+      practiceStartedAt: 0,
+      referredBy: null,
+      referralCreditedAt: 0,
+      referralStats: {
+        freeInvitees: [],
+        freeRewardGrantedAt: 0,
+        paidWeeklyCredits: [],
+        paidRewardCount: 0
+      }
     };
   }
   users[key].chatId = key;
@@ -478,6 +506,15 @@ function getUser(chatId) {
   users[key].freeQuizWindowStartedAt ||= 0;
   users[key].freeQuizCount ||= 0;
   users[key].challengeLastStartedAt ||= 0;
+  users[key].createdAt ||= Date.now();
+  users[key].practiceStartedAt ||= 0;
+  users[key].referredBy ||= null;
+  users[key].referralCreditedAt ||= 0;
+  users[key].referralStats ||= {};
+  users[key].referralStats.freeInvitees ||= [];
+  users[key].referralStats.freeRewardGrantedAt ||= 0;
+  users[key].referralStats.paidWeeklyCredits ||= [];
+  users[key].referralStats.paidRewardCount ||= 0;
   return users[key];
 }
 
@@ -553,7 +590,10 @@ function freeLimitText(user) {
     `Free practice is limited to ${freeQuizLimit} words every 24 hours.`,
     `You can practice again in ${remaining}.`,
     "",
-    "To study for one month with Premium, send your Telegram ID from Status after buying coffee.",
+    `Invite ${freeReferralGoal} friends who start practice and get ${premiumDays} days of Premium free.`,
+    inviteLink(user),
+    "",
+    `Or get ${premiumDays} days of Premium here:`,
     buyMeCoffeeUrl
   ].join("\n");
 }
@@ -569,7 +609,7 @@ function dailyChallengeLimitText(user) {
     "Daily Challenge can be taken once every 24 hours.",
     `You can try again in ${remaining}.`,
     "",
-    "Premium study for one month is available after buying coffee and sending your Telegram ID from Status.",
+    `Premium gives you ${premiumDays} days of unlimited word practice.`,
     buyMeCoffeeUrl
   ].join("\n");
 }
@@ -696,7 +736,7 @@ function premiumInfoText(user) {
   if (plan.active) {
     return [
       "Premium",
-      `Your plan is active until ${formatDate(plan.expiresAt)}.`,
+      plan.expiresAt ? `Your plan is active until ${formatDate(plan.expiresAt)}.` : "Your Premium plan is active.",
       "",
       "Premium removes the regular 10-word free practice limit."
     ].join("\n");
@@ -710,6 +750,158 @@ function premiumInfoText(user) {
     `Your Telegram ID: ${user.chatId}`,
     buyMeCoffeeUrl
   ].join("\n");
+}
+
+function inviteText(user) {
+  const link = inviteLink(user);
+  if (isPremium(user.chatId)) {
+    const status = paidWeeklyStatus(user);
+    return [
+      "Invite Challenge",
+      `Invite 1 friend each week. When that friend starts practice, Premium extends by ${paidReferralExtensionDays} days.`,
+      `This week: ${status}`,
+      "",
+      "Your invite link:",
+      link
+    ].join("\n");
+  }
+
+  const count = user.referralStats.freeInvitees.length;
+  return [
+    "Invite Friends",
+    `Invite ${freeReferralGoal} friends who start practice and get ${premiumDays} days of Premium free.`,
+    `Progress: ${count}/${freeReferralGoal}`,
+    "",
+    "Your invite link:",
+    link
+  ].join("\n");
+}
+
+async function markPracticeStarted(chatId, user) {
+  if (user.practiceStartedAt) {
+    return;
+  }
+  user.practiceStartedAt = Date.now();
+  saveUsers();
+  await creditReferrer(user);
+}
+
+async function creditReferrer(invitee) {
+  if (!invitee.referredBy || invitee.referralCreditedAt) {
+    return;
+  }
+
+  const referrerId = String(invitee.referredBy);
+  if (referrerId === String(invitee.chatId)) {
+    return;
+  }
+
+  const referrer = getUser(referrerId);
+  const inviteeId = String(invitee.chatId);
+  invitee.referralCreditedAt = Date.now();
+
+  if (isPremium(referrerId)) {
+    await creditPaidWeeklyReferral(referrerId, referrer, inviteeId);
+  } else {
+    await creditFreeReferral(referrerId, referrer, inviteeId);
+  }
+
+  saveUsers();
+}
+
+async function creditFreeReferral(referrerId, referrer, inviteeId) {
+  if (!referrer.referralStats.freeInvitees.includes(inviteeId)) {
+    referrer.referralStats.freeInvitees.push(inviteeId);
+  }
+
+  const count = referrer.referralStats.freeInvitees.length;
+  if (count >= freeReferralGoal && !referrer.referralStats.freeRewardGrantedAt && !isRevoked(referrerId)) {
+    const expiresAt = Date.now() + Math.round(premiumDays * limitWindowMs);
+    grantPremium(referrerId, expiresAt, {
+      grantedBy: "free_referral_reward",
+      status: "referral_reward"
+    });
+    referrer.referralStats.freeRewardGrantedAt = Date.now();
+    await sendMessage(referrerId, [
+      "Invite reward unlocked!",
+      `You invited ${freeReferralGoal} friends who started practice.`,
+      `Premium is active for ${premiumDays} days.`,
+      `Expires: ${formatDate(expiresAt)}`
+    ].join("\n"), mainKeyboard());
+    return;
+  }
+
+  await sendMessage(referrerId, [
+    "Invite progress updated.",
+    `Friends started practice: ${count}/${freeReferralGoal}`,
+    count >= freeReferralGoal ? "Your reward is being reviewed." : `Invite ${freeReferralGoal - count} more to unlock Premium.`
+  ].join("\n"), mainKeyboard());
+}
+
+async function creditPaidWeeklyReferral(referrerId, referrer, inviteeId) {
+  const weekKey = currentWeekKey();
+  const credits = referrer.referralStats.paidWeeklyCredits;
+  if (credits.some((credit) => credit.inviteeId === inviteeId)) {
+    return;
+  }
+
+  if (credits.some((credit) => credit.weekKey === weekKey)) {
+    await sendMessage(referrerId, [
+      "Invite recorded.",
+      "Your Premium invite challenge counts 1 friend per week.",
+      "This week's credit is already complete."
+    ].join("\n"), mainKeyboard());
+    return;
+  }
+
+  credits.push({
+    weekKey,
+    inviteeId,
+    creditedAt: Date.now()
+  });
+
+  const expiresAt = !isRevoked(referrerId)
+    ? extendPremium(referrerId, paidReferralExtensionDays, {
+        grantedBy: "paid_weekly_referral_reward",
+        status: "referral_extension"
+      })
+    : null;
+  referrer.referralStats.paidRewardCount += 1;
+  await sendMessage(referrerId, [
+    "Weekly invite reward unlocked!",
+    `You earned a ${paidReferralExtensionDays}-day Premium extension.`,
+    expiresAt ? `Premium expires: ${formatDate(expiresAt)}` : "Your account needs manual review."
+  ].join("\n"), mainKeyboard());
+}
+
+function captureReferral(user, text) {
+  const match = text.match(/^\/start\s+ref_(\d+)$/);
+  if (!match || user.referredBy || user.practiceStartedAt) {
+    return;
+  }
+  const referrerId = match[1];
+  if (referrerId === String(user.chatId)) {
+    return;
+  }
+  user.referredBy = referrerId;
+}
+
+function inviteStatus(user) {
+  if (isPremium(user.chatId)) {
+    return `Invite challenge: ${paidWeeklyStatus(user)}`;
+  }
+  return `Invite reward: ${user.referralStats.freeInvitees.length}/${freeReferralGoal} friends`;
+}
+
+function paidWeeklyStatus(user) {
+  const weekKey = currentWeekKey();
+  return user.referralStats.paidWeeklyCredits.some((credit) => credit.weekKey === weekKey)
+    ? "completed this week"
+    : "available this week";
+}
+
+function inviteLink(user) {
+  return `https://t.me/${botUsername}?start=ref_${user.chatId}`;
 }
 
 function makeDailyChallengeWords() {
@@ -785,6 +977,15 @@ function grantPremium(chatId, expiresAt, details = {}) {
   savePremiumAccess();
 }
 
+function extendPremium(chatId, days, details = {}) {
+  const key = String(chatId);
+  const currentExpiresAt = Number(premiumAccess[key]?.expiresAt || 0);
+  const baseTime = Math.max(Date.now(), currentExpiresAt);
+  const expiresAt = baseTime + Math.round(days * limitWindowMs);
+  grantPremium(key, expiresAt, details);
+  return expiresAt;
+}
+
 function premiumStatus(chatId) {
   const key = String(chatId);
   if (premiumTelegramIds.has(key)) {
@@ -816,6 +1017,10 @@ function isAdmin(chatId) {
   return adminTelegramIds.has(String(chatId));
 }
 
+function isRevoked(chatId) {
+  return premiumAccess[String(chatId)]?.status === "revoked";
+}
+
 function formatRemaining(ms) {
   const safeMs = Math.max(0, ms);
   const totalMinutes = Math.ceil(safeMs / 60000);
@@ -833,6 +1038,15 @@ function randomInt(min, max) {
 
 function formatDate(value) {
   return new Date(Number(value)).toISOString().slice(0, 10);
+}
+
+function currentWeekKey() {
+  const date = new Date();
+  const day = date.getUTCDay() || 7;
+  date.setUTCDate(date.getUTCDate() + 4 - day);
+  const yearStart = new Date(Date.UTC(date.getUTCFullYear(), 0, 1));
+  const week = Math.ceil((((date - yearStart) / 86400000) + 1) / 7);
+  return `${date.getUTCFullYear()}-W${String(week).padStart(2, "0")}`;
 }
 
 function sleep(ms) {

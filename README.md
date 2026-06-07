@@ -20,6 +20,7 @@ Students choose a level, answer one word at a time, and get immediate feedback. 
 - Per-chat progress: level, completed count, correct count, accuracy
 - Free practice limit: 10 regular quiz words every 24 hours
 - Premium unlock by Telegram numeric ID through admin bot commands or `PREMIUM_TELEGRAM_IDS`
+- Referral rewards: free students can invite 3 practicing friends for 31 Premium days; Premium students can invite 1 practicing friend per week for a 5-day extension
 - Approved-only content from `content/words.json`
 - CSV-to-JSON build script for content operations
 - Docker and Coolify-ready long polling deployment
@@ -113,6 +114,9 @@ Optional environment variables:
 ```text
 FREE_QUIZ_LIMIT=10
 PREMIUM_DAYS=31
+FREE_REFERRAL_GOAL=3
+PAID_REFERRAL_EXTENSION_DAYS=5
+BOT_USERNAME=EnglishVocabularyPracticeBot
 BUY_ME_COFFEE_URL=https://buymeacoffee.com/your-page
 ADMIN_TELEGRAM_IDS=111111111
 PREMIUM_TELEGRAM_IDS=123456789,987654321
@@ -148,6 +152,14 @@ Useful admin commands:
 `PREMIUM_TELEGRAM_IDS` is still available for manually managed permanent IDs, but the admin command flow is faster for normal monthly payments.
 
 The admin is your own Telegram account inside the same bot. No separate admin bot is needed. Put your Telegram numeric ID in `ADMIN_TELEGRAM_IDS`, then send admin commands directly to `@EnglishVocabularyPracticeBot`.
+
+Referral rewards:
+
+- Free students get an invite link from `Invite Friends`.
+- If 3 invited friends start practice, the inviter gets 31 Premium days.
+- Premium students can earn one weekly invite reward.
+- If 1 invited friend starts practice in that week, the inviter gets a 5-day extension.
+- The same invited Telegram ID is counted only once.
 
 4. Deploy. No exposed port is required because the bot uses Telegram long polling.
 
