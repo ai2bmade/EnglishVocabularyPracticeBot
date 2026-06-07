@@ -40,7 +40,7 @@ level,word,choice_1,choice_2,choice_3,answer,explanation,status
 3,viable,able to work successfully,clearly forbidden,deeply hidden,1,Viable means able to succeed or work as planned.,approved
 3,feasible,possible and practical,extremely harmful,already complete,1,Feasible means possible to do in a practical way.,approved
 3,vulnerable,easily harmed or affected,very profitable,officially chosen,1,Vulnerable means easily hurt damaged or affected.,approved
-3,consecutive,following one after another,random and unrelated,secretly harmful,1,Consecutive means happening one after another without a break.,approved
+3,consecutive,following one after another,lack of following one after another,a rule used when dealing with following one after another,1,Consecutive means happening one after another without a break.,approved
 3,comprehensive,complete and including many parts,temporary and weak,openly unfair,1,Comprehensive means complete and covering many details.,approved
 3,regulatory,related to official rules or control,related to private emotions,likely to fall,1,Regulatory means connected with official rules or regulation.,approved
 3,architectural,related to building design,related to public money,unable to continue,1,Architectural means related to the design or style of buildings.,approved
@@ -211,293 +211,293 @@ level,word,choice_1,choice_2,choice_3,answer,explanation,status
 3,singularity,a point where normal rules or values break down,a common routine,a mild preference,1,A singularity is a point where ordinary rules or measurements cease to apply.,approved
 3,superposition,the combination of multiple possible states,a single final vote,a biological species,1,Superposition is the coexistence of multiple possible states in quantum theory.,approved
 3,waveform,the shape of a wave signal,a written legal claim,a market monopoly,1,A waveform is the shape or pattern of a wave signal.,approved
-3,wary,careful because of possible danger,a different academic idea,an unrelated practical concept,1,Wary means careful because of possible danger.,approved
-3,withdraw,to move back or remove from participation,a different academic idea,an unrelated practical concept,1,Withdraw means to move back or remove from participation.,approved
-3,withdrawal,the act of removal or retreat,a different academic idea,an unrelated practical concept,1,Withdrawal means the act of removal or retreat.,approved
-3,withdrawn,quiet and socially distant,a different academic idea,an unrelated practical concept,1,Withdrawn means quiet and socially distant.,approved
-3,withhold,to hold back or refuse to give,a different academic idea,an unrelated practical concept,1,Withhold means to hold back or refuse to give.,approved
-3,withstand,to endure pressure or damage,a different academic idea,an unrelated practical concept,1,Withstand means to endure pressure or damage.,approved
-3,witty,clever and amusing in speech,a different academic idea,an unrelated practical concept,1,Witty means clever and amusing in speech.,approved
-3,tally,a count or record of totals,a different academic idea,an unrelated practical concept,1,Tally means a count or record of totals.,approved
-3,temporary,lasting for only a short time,a different academic idea,an unrelated practical concept,1,Temporary means lasting for only a short time.,approved
-3,tentative,not certain or not final,a different academic idea,an unrelated practical concept,1,Tentative means not certain or not final.,approved
-3,thesis,a main argument or long academic paper,a different academic idea,an unrelated practical concept,1,Thesis means a main argument or long academic paper.,approved
-3,thriving,growing or doing very well,a different academic idea,an unrelated practical concept,1,Thriving means growing or doing very well.,approved
-3,tolerate,to accept something unpleasant,a different academic idea,an unrelated practical concept,1,Tolerate means to accept something unpleasant.,approved
-3,transient,lasting only briefly,a different academic idea,an unrelated practical concept,1,Transient means lasting only briefly.,approved
-3,traverse,to cross or travel across,a different academic idea,an unrelated practical concept,1,Traverse means to cross or travel across.,approved
-3,trustworthy,deserving confidence,a different academic idea,an unrelated practical concept,1,Trustworthy means deserving confidence.,approved
-3,tuition,money paid for instruction,a different academic idea,an unrelated practical concept,1,Tuition means money paid for instruction.,approved
-3,undergraduate,a college student before a first degree,a different academic idea,an unrelated practical concept,1,Undergraduate means a college student before a first degree.,approved
-3,underdeveloped,not fully grown or advanced,a different academic idea,an unrelated practical concept,1,Underdeveloped means not fully grown or advanced.,approved
-3,underprivileged,lacking social or economic advantages,a different academic idea,an unrelated practical concept,1,Underprivileged means lacking social or economic advantages.,approved
-3,unbiased,fair and not influenced by preference,a different academic idea,an unrelated practical concept,1,Unbiased means fair and not influenced by preference.,approved
-3,unanimous,fully agreed by everyone involved,a different academic idea,an unrelated practical concept,1,Unanimous means fully agreed by everyone involved.,approved
-3,unanimity,complete agreement among all,a different academic idea,an unrelated practical concept,1,Unanimity means complete agreement among all.,approved
-3,synthetic,made artificially rather than naturally,a different academic idea,an unrelated practical concept,1,Synthetic means made artificially rather than naturally.,approved
-3,thermal,related to heat,a different academic idea,an unrelated practical concept,1,Thermal means related to heat.,approved
-3,thermometer,an instrument for measuring temperature,a different academic idea,an unrelated practical concept,1,Thermometer means an instrument for measuring temperature.,approved
-3,thermostat,a device that controls temperature,a different academic idea,an unrelated practical concept,1,Thermostat means a device that controls temperature.,approved
-3,throng,a large crowded group,a different academic idea,an unrelated practical concept,1,Throng means a large crowded group.,approved
-3,timid,shy or easily frightened,a different academic idea,an unrelated practical concept,1,Timid means shy or easily frightened.,approved
-3,toxin,a poisonous substance,a different academic idea,an unrelated practical concept,1,Toxin means a poisonous substance.,approved
-3,underscore,to emphasize,a different academic idea,an unrelated practical concept,1,Underscore means to emphasize.,approved
-3,undersell,to sell at a lower price,a different academic idea,an unrelated practical concept,1,Undersell means to sell at a lower price.,approved
-3,undersigned,the person who has signed below,a different academic idea,an unrelated practical concept,1,Undersigned means the person who has signed below.,approved
-3,understatement,a statement that makes something seem less important,a different academic idea,an unrelated practical concept,1,Understatement means a statement that makes something seem less important.,approved
-3,unilateral,done by one side only,a different academic idea,an unrelated practical concept,1,Unilateral means done by one side only.,approved
-3,unmindful,not aware or not careful,a different academic idea,an unrelated practical concept,1,Unmindful means not aware or not careful.,approved
-3,upcoming,happening soon,a different academic idea,an unrelated practical concept,1,Upcoming means happening soon.,approved
-3,update,to make current,a different academic idea,an unrelated practical concept,1,Update means to make current.,approved
-3,upgrade,to improve to a better version,a different academic idea,an unrelated practical concept,1,Upgrade means to improve to a better version.,approved
-3,upkeep,maintenance of good condition,a different academic idea,an unrelated practical concept,1,Upkeep means maintenance of good condition.,approved
-3,upright,honest or vertical,a different academic idea,an unrelated practical concept,1,Upright means honest or vertical.,approved
-3,upset,disturbed or unhappy,a different academic idea,an unrelated practical concept,1,Upset means disturbed or unhappy.,approved
-3,urban,related to a city,a different academic idea,an unrelated practical concept,1,Urban means related to a city.,approved
-3,usher,to guide someone somewhere,a different academic idea,an unrelated practical concept,1,Usher means to guide someone somewhere.,approved
-3,vacant,empty or available,a different academic idea,an unrelated practical concept,1,Vacant means empty or available.,approved
-3,variation,a difference or changed form,a different academic idea,an unrelated practical concept,1,Variation means a difference or changed form.,approved
-3,verdict,an official decision in court,a different academic idea,an unrelated practical concept,1,Verdict means an official decision in court.,approved
-3,verify,to confirm as true,a different academic idea,an unrelated practical concept,1,Verify means to confirm as true.,approved
-3,versatile,able to be used in many ways,a different academic idea,an unrelated practical concept,1,Versatile means able to be used in many ways.,approved
-3,version,a particular form of something,a different academic idea,an unrelated practical concept,1,Version means a particular form of something.,approved
-3,vicinity,the nearby area,a different academic idea,an unrelated practical concept,1,Vicinity means the nearby area.,approved
-3,video,recorded moving images,a different academic idea,an unrelated practical concept,1,Video means recorded moving images.,approved
-3,vigilant,watchful for danger,a different academic idea,an unrelated practical concept,1,Vigilant means watchful for danger.,approved
-3,visibility,the state of being able to be seen,a different academic idea,an unrelated practical concept,1,Visibility means the state of being able to be seen.,approved
-3,velocity,speed in a particular direction,a different academic idea,an unrelated practical concept,1,Velocity means speed in a particular direction.,approved
-3,veritable,real or genuine,a different academic idea,an unrelated practical concept,1,Veritable means real or genuine.,approved
-3,unwarranted,not justified,a different academic idea,an unrelated practical concept,1,Unwarranted means not justified.,approved
-3,reflect,to show or think deeply about,a different academic idea,an unrelated practical concept,1,Reflect means to show or think deeply about.,approved
-3,reflection,an image or careful thought,a different academic idea,an unrelated practical concept,1,Reflection means an image or careful thought.,approved
-3,release,to let go or make available,a different academic idea,an unrelated practical concept,1,Release means to let go or make available.,approved
-3,relevant,closely connected to the matter,a different academic idea,an unrelated practical concept,1,Relevant means closely connected to the matter.,approved
-3,repair,to fix damage,a different academic idea,an unrelated practical concept,1,Repair means to fix damage.,approved
-3,resist,to oppose or refuse to accept,a different academic idea,an unrelated practical concept,1,Resist means to oppose or refuse to accept.,approved
-3,resolution,a firm decision or solution,a different academic idea,an unrelated practical concept,1,Resolution means a firm decision or solution.,approved
-3,resolve,to solve or decide firmly,a different academic idea,an unrelated practical concept,1,Resolve means to solve or decide firmly.,approved
-3,resources,useful supplies or sources of support,a different academic idea,an unrelated practical concept,1,Resources means useful supplies or sources of support.,approved
-3,restrain,to hold back or control,a different academic idea,an unrelated practical concept,1,Restrain means to hold back or control.,approved
-3,restrained,controlled or limited,a different academic idea,an unrelated practical concept,1,Restrained means controlled or limited.,approved
-3,restrict,to limit,a different academic idea,an unrelated practical concept,1,Restrict means to limit.,approved
-3,resume,to begin again after stopping,a different academic idea,an unrelated practical concept,1,Resume means to begin again after stopping.,approved
-3,retain,to keep,a different academic idea,an unrelated practical concept,1,Retain means to keep.,approved
-3,reveal,to make known,a different academic idea,an unrelated practical concept,1,Reveal means to make known.,approved
-3,revise,to change after review,a different academic idea,an unrelated practical concept,1,Revise means to change after review.,approved
-3,revoke,to officially cancel,a different academic idea,an unrelated practical concept,1,Revoke means to officially cancel.,approved
-3,robust,strong and healthy,a different academic idea,an unrelated practical concept,1,Robust means strong and healthy.,approved
-3,rural,related to the countryside,a different academic idea,an unrelated practical concept,1,Rural means related to the countryside.,approved
-3,security,protection from danger,a different academic idea,an unrelated practical concept,1,Security means protection from danger.,approved
-3,script,written words for speech or performance,a different academic idea,an unrelated practical concept,1,Script means written words for speech or performance.,approved
-3,scrutiny,careful examination,a different academic idea,an unrelated practical concept,1,Scrutiny means careful examination.,approved
-3,seasoning,flavoring added to food,a different academic idea,an unrelated practical concept,1,Seasoning means flavoring added to food.,approved
-3,secure,safe or firmly fixed,a different academic idea,an unrelated practical concept,1,Secure means safe or firmly fixed.,approved
-3,shallow,not deep,a different academic idea,an unrelated practical concept,1,Shallow means not deep.,approved
-3,shrink,to become smaller,a different academic idea,an unrelated practical concept,1,Shrink means to become smaller.,approved
-3,similarity,likeness between things,a different academic idea,an unrelated practical concept,1,Similarity means likeness between things.,approved
-3,simulate,to imitate a real process,a different academic idea,an unrelated practical concept,1,Simulate means to imitate a real process.,approved
-3,simultaneous,happening at the same time,a different academic idea,an unrelated practical concept,1,Simultaneous means happening at the same time.,approved
-3,simultaneously,at the same time,a different academic idea,an unrelated practical concept,1,Simultaneously means at the same time.,approved
-3,sole,only or single,a different academic idea,an unrelated practical concept,1,Sole means only or single.,approved
-3,solely,only,a different academic idea,an unrelated practical concept,1,Solely means only.,approved
-3,solitary,alone,a different academic idea,an unrelated practical concept,1,Solitary means alone.,approved
-3,solitude,the state of being alone,a different academic idea,an unrelated practical concept,1,Solitude means the state of being alone.,approved
-3,soluble,able to dissolve,a different academic idea,an unrelated practical concept,1,Soluble means able to dissolve.,approved
-3,solvent,able to pay debts or a liquid that dissolves,a different academic idea,an unrelated practical concept,1,Solvent means able to pay debts or a liquid that dissolves.,approved
-3,sphere,a round object or area of activity,a different academic idea,an unrelated practical concept,1,Sphere means a round object or area of activity.,approved
-3,spine,the backbone,a different academic idea,an unrelated practical concept,1,Spine means the backbone.,approved
-3,sporadic,happening irregularly,a different academic idea,an unrelated practical concept,1,Sporadic means happening irregularly.,approved
-3,stability,steadiness and resistance to sudden change,a different academic idea,an unrelated practical concept,1,Stability means steadiness and resistance to sudden change.,approved
-3,stable,steady and not likely to change,a different academic idea,an unrelated practical concept,1,Stable means steady and not likely to change.,approved
-3,stamina,physical or mental endurance,a different academic idea,an unrelated practical concept,1,Stamina means physical or mental endurance.,approved
-3,subjective,based on personal feelings,a different academic idea,an unrelated practical concept,1,Subjective means based on personal feelings.,approved
-3,subsequently,afterward,a different academic idea,an unrelated practical concept,1,Subsequently means afterward.,approved
-3,suffice,to be enough,a different academic idea,an unrelated practical concept,1,Suffice means to be enough.,approved
-3,supplement,something added to complete or improve,a different academic idea,an unrelated practical concept,1,Supplement means something added to complete or improve.,approved
-3,supplementary,added to complete or improve,a different academic idea,an unrelated practical concept,1,Supplementary means added to complete or improve.,approved
-3,surplus,more than is needed,a different academic idea,an unrelated practical concept,1,Surplus means more than is needed.,approved
-3,survive,to continue living or existing,a different academic idea,an unrelated practical concept,1,Survive means to continue living or existing.,approved
-3,suspend,to stop temporarily or hang,a different academic idea,an unrelated practical concept,1,Suspend means to stop temporarily or hang.,approved
-3,suspense,uncertainty about what will happen,a different academic idea,an unrelated practical concept,1,Suspense means uncertainty about what will happen.,approved
-3,synchronize,to make happen at the same time,a different academic idea,an unrelated practical concept,1,Synchronize means to make happen at the same time.,approved
-3,synonym,a word with a similar meaning,a different academic idea,an unrelated practical concept,1,Synonym means a word with a similar meaning.,approved
-3,synthesis,combination of parts into a whole,a different academic idea,an unrelated practical concept,1,Synthesis means combination of parts into a whole.,approved
-3,stroll,a relaxed walk,a different academic idea,an unrelated practical concept,1,Stroll means a relaxed walk.,approved
-3,submit,to send for review,a different academic idea,an unrelated practical concept,1,Submit means to send for review.,approved
-3,subscriber,a person who signs up for a service,a different academic idea,an unrelated practical concept,1,Subscriber means a person who signs up for a service.,approved
-3,pending,waiting to be decided,a different academic idea,an unrelated practical concept,1,Pending means waiting to be decided.,approved
-3,penetrate,to enter or pass through,a different academic idea,an unrelated practical concept,1,Penetrate means to enter or pass through.,approved
-3,perceive,to notice or understand,a different academic idea,an unrelated practical concept,1,Perceive means to notice or understand.,approved
-3,perennial,lasting for many years or recurring,a different academic idea,an unrelated practical concept,1,Perennial means lasting for many years or recurring.,approved
-3,peril,serious danger,a different academic idea,an unrelated practical concept,1,Peril means serious danger.,approved
-3,perimeter,the outer boundary,a different academic idea,an unrelated practical concept,1,Perimeter means the outer boundary.,approved
-3,periodic,happening at regular intervals,a different academic idea,an unrelated practical concept,1,Periodic means happening at regular intervals.,approved
-3,permanent,lasting without expected end,a different academic idea,an unrelated practical concept,1,Permanent means lasting without expected end.,approved
-3,permeate,to spread through,a different academic idea,an unrelated practical concept,1,Permeate means to spread through.,approved
-3,perplex,to confuse deeply,a different academic idea,an unrelated practical concept,1,Perplex means to confuse deeply.,approved
-3,persevere,to continue despite difficulty,a different academic idea,an unrelated practical concept,1,Persevere means to continue despite difficulty.,approved
-3,persist,to continue firmly,a different academic idea,an unrelated practical concept,1,Persist means to continue firmly.,approved
-3,pertinent,directly related,a different academic idea,an unrelated practical concept,1,Pertinent means directly related.,approved
-3,phenomenal,extraordinary or remarkable,a different academic idea,an unrelated practical concept,1,Phenomenal means extraordinary or remarkable.,approved
-3,portal,an entrance or online access point,a different academic idea,an unrelated practical concept,1,Portal means an entrance or online access point.,approved
-3,postgraduate,a student after a first degree,a different academic idea,an unrelated practical concept,1,Postgraduate means a student after a first degree.,approved
-3,postpone,to delay until later,a different academic idea,an unrelated practical concept,1,Postpone means to delay until later.,approved
-3,potential,possible ability or future chance,a different academic idea,an unrelated practical concept,1,Potential means possible ability or future chance.,approved
-3,precede,to come before,a different academic idea,an unrelated practical concept,1,Precede means to come before.,approved
-3,precise,exact and careful,a different academic idea,an unrelated practical concept,1,Precise means exact and careful.,approved
-3,prerequisite,something required beforehand,a different academic idea,an unrelated practical concept,1,Prerequisite means something required beforehand.,approved
-3,presently,now or soon,a different academic idea,an unrelated practical concept,1,Presently means now or soon.,approved
-3,pressing,urgent,a different academic idea,an unrelated practical concept,1,Pressing means urgent.,approved
-3,presume,to suppose before proof,a different academic idea,an unrelated practical concept,1,Presume means to suppose before proof.,approved
-3,preview,an advance showing,a different academic idea,an unrelated practical concept,1,Preview means an advance showing.,approved
-3,professional,related to skilled work,a different academic idea,an unrelated practical concept,1,Professional means related to skilled work.,approved
-3,proficient,skilled and competent,a different academic idea,an unrelated practical concept,1,Proficient means skilled and competent.,approved
-3,meditate,to think deeply or practice focused calm,a different academic idea,an unrelated practical concept,1,Meditate means to think deeply or practice focused calm.,approved
-3,meter,a measuring device or unit,a different academic idea,an unrelated practical concept,1,Meter means a measuring device or unit.,approved
-3,migrate,to move from one region to another,a different academic idea,an unrelated practical concept,1,Migrate means to move from one region to another.,approved
-3,mind,the part that thinks and feels,a different academic idea,an unrelated practical concept,1,Mind means the part that thinks and feels.,approved
-3,miniature,very small copy,a different academic idea,an unrelated practical concept,1,Miniature means very small copy.,approved
-3,minor,less important or smaller,a different academic idea,an unrelated practical concept,1,Minor means less important or smaller.,approved
-3,mitigate,to make less severe,a different academic idea,an unrelated practical concept,1,Mitigate means to make less severe.,approved
-3,moderate,not extreme,a different academic idea,an unrelated practical concept,1,Moderate means not extreme.,approved
-3,modify,to change partly,a different academic idea,an unrelated practical concept,1,Modify means to change partly.,approved
-3,momentary,lasting for a very short time,a different academic idea,an unrelated practical concept,1,Momentary means lasting for a very short time.,approved
-3,monetary,related to money,a different academic idea,an unrelated practical concept,1,Monetary means related to money.,approved
-3,multilateral,involving several sides or countries,a different academic idea,an unrelated practical concept,1,Multilateral means involving several sides or countries.,approved
-3,multitude,a very large number,a different academic idea,an unrelated practical concept,1,Multitude means a very large number.,approved
-3,municipal,related to a city or town government,a different academic idea,an unrelated practical concept,1,Municipal means related to a city or town government.,approved
-3,native,belonging by birth or origin,a different academic idea,an unrelated practical concept,1,Native means belonging by birth or origin.,approved
-3,necessitate,to make necessary,a different academic idea,an unrelated practical concept,1,Necessitate means to make necessary.,approved
-3,neglect,to fail to care for,a different academic idea,an unrelated practical concept,1,Neglect means to fail to care for.,approved
-3,negligence,failure to take proper care,a different academic idea,an unrelated practical concept,1,Negligence means failure to take proper care.,approved
-3,notable,worthy of attention,a different academic idea,an unrelated practical concept,1,Notable means worthy of attention.,approved
-3,noteworthy,important enough to notice,a different academic idea,an unrelated practical concept,1,Noteworthy means important enough to notice.,approved
-3,notwithstanding,despite,a different academic idea,an unrelated practical concept,1,Notwithstanding means despite.,approved
-3,novice,a beginner,a different academic idea,an unrelated practical concept,1,Novice means a beginner.,approved
-3,objective,not influenced by personal feelings,a different academic idea,an unrelated practical concept,1,Objective means not influenced by personal feelings.,approved
-3,obligatory,required,a different academic idea,an unrelated practical concept,1,Obligatory means required.,approved
-3,oblige,to require or do a favor for,a different academic idea,an unrelated practical concept,1,Oblige means to require or do a favor for.,approved
-3,obscure,not clear or not well known,a different academic idea,an unrelated practical concept,1,Obscure means not clear or not well known.,approved
-3,obsess,to think about too much,a different academic idea,an unrelated practical concept,1,Obsess means to think about too much.,approved
-3,obstacle,something blocking progress,a different academic idea,an unrelated practical concept,1,Obstacle means something blocking progress.,approved
-3,obstruct,to block or prevent,a different academic idea,an unrelated practical concept,1,Obstruct means to block or prevent.,approved
-3,opaque,not transparent or not clear,a different academic idea,an unrelated practical concept,1,Opaque means not transparent or not clear.,approved
-3,openhanded,generous,a different academic idea,an unrelated practical concept,1,Openhanded means generous.,approved
-3,opponent,a person who competes or disagrees,a different academic idea,an unrelated practical concept,1,Opponent means a person who competes or disagrees.,approved
-3,original,first or not copied,a different academic idea,an unrelated practical concept,1,Original means first or not copied.,approved
-3,originate,to begin or come from,a different academic idea,an unrelated practical concept,1,Originate means to begin or come from.,approved
-3,orthodox,following accepted beliefs,a different academic idea,an unrelated practical concept,1,Orthodox means following accepted beliefs.,approved
-3,outlook,a view of the future,a different academic idea,an unrelated practical concept,1,Outlook means a view of the future.,approved
-3,output,the amount produced,a different academic idea,an unrelated practical concept,1,Output means the amount produced.,approved
-3,outspoken,frank in expressing opinions,a different academic idea,an unrelated practical concept,1,Outspoken means frank in expressing opinions.,approved
-3,outweigh,to be more important than,a different academic idea,an unrelated practical concept,1,Outweigh means to be more important than.,approved
-3,overt,open and not hidden,a different academic idea,an unrelated practical concept,1,Overt means open and not hidden.,approved
-3,palatable,pleasant to taste or acceptable,a different academic idea,an unrelated practical concept,1,Palatable means pleasant to taste or acceptable.,approved
-3,parallel,similar or side by side,a different academic idea,an unrelated practical concept,1,Parallel means similar or side by side.,approved
-3,passionate,showing strong feeling,a different academic idea,an unrelated practical concept,1,Passionate means showing strong feeling.,approved
-3,pediatrician,a doctor for children,a different academic idea,an unrelated practical concept,1,Pediatrician means a doctor for children.,approved
-3,latent,present but hidden,a different academic idea,an unrelated practical concept,1,Latent means present but hidden.,approved
-3,lateral,related to the side,a different academic idea,an unrelated practical concept,1,Lateral means related to the side.,approved
-3,legible,easy to read,a different academic idea,an unrelated practical concept,1,Legible means easy to read.,approved
-3,literacy,ability to read and write,a different academic idea,an unrelated practical concept,1,Literacy means ability to read and write.,approved
-3,literal,using the exact basic meaning,a different academic idea,an unrelated practical concept,1,Literal means using the exact basic meaning.,approved
-3,literary,related to literature,a different academic idea,an unrelated practical concept,1,Literary means related to literature.,approved
-3,literate,able to read and write,a different academic idea,an unrelated practical concept,1,Literate means able to read and write.,approved
-3,logic,reasoned thinking,a different academic idea,an unrelated practical concept,1,Logic means reasoned thinking.,approved
-3,logical,reasonable and well ordered,a different academic idea,an unrelated practical concept,1,Logical means reasonable and well ordered.,approved
-3,lucid,clear and easy to understand,a different academic idea,an unrelated practical concept,1,Lucid means clear and easy to understand.,approved
-3,lucrative,producing much money,a different academic idea,an unrelated practical concept,1,Lucrative means producing much money.,approved
-3,lurk,to wait hidden,a different academic idea,an unrelated practical concept,1,Lurk means to wait hidden.,approved
-3,luxurious,very comfortable and expensive,a different academic idea,an unrelated practical concept,1,Luxurious means very comfortable and expensive.,approved
-3,magnify,to make appear larger,a different academic idea,an unrelated practical concept,1,Magnify means to make appear larger.,approved
-3,magnitude,great size or importance,a different academic idea,an unrelated practical concept,1,Magnitude means great size or importance.,approved
-3,major,large or important,a different academic idea,an unrelated practical concept,1,Major means large or important.,approved
-3,manifest,clear or to show plainly,a different academic idea,an unrelated practical concept,1,Manifest means clear or to show plainly.,approved
-3,manipulate,to control skillfully or unfairly,a different academic idea,an unrelated practical concept,1,Manipulate means to control skillfully or unfairly.,approved
-3,manual,done by hand or a handbook,a different academic idea,an unrelated practical concept,1,Manual means done by hand or a handbook.,approved
-3,manuscript,a written or typed draft,a different academic idea,an unrelated practical concept,1,Manuscript means a written or typed draft.,approved
-3,mandate,an official order,a different academic idea,an unrelated practical concept,1,Mandate means an official order.,approved
-3,mediate,to help settle a disagreement,a different academic idea,an unrelated practical concept,1,Mediate means to help settle a disagreement.,approved
-3,profuse,very abundant or given freely,a different academic idea,an unrelated practical concept,1,Profuse means very abundant or given freely.,approved
-3,project,a planned piece of work or to estimate forward,a different academic idea,an unrelated practical concept,1,Project means a planned piece of work or to estimate forward.,approved
-3,prologue,an introductory section of a work,a different academic idea,an unrelated practical concept,1,Prologue means an introductory section of a work.,approved
-3,prominent,important or easily noticed,a different academic idea,an unrelated practical concept,1,Prominent means important or easily noticed.,approved
-3,prompt,quick to act or to cause action,a different academic idea,an unrelated practical concept,1,Prompt means quick to act or to cause action.,approved
-3,propel,to push or drive forward,a different academic idea,an unrelated practical concept,1,Propel means to push or drive forward.,approved
-3,prospect,a possibility or expected chance,a different academic idea,an unrelated practical concept,1,Prospect means a possibility or expected chance.,approved
-3,province,a region or area of responsibility,a different academic idea,an unrelated practical concept,1,Province means a region or area of responsibility.,approved
-3,provisional,temporary until final approval,a different academic idea,an unrelated practical concept,1,Provisional means temporary until final approval.,approved
-3,provoke,to cause a reaction,a different academic idea,an unrelated practical concept,1,Provoke means to cause a reaction.,approved
-3,prudent,careful and sensible,a different academic idea,an unrelated practical concept,1,Prudent means careful and sensible.,approved
-3,punctual,on time,a different academic idea,an unrelated practical concept,1,Punctual means on time.,approved
-3,puncture,to make a small hole in,a different academic idea,an unrelated practical concept,1,Puncture means to make a small hole in.,approved
-3,questionable,doubtful or uncertain,a different academic idea,an unrelated practical concept,1,Questionable means doubtful or uncertain.,approved
-3,rational,based on reason,a different academic idea,an unrelated practical concept,1,Rational means based on reason.,approved
-3,rebel,to resist authority,a different academic idea,an unrelated practical concept,1,Rebel means to resist authority.,approved
-3,reckless,careless about danger,a different academic idea,an unrelated practical concept,1,Reckless means careless about danger.,approved
-3,reconcilable,able to be made consistent or friendly again,a different academic idea,an unrelated practical concept,1,Reconcilable means able to be made consistent or friendly again.,approved
-3,reconcile,to restore agreement or make consistent,a different academic idea,an unrelated practical concept,1,Reconcile means to restore agreement or make consistent.,approved
-3,recurrent,happening repeatedly,a different academic idea,an unrelated practical concept,1,Recurrent means happening repeatedly.,approved
-3,redundant,unnecessary because more than enough exists,a different academic idea,an unrelated practical concept,1,Redundant means unnecessary because more than enough exists.,approved
-3,quench,to satisfy thirst or put out fire,a different academic idea,an unrelated practical concept,1,Quench means to satisfy thirst or put out fire.,approved
-3,initiate,to begin or start,a different academic idea,an unrelated practical concept,1,Initiate means to begin or start.,approved
-3,inmate,a person confined in prison or an institution,a different academic idea,an unrelated practical concept,1,Inmate means a person confined in prison or an institution.,approved
-3,inscribe,to write or carve words on something,a different academic idea,an unrelated practical concept,1,Inscribe means to write or carve words on something.,approved
-3,inscription,words written or carved on a surface,a different academic idea,an unrelated practical concept,1,Inscription means words written or carved on a surface.,approved
-3,insoluble,impossible to dissolve or solve,a different academic idea,an unrelated practical concept,1,Insoluble means impossible to dissolve or solve.,approved
-3,insolvent,unable to pay debts,a different academic idea,an unrelated practical concept,1,Insolvent means unable to pay debts.,approved
-3,integrate,to combine into a whole,a different academic idea,an unrelated practical concept,1,Integrate means to combine into a whole.,approved
-3,intensify,to make stronger,a different academic idea,an unrelated practical concept,1,Intensify means to make stronger.,approved
-3,intercept,to stop or catch before arrival,a different academic idea,an unrelated practical concept,1,Intercept means to stop or catch before arrival.,approved
-3,intermittent,stopping and starting at intervals,a different academic idea,an unrelated practical concept,1,Intermittent means stopping and starting at intervals.,approved
-3,intersect,to cross or meet at a point,a different academic idea,an unrelated practical concept,1,Intersect means to cross or meet at a point.,approved
-3,interstate,between states,a different academic idea,an unrelated practical concept,1,Interstate means between states.,approved
-3,intimidate,to frighten or pressure someone,a different academic idea,an unrelated practical concept,1,Intimidate means to frighten or pressure someone.,approved
-3,intravenous,going into a vein,a different academic idea,an unrelated practical concept,1,Intravenous means going into a vein.,approved
-3,invisible,unable to be seen,a different academic idea,an unrelated practical concept,1,Invisible means unable to be seen.,approved
-3,invoke,to call upon or cite as authority,a different academic idea,an unrelated practical concept,1,Invoke means to call upon or cite as authority.,approved
-3,irrelevant,not connected to the matter,a different academic idea,an unrelated practical concept,1,Irrelevant means not connected to the matter.,approved
-3,isolate,to separate from others,a different academic idea,an unrelated practical concept,1,Isolate means to separate from others.,approved
-3,isolated,separated from others,a different academic idea,an unrelated practical concept,1,Isolated means separated from others.,approved
-3,isolation,the state of being separated,a different academic idea,an unrelated practical concept,1,Isolation means the state of being separated.,approved
-3,journalist,a person who reports news,a different academic idea,an unrelated practical concept,1,Journalist means a person who reports news.,approved
-3,jeopardize,to put at risk,a different academic idea,an unrelated practical concept,1,Jeopardize means to put at risk.,approved
-3,insignificant,too small or unimportant to matter,a different academic idea,an unrelated practical concept,1,Insignificant means too small or unimportant to matter.,approved
-3,intermission,a pause between parts of a performance,a different academic idea,an unrelated practical concept,1,Intermission means a pause between parts of a performance.,approved
-3,interval,a period of time between events,a different academic idea,an unrelated practical concept,1,Interval means a period of time between events.,approved
-3,jeopardy,danger or risk of loss,a different academic idea,an unrelated practical concept,1,Jeopardy means danger or risk of loss.,approved
-3,intricate,complicated and detailed,a different academic idea,an unrelated practical concept,1,Intricate means complicated and detailed.,approved
-3,invincible,impossible to defeat,a different academic idea,an unrelated practical concept,1,Invincible means impossible to defeat.,approved
-3,involve,to include as a necessary part,a different academic idea,an unrelated practical concept,1,Involve means to include as a necessary part.,approved
-3,intrinsic,belonging naturally to something,a different academic idea,an unrelated practical concept,1,Intrinsic means belonging naturally to something.,approved
-3,irrevocable,not able to be changed or cancelled,a different academic idea,an unrelated practical concept,1,Irrevocable means not able to be changed or cancelled.,approved
-3,intrude,to enter or interrupt without invitation,a different academic idea,an unrelated practical concept,1,Intrude means to enter or interrupt without invitation.,approved
-3,abandon,to leave behind completely,a different academic idea,an unrelated practical concept,1,Abandon means to leave behind completely.,approved
-3,abate,to become less intense,a different academic idea,an unrelated practical concept,1,Abate means to become less intense.,approved
-3,abnormal,not usual or typical,a different academic idea,an unrelated practical concept,1,Abnormal means not usual or typical.,approved
-3,abroad,in or to another country,a different academic idea,an unrelated practical concept,1,Abroad means in or to another country.,approved
-3,accede,to agree to a request or take office,a different academic idea,an unrelated practical concept,1,Accede means to agree to a request or take office.,approved
-3,accessible,easy to reach or use,a different academic idea,an unrelated practical concept,1,Accessible means easy to reach or use.,approved
-3,accommodate,to provide room for or adjust to,a different academic idea,an unrelated practical concept,1,Accommodate means to provide room for or adjust to.,approved
-3,accord,agreement or harmony,a different academic idea,an unrelated practical concept,1,Accord means agreement or harmony.,approved
-3,accumulate,to collect gradually,a different academic idea,an unrelated practical concept,1,Accumulate means to collect gradually.,approved
-3,acquired,gained through effort or experience,a different academic idea,an unrelated practical concept,1,Acquired means gained through effort or experience.,approved
-3,adapt,to change for new conditions,a different academic idea,an unrelated practical concept,1,Adapt means to change for new conditions.,approved
-3,adaptable,able to fit new conditions,a different academic idea,an unrelated practical concept,1,Adaptable means able to fit new conditions.,approved
-3,addicted,unable to stop using or doing something,a different academic idea,an unrelated practical concept,1,Addicted means unable to stop using or doing something.,approved
-3,adequate,good enough for a purpose,a different academic idea,an unrelated practical concept,1,Adequate means good enough for a purpose.,approved
-3,adhere,to stick firmly or follow closely,a different academic idea,an unrelated practical concept,1,Adhere means to stick firmly or follow closely.,approved
-3,adjacent,next to or nearby,a different academic idea,an unrelated practical concept,1,Adjacent means next to or nearby.,approved
-3,advantageous,helpful or favorable,a different academic idea,an unrelated practical concept,1,Advantageous means helpful or favorable.,approved
-3,advocate,to publicly support or a supporter,a different academic idea,an unrelated practical concept,1,Advocate means to publicly support or a supporter.,approved
-3,affirm,to state firmly as true,a different academic idea,an unrelated practical concept,1,Affirm means to state firmly as true.,approved
-3,aggregate,to combine into a total,a different academic idea,an unrelated practical concept,1,Aggregate means to combine into a total.,approved
-3,agitation,public unrest or emotional disturbance,a different academic idea,an unrelated practical concept,1,Agitation means public unrest or emotional disturbance.,approved
-3,alias,a false or additional name,a different academic idea,an unrelated practical concept,1,Alias means a false or additional name.,approved
-3,alien,foreign or unfamiliar,a different academic idea,an unrelated practical concept,1,Alien means foreign or unfamiliar.,approved
-3,ally,a partner who gives support,a different academic idea,an unrelated practical concept,1,Ally means a partner who gives support.,approved
-3,alternative,another possible choice,a different academic idea,an unrelated practical concept,1,Alternative means another possible choice.,approved
-3,altitude,height above sea level,a different academic idea,an unrelated practical concept,1,Altitude means height above sea level.,approved
-3,abrupt,sudden and unexpected,a different academic idea,an unrelated practical concept,1,Abrupt means sudden and unexpected.,approved
-3,affluence,great wealth,a different academic idea,an unrelated practical concept,1,Affluence means great wealth.,approved
-3,affluent,wealthy and prosperous,a different academic idea,an unrelated practical concept,1,Affluent means wealthy and prosperous.,approved
+3,wary,careful because of possible danger,lack of careful because of possible danger,a written record concerning careful because of possible danger,1,Wary means careful because of possible danger.,approved
+3,withdraw,to move back or remove from participation,to stay involved or move forward,a result that may follow when people move back or remove from participation,1,Withdraw means to move back or remove from participation.,approved
+3,withdrawal,the act of removal or retreat,lack of act of removal or retreat,a written record concerning act of removal or retreat,1,Withdrawal means the act of removal or retreat.,approved
+3,withdrawn,quiet and socially distant,lack of quiet and socially distant,a social situation shaped by quiet and socially distant,1,Withdrawn means quiet and socially distant.,approved
+3,withhold,to hold back or refuse to give,to prevent or reverse that action,a situation that makes people hold back or refuse to give,1,Withhold means to hold back or refuse to give.,approved
+3,withstand,to endure pressure or damage,to prevent or reverse that action,a person responsible for deciding whether to endure pressure or damage,1,Withstand means to endure pressure or damage.,approved
+3,witty,clever and amusing in speech,lack of clever and amusing in speech,a written record concerning clever and amusing in speech,1,Witty means clever and amusing in speech.,approved
+3,tally,a count or record of totals,lack of count or record of totals,a written record concerning count or record of totals,1,Tally means a count or record of totals.,approved
+3,temporary,lasting for only a short time,lack of lasting for only a short time,a personal reaction connected to lasting for only a short time,1,Temporary means lasting for only a short time.,approved
+3,tentative,not certain or not final,lack of not certain or not final,a formal decision about not certain or not final,1,Tentative means not certain or not final.,approved
+3,thesis,a main argument or long academic paper,lack of main argument or long academic paper,a careful judgment involving main argument or long academic paper,1,Thesis means a main argument or long academic paper.,approved
+3,thriving,growing or doing very well,lack of growing or doing very well,a formal decision about growing or doing very well,1,Thriving means growing or doing very well.,approved
+3,tolerate,to accept something unpleasant,to reject or refuse,a rule about when to accept something unpleasant,1,Tolerate means to accept something unpleasant.,approved
+3,transient,lasting only briefly,lack of lasting only briefly,a formal decision about lasting only briefly,1,Transient means lasting only briefly.,approved
+3,traverse,to cross or travel across,to prevent or reverse that action,a plan made before people cross or travel across,1,Traverse means to cross or travel across.,approved
+3,trustworthy,deserving confidence,lack of deserving confidence,a written record concerning deserving confidence,1,Trustworthy means deserving confidence.,approved
+3,tuition,money paid for instruction,lack of money paid for instruction,a formal decision about money paid for instruction,1,Tuition means money paid for instruction.,approved
+3,undergraduate,a college student before a first degree,lack of college student before a first degree,a social situation shaped by college student before a first degree,1,Undergraduate means a college student before a first degree.,approved
+3,underdeveloped,not fully grown or advanced,lack of not fully grown or advanced,a formal decision about not fully grown or advanced,1,Underdeveloped means not fully grown or advanced.,approved
+3,underprivileged,lacking social or economic advantages,lack of lacking social or economic advantages,a rule used when dealing with lacking social or economic advantages,1,Underprivileged means lacking social or economic advantages.,approved
+3,unbiased,fair and not influenced by preference,lack of fair and not influenced by preference,a written record concerning fair and not influenced by preference,1,Unbiased means fair and not influenced by preference.,approved
+3,unanimous,fully agreed by everyone involved,lack of fully agreed by everyone involved,a long-term result caused by fully agreed by everyone involved,1,Unanimous means fully agreed by everyone involved.,approved
+3,unanimity,complete agreement among all,clear disagreement or refusal to cooperate,a rule used when dealing with complete agreement among all,1,Unanimity means complete agreement among all.,approved
+3,synthetic,made artificially rather than naturally,lack of made artificially rather than naturally,a formal decision about made artificially rather than naturally,1,Synthetic means made artificially rather than naturally.,approved
+3,thermal,related to heat,lack of related to heat,a public discussion about related to heat,1,Thermal means related to heat.,approved
+3,thermometer,an instrument for measuring temperature,lack of instrument for measuring temperature,a written record concerning instrument for measuring temperature,1,Thermometer means an instrument for measuring temperature.,approved
+3,thermostat,a device that controls temperature,lack of device that controls temperature,a personal reaction connected to device that controls temperature,1,Thermostat means a device that controls temperature.,approved
+3,throng,a large crowded group,lack of large crowded group,a careful judgment involving large crowded group,1,Throng means a large crowded group.,approved
+3,timid,shy or easily frightened,lack of shy or easily frightened,a social situation shaped by shy or easily frightened,1,Timid means shy or easily frightened.,approved
+3,toxin,a poisonous substance,lack of poisonous substance,a personal reaction connected to poisonous substance,1,Toxin means a poisonous substance.,approved
+3,underscore,to emphasize,to prevent or reverse that action,a result that may follow when people emphasize,1,Underscore means to emphasize.,approved
+3,undersell,to sell at a lower price,to prevent or reverse that action,a result that may follow when people sell at a lower price,1,Undersell means to sell at a lower price.,approved
+3,undersigned,the person who has signed below,lack of person who has signed below,a rule used when dealing with person who has signed below,1,Undersigned means the person who has signed below.,approved
+3,understatement,a statement that makes something seem less important,lack of statement that makes something seem less important,a public discussion about statement that makes something seem less important,1,Understatement means a statement that makes something seem less important.,approved
+3,unilateral,done by one side only,lack of done by one side only,a public discussion about done by one side only,1,Unilateral means done by one side only.,approved
+3,unmindful,not aware or not careful,lack of not aware or not careful,a personal reaction connected to not aware or not careful,1,Unmindful means not aware or not careful.,approved
+3,upcoming,happening soon,lack of happening soon,a written record concerning happening soon,1,Upcoming means happening soon.,approved
+3,update,to make current,to prevent or reverse that action,a situation that makes people make current,1,Update means to make current.,approved
+3,upgrade,to improve to a better version,to make worse,a result that may follow when people improve to a better version,1,Upgrade means to improve to a better version.,approved
+3,upkeep,maintenance of good condition,lack of maintenance of good condition,a social situation shaped by maintenance of good condition,1,Upkeep means maintenance of good condition.,approved
+3,upright,honest or vertical,lack of honest or vertical,a careful judgment involving honest or vertical,1,Upright means honest or vertical.,approved
+3,upset,disturbed or unhappy,lack of disturbed or unhappy,a public discussion about disturbed or unhappy,1,Upset means disturbed or unhappy.,approved
+3,urban,related to a city,lack of related to a city,a rule used when dealing with related to a city,1,Urban means related to a city.,approved
+3,usher,to guide someone somewhere,to prevent or reverse that action,a rule about when to guide someone somewhere,1,Usher means to guide someone somewhere.,approved
+3,vacant,empty or available,lack of empty or available,a formal decision about empty or available,1,Vacant means empty or available.,approved
+3,variation,a difference or changed form,lack of difference or changed form,a careful judgment involving difference or changed form,1,Variation means a difference or changed form.,approved
+3,verdict,an official decision in court,lack of official decision in court,a written record concerning official decision in court,1,Verdict means an official decision in court.,approved
+3,verify,to confirm as true,to prevent or reverse that action,a person responsible for deciding whether to confirm as true,1,Verify means to confirm as true.,approved
+3,versatile,able to be used in many ways,lack of able to be used in many ways,a long-term result caused by able to be used in many ways,1,Versatile means able to be used in many ways.,approved
+3,version,a particular form of something,lack of particular form of something,a rule used when dealing with particular form of something,1,Version means a particular form of something.,approved
+3,vicinity,the nearby area,lack of nearby area,a social situation shaped by nearby area,1,Vicinity means the nearby area.,approved
+3,video,recorded moving images,lack of recorded moving images,a public discussion about recorded moving images,1,Video means recorded moving images.,approved
+3,vigilant,watchful for danger,lack of watchful for danger,a careful judgment involving watchful for danger,1,Vigilant means watchful for danger.,approved
+3,visibility,the state of being able to be seen,lack of state of being able to be seen,a public discussion about state of being able to be seen,1,Visibility means the state of being able to be seen.,approved
+3,velocity,speed in a particular direction,lack of speed in a particular direction,a long-term result caused by speed in a particular direction,1,Velocity means speed in a particular direction.,approved
+3,veritable,real or genuine,lack of real or genuine,a social situation shaped by real or genuine,1,Veritable means real or genuine.,approved
+3,unwarranted,not justified,lack of not justified,a careful judgment involving not justified,1,Unwarranted means not justified.,approved
+3,reflect,to show or think deeply about,to prevent or reverse that action,a result that may follow when people show or think deeply about,1,Reflect means to show or think deeply about.,approved
+3,reflection,an image or careful thought,lack of image or careful thought,a long-term result caused by image or careful thought,1,Reflection means an image or careful thought.,approved
+3,release,to let go or make available,to prevent or forbid,a situation that makes people let go or make available,1,Release means to let go or make available.,approved
+3,relevant,closely connected to the matter,lack of closely connected to the matter,a personal reaction connected to closely connected to the matter,1,Relevant means closely connected to the matter.,approved
+3,repair,to fix damage,to prevent or reverse that action,a result that may follow when people fix damage,1,Repair means to fix damage.,approved
+3,resist,to oppose or refuse to accept,to reject or refuse,a person responsible for deciding whether to oppose or refuse to accept,1,Resist means to oppose or refuse to accept.,approved
+3,resolution,a firm decision or solution,lack of firm decision or solution,a rule used when dealing with firm decision or solution,1,Resolution means a firm decision or solution.,approved
+3,resolve,to solve or decide firmly,to leave unsettled,a reason someone may solve or decide firmly,1,Resolve means to solve or decide firmly.,approved
+3,resources,useful supplies or sources of support,lack of useful supplies or sources of support,a public discussion about useful supplies or sources of support,1,Resources means useful supplies or sources of support.,approved
+3,restrain,to hold back or control,to prevent or reverse that action,a person responsible for deciding whether to hold back or control,1,Restrain means to hold back or control.,approved
+3,restrained,controlled or limited,lack of controlled or limited,a long-term result caused by controlled or limited,1,Restrained means controlled or limited.,approved
+3,restrict,to limit,to allow freely,a reason someone may limit,1,Restrict means to limit.,approved
+3,resume,to begin again after stopping,to stop or finish,a reason someone may begin again after stopping,1,Resume means to begin again after stopping.,approved
+3,retain,to keep,to stop or pause,a rule about when to keep,1,Retain means to keep.,approved
+3,reveal,to make known,to prevent or reverse that action,a reason someone may make known,1,Reveal means to make known.,approved
+3,revise,to change after review,to prevent or reverse that action,a person responsible for deciding whether to change after review,1,Revise means to change after review.,approved
+3,revoke,to officially cancel,to prevent or reverse that action,a person responsible for deciding whether to officially cancel,1,Revoke means to officially cancel.,approved
+3,robust,strong and healthy,lack of strong and healthy,a written record concerning strong and healthy,1,Robust means strong and healthy.,approved
+3,rural,related to the countryside,lack of related to the countryside,a social situation shaped by related to the countryside,1,Rural means related to the countryside.,approved
+3,security,protection from danger,lack of protection from danger,a rule used when dealing with protection from danger,1,Security means protection from danger.,approved
+3,script,written words for speech or performance,lack of written words for speech or performance,a social situation shaped by written words for speech or performance,1,Script means written words for speech or performance.,approved
+3,scrutiny,careful examination,lack of careful examination,a long-term result caused by careful examination,1,Scrutiny means careful examination.,approved
+3,seasoning,flavoring added to food,lack of flavoring added to food,a long-term result caused by flavoring added to food,1,Seasoning means flavoring added to food.,approved
+3,secure,safe or firmly fixed,lack of safe or firmly fixed,a long-term result caused by safe or firmly fixed,1,Secure means safe or firmly fixed.,approved
+3,shallow,not deep,lack of not deep,a personal reaction connected to not deep,1,Shallow means not deep.,approved
+3,shrink,to become smaller,to prevent or reverse that action,a rule about when to become smaller,1,Shrink means to become smaller.,approved
+3,similarity,likeness between things,lack of likeness between things,a long-term result caused by likeness between things,1,Similarity means likeness between things.,approved
+3,simulate,to imitate a real process,to prevent or reverse that action,a situation that makes people imitate a real process,1,Simulate means to imitate a real process.,approved
+3,simultaneous,happening at the same time,lack of happening at the same time,a personal reaction connected to happening at the same time,1,Simultaneous means happening at the same time.,approved
+3,simultaneously,at the same time,lack of at the same time,a personal reaction connected to at the same time,1,Simultaneously means at the same time.,approved
+3,sole,only or single,lack of only or single,a formal decision about only or single,1,Sole means only or single.,approved
+3,solely,only,lack of only,a careful judgment involving only,1,Solely means only.,approved
+3,solitary,alone,lack of alone,a personal reaction connected to alone,1,Solitary means alone.,approved
+3,solitude,the state of being alone,lack of state of being alone,a social situation shaped by state of being alone,1,Solitude means the state of being alone.,approved
+3,soluble,able to dissolve,lack of able to dissolve,a rule used when dealing with able to dissolve,1,Soluble means able to dissolve.,approved
+3,solvent,able to pay debts or a liquid that dissolves,lack of able to pay debts or a liquid that dissolves,a public discussion about able to pay debts or a liquid that dissolves,1,Solvent means able to pay debts or a liquid that dissolves.,approved
+3,sphere,a round object or area of activity,lack of round object or area of activity,a long-term result caused by round object or area of activity,1,Sphere means a round object or area of activity.,approved
+3,spine,the backbone,lack of backbone,a personal reaction connected to backbone,1,Spine means the backbone.,approved
+3,sporadic,happening irregularly,lack of happening irregularly,a rule used when dealing with happening irregularly,1,Sporadic means happening irregularly.,approved
+3,stability,steadiness and resistance to sudden change,lack of steadiness and resistance to sudden change,a written record concerning steadiness and resistance to sudden change,1,Stability means steadiness and resistance to sudden change.,approved
+3,stable,steady and not likely to change,lack of steady and not likely to change,a long-term result caused by steady and not likely to change,1,Stable means steady and not likely to change.,approved
+3,stamina,physical or mental endurance,lack of physical or mental endurance,a careful judgment involving physical or mental endurance,1,Stamina means physical or mental endurance.,approved
+3,subjective,based on personal feelings,lack of based on personal feelings,a formal decision about based on personal feelings,1,Subjective means based on personal feelings.,approved
+3,subsequently,afterward,lack of afterward,a careful judgment involving afterward,1,Subsequently means afterward.,approved
+3,suffice,to be enough,to prevent or reverse that action,a reason someone may be enough,1,Suffice means to be enough.,approved
+3,supplement,something added to complete or improve,lack of something added to complete or improve,a long-term result caused by something added to complete or improve,1,Supplement means something added to complete or improve.,approved
+3,supplementary,added to complete or improve,lack of added to complete or improve,a written record concerning added to complete or improve,1,Supplementary means added to complete or improve.,approved
+3,surplus,more than is needed,lack of more than is needed,a long-term result caused by more than is needed,1,Surplus means more than is needed.,approved
+3,survive,to continue living or existing,to stop or pause,a plan made before people continue living or existing,1,Survive means to continue living or existing.,approved
+3,suspend,to stop temporarily or hang,to prevent or reverse that action,a reason someone may stop temporarily or hang,1,Suspend means to stop temporarily or hang.,approved
+3,suspense,uncertainty about what will happen,doubt or uncertainty,a personal reaction connected to uncertainty about what will happen,1,Suspense means uncertainty about what will happen.,approved
+3,synchronize,to make happen at the same time,to prevent or reverse that action,a situation that makes people make happen at the same time,1,Synchronize means to make happen at the same time.,approved
+3,synonym,a word with a similar meaning,lack of word with a similar meaning,a long-term result caused by word with a similar meaning,1,Synonym means a word with a similar meaning.,approved
+3,synthesis,combination of parts into a whole,lack of combination of parts into a whole,a social situation shaped by combination of parts into a whole,1,Synthesis means combination of parts into a whole.,approved
+3,stroll,a relaxed walk,lack of relaxed walk,a rule used when dealing with relaxed walk,1,Stroll means a relaxed walk.,approved
+3,submit,to send for review,to prevent or reverse that action,a situation that makes people send for review,1,Submit means to send for review.,approved
+3,subscriber,a person who signs up for a service,lack of person who signs up for a service,a formal decision about person who signs up for a service,1,Subscriber means a person who signs up for a service.,approved
+3,pending,waiting to be decided,lack of waiting to be decided,a written record concerning waiting to be decided,1,Pending means waiting to be decided.,approved
+3,penetrate,to enter or pass through,to leave or stay outside,a reason someone may enter or pass through,1,Penetrate means to enter or pass through.,approved
+3,perceive,to notice or understand,to prevent or reverse that action,a rule about when to notice or understand,1,Perceive means to notice or understand.,approved
+3,perennial,lasting for many years or recurring,lack of lasting for many years or recurring,a rule used when dealing with lasting for many years or recurring,1,Perennial means lasting for many years or recurring.,approved
+3,peril,serious danger,lack of serious danger,a personal reaction connected to serious danger,1,Peril means serious danger.,approved
+3,perimeter,the outer boundary,lack of outer boundary,a written record concerning outer boundary,1,Perimeter means the outer boundary.,approved
+3,periodic,happening at regular intervals,lack of happening at regular intervals,a written record concerning happening at regular intervals,1,Periodic means happening at regular intervals.,approved
+3,permanent,lasting without expected end,lack of lasting without expected end,a personal reaction connected to lasting without expected end,1,Permanent means lasting without expected end.,approved
+3,permeate,to spread through,to prevent or reverse that action,a plan made before people spread through,1,Permeate means to spread through.,approved
+3,perplex,to confuse deeply,to prevent or reverse that action,a person responsible for deciding whether to confuse deeply,1,Perplex means to confuse deeply.,approved
+3,persevere,to continue despite difficulty,to stop or pause,a result that may follow when people continue despite difficulty,1,Persevere means to continue despite difficulty.,approved
+3,persist,to continue firmly,to stop or pause,a plan made before people continue firmly,1,Persist means to continue firmly.,approved
+3,pertinent,directly related,lack of directly related,a personal reaction connected to directly related,1,Pertinent means directly related.,approved
+3,phenomenal,extraordinary or remarkable,lack of extraordinary or remarkable,a formal decision about extraordinary or remarkable,1,Phenomenal means extraordinary or remarkable.,approved
+3,portal,an entrance or online access point,lack of entrance or online access point,a public discussion about entrance or online access point,1,Portal means an entrance or online access point.,approved
+3,postgraduate,a student after a first degree,lack of student after a first degree,a rule used when dealing with student after a first degree,1,Postgraduate means a student after a first degree.,approved
+3,postpone,to delay until later,to prevent or reverse that action,a reason someone may delay until later,1,Postpone means to delay until later.,approved
+3,potential,possible ability or future chance,inability or lack of skill,a formal decision about possible ability or future chance,1,Potential means possible ability or future chance.,approved
+3,precede,to come before,to prevent or reverse that action,a rule about when to come before,1,Precede means to come before.,approved
+3,precise,exact and careful,lack of exact and careful,a public discussion about exact and careful,1,Precise means exact and careful.,approved
+3,prerequisite,something required beforehand,lack of something required beforehand,a long-term result caused by something required beforehand,1,Prerequisite means something required beforehand.,approved
+3,presently,now or soon,lack of now or soon,a careful judgment involving now or soon,1,Presently means now or soon.,approved
+3,pressing,urgent,lack of urgent,a formal decision about urgent,1,Pressing means urgent.,approved
+3,presume,to suppose before proof,to prevent or reverse that action,a result that may follow when people suppose before proof,1,Presume means to suppose before proof.,approved
+3,preview,an advance showing,lack of advance showing,a long-term result caused by advance showing,1,Preview means an advance showing.,approved
+3,professional,related to skilled work,inability or lack of skill,a long-term result caused by related to skilled work,1,Professional means related to skilled work.,approved
+3,proficient,skilled and competent,inability or lack of skill,a rule used when dealing with skilled and competent,1,Proficient means skilled and competent.,approved
+3,meditate,to think deeply or practice focused calm,to prevent or reverse that action,a reason someone may think deeply or practice focused calm,1,Meditate means to think deeply or practice focused calm.,approved
+3,meter,a measuring device or unit,lack of measuring device or unit,a social situation shaped by measuring device or unit,1,Meter means a measuring device or unit.,approved
+3,migrate,to move from one region to another,to prevent or reverse that action,a reason someone may move from one region to another,1,Migrate means to move from one region to another.,approved
+3,mind,the part that thinks and feels,lack of part that thinks and feels,a long-term result caused by part that thinks and feels,1,Mind means the part that thinks and feels.,approved
+3,miniature,very small copy,lack of very small copy,a social situation shaped by very small copy,1,Miniature means very small copy.,approved
+3,minor,less important or smaller,lack of less important or smaller,a social situation shaped by less important or smaller,1,Minor means less important or smaller.,approved
+3,mitigate,to make less severe,to prevent or reverse that action,a reason someone may make less severe,1,Mitigate means to make less severe.,approved
+3,moderate,not extreme,lack of not extreme,a long-term result caused by not extreme,1,Moderate means not extreme.,approved
+3,modify,to change partly,to prevent or reverse that action,a plan made before people change partly,1,Modify means to change partly.,approved
+3,momentary,lasting for a very short time,lack of lasting for a very short time,a personal reaction connected to lasting for a very short time,1,Momentary means lasting for a very short time.,approved
+3,monetary,related to money,lack of related to money,a public discussion about related to money,1,Monetary means related to money.,approved
+3,multilateral,involving several sides or countries,lack of involving several sides or countries,a personal reaction connected to involving several sides or countries,1,Multilateral means involving several sides or countries.,approved
+3,multitude,a very large number,lack of very large number,a careful judgment involving very large number,1,Multitude means a very large number.,approved
+3,municipal,related to a city or town government,lack of related to a city or town government,a rule used when dealing with related to a city or town government,1,Municipal means related to a city or town government.,approved
+3,native,belonging by birth or origin,lack of belonging by birth or origin,a careful judgment involving belonging by birth or origin,1,Native means belonging by birth or origin.,approved
+3,necessitate,to make necessary,to prevent or reverse that action,a situation that makes people make necessary,1,Necessitate means to make necessary.,approved
+3,neglect,to fail to care for,to prevent or reverse that action,a situation that makes people fail to care for,1,Neglect means to fail to care for.,approved
+3,negligence,failure to take proper care,lack of failure to take proper care,a written record concerning failure to take proper care,1,Negligence means failure to take proper care.,approved
+3,notable,worthy of attention,lack of worthy of attention,a public discussion about worthy of attention,1,Notable means worthy of attention.,approved
+3,noteworthy,important enough to notice,lack of important enough to notice,a formal decision about important enough to notice,1,Noteworthy means important enough to notice.,approved
+3,notwithstanding,despite,lack of despite,a social situation shaped by despite,1,Notwithstanding means despite.,approved
+3,novice,a beginner,lack of beginner,a careful judgment involving beginner,1,Novice means a beginner.,approved
+3,objective,not influenced by personal feelings,lack of not influenced by personal feelings,a public discussion about not influenced by personal feelings,1,Objective means not influenced by personal feelings.,approved
+3,obligatory,required,lack of required,a formal decision about required,1,Obligatory means required.,approved
+3,oblige,to require or do a favor for,to prevent or reverse that action,a situation that makes people require or do a favor for,1,Oblige means to require or do a favor for.,approved
+3,obscure,not clear or not well known,confusion or lack of clear understanding,a personal reaction connected to not clear or not well known,1,Obscure means not clear or not well known.,approved
+3,obsess,to think about too much,to ignore completely,anxiety caused by repeated thoughts,1,Obsess means to think about too much.,approved
+3,obstacle,something blocking progress,lack of something blocking progress,a public discussion about something blocking progress,1,Obstacle means something blocking progress.,approved
+3,obstruct,to block or prevent,to prevent or reverse that action,a result that may follow when people block or prevent,1,Obstruct means to block or prevent.,approved
+3,opaque,not transparent or not clear,confusion or lack of clear understanding,a rule used when dealing with not transparent or not clear,1,Opaque means not transparent or not clear.,approved
+3,openhanded,generous,lack of generous,a social situation shaped by generous,1,Openhanded means generous.,approved
+3,opponent,a person who competes or disagrees,lack of person who competes or disagrees,a long-term result caused by person who competes or disagrees,1,Opponent means a person who competes or disagrees.,approved
+3,original,first or not copied,lack of first or not copied,a public discussion about first or not copied,1,Original means first or not copied.,approved
+3,originate,to begin or come from,to stop or finish,a person responsible for deciding whether to begin or come from,1,Originate means to begin or come from.,approved
+3,orthodox,following accepted beliefs,doubt or refusal to accept,a careful judgment involving following accepted beliefs,1,Orthodox means following accepted beliefs.,approved
+3,outlook,a view of the future,lack of view of the future,a public discussion about view of the future,1,Outlook means a view of the future.,approved
+3,output,the amount produced,lack of amount produced,a social situation shaped by amount produced,1,Output means the amount produced.,approved
+3,outspoken,frank in expressing opinions,lack of frank in expressing opinions,a public discussion about frank in expressing opinions,1,Outspoken means frank in expressing opinions.,approved
+3,outweigh,to be more important than,to prevent or reverse that action,a rule about when to be more important than,1,Outweigh means to be more important than.,approved
+3,overt,open and not hidden,lack of open and not hidden,a careful judgment involving open and not hidden,1,Overt means open and not hidden.,approved
+3,palatable,pleasant to taste or acceptable,lack of pleasant to taste or acceptable,a long-term result caused by pleasant to taste or acceptable,1,Palatable means pleasant to taste or acceptable.,approved
+3,parallel,similar or side by side,lack of similar or side by side,a written record concerning similar or side by side,1,Parallel means similar or side by side.,approved
+3,passionate,showing strong feeling,lack of showing strong feeling,a careful judgment involving showing strong feeling,1,Passionate means showing strong feeling.,approved
+3,pediatrician,a doctor for children,lack of doctor for children,a formal decision about doctor for children,1,Pediatrician means a doctor for children.,approved
+3,latent,present but hidden,lack of present but hidden,a rule used when dealing with present but hidden,1,Latent means present but hidden.,approved
+3,lateral,related to the side,lack of related to the side,a public discussion about related to the side,1,Lateral means related to the side.,approved
+3,legible,easy to read,lack of easy to read,a personal reaction connected to easy to read,1,Legible means easy to read.,approved
+3,literacy,ability to read and write,inability or lack of skill,a personal reaction connected to ability to read and write,1,Literacy means ability to read and write.,approved
+3,literal,using the exact basic meaning,lack of using the exact basic meaning,a long-term result caused by using the exact basic meaning,1,Literal means using the exact basic meaning.,approved
+3,literary,related to literature,lack of related to literature,a formal decision about related to literature,1,Literary means related to literature.,approved
+3,literate,able to read and write,lack of able to read and write,a formal decision about able to read and write,1,Literate means able to read and write.,approved
+3,logic,reasoned thinking,lack of reasoned thinking,a formal decision about reasoned thinking,1,Logic means reasoned thinking.,approved
+3,logical,reasonable and well ordered,disorder or confusion,a rule used when dealing with reasonable and well ordered,1,Logical means reasonable and well ordered.,approved
+3,lucid,clear and easy to understand,confusion or lack of clear understanding,a written record concerning clear and easy to understand,1,Lucid means clear and easy to understand.,approved
+3,lucrative,producing much money,lack of producing much money,a rule used when dealing with producing much money,1,Lucrative means producing much money.,approved
+3,lurk,to wait hidden,to prevent or reverse that action,a rule about when to wait hidden,1,Lurk means to wait hidden.,approved
+3,luxurious,very comfortable and expensive,lack of very comfortable and expensive,a public discussion about very comfortable and expensive,1,Luxurious means very comfortable and expensive.,approved
+3,magnify,to make appear larger,to prevent or reverse that action,a plan made before people make appear larger,1,Magnify means to make appear larger.,approved
+3,magnitude,great size or importance,lack of great size or importance,a long-term result caused by great size or importance,1,Magnitude means great size or importance.,approved
+3,major,large or important,lack of large or important,a social situation shaped by large or important,1,Major means large or important.,approved
+3,manifest,clear or to show plainly,confusion or lack of clear understanding,a long-term result caused by clear or to show plainly,1,Manifest means clear or to show plainly.,approved
+3,manipulate,to control skillfully or unfairly,to prevent or reverse that action,a reason someone may control skillfully or unfairly,1,Manipulate means to control skillfully or unfairly.,approved
+3,manual,done by hand or a handbook,lack of done by hand or a handbook,a rule used when dealing with done by hand or a handbook,1,Manual means done by hand or a handbook.,approved
+3,manuscript,a written or typed draft,lack of written or typed draft,a long-term result caused by written or typed draft,1,Manuscript means a written or typed draft.,approved
+3,mandate,an official order,disorder or confusion,a formal decision about official order,1,Mandate means an official order.,approved
+3,mediate,to help settle a disagreement,to prevent or reverse that action,a situation that makes people help settle a disagreement,1,Mediate means to help settle a disagreement.,approved
+3,profuse,very abundant or given freely,lack of very abundant or given freely,a social situation shaped by very abundant or given freely,1,Profuse means very abundant or given freely.,approved
+3,project,a planned piece of work or to estimate forward,lack of planned piece of work or to estimate forward,a written record concerning planned piece of work or to estimate forward,1,Project means a planned piece of work or to estimate forward.,approved
+3,prologue,an introductory section of a work,lack of introductory section of a work,a careful judgment involving introductory section of a work,1,Prologue means an introductory section of a work.,approved
+3,prominent,important or easily noticed,lack of important or easily noticed,a social situation shaped by important or easily noticed,1,Prominent means important or easily noticed.,approved
+3,prompt,quick to act or to cause action,lack of quick to act or to cause action,a written record concerning quick to act or to cause action,1,Prompt means quick to act or to cause action.,approved
+3,propel,to push or drive forward,to prevent or reverse that action,a result that may follow when people push or drive forward,1,Propel means to push or drive forward.,approved
+3,prospect,a possibility or expected chance,lack of possibility or expected chance,a rule used when dealing with possibility or expected chance,1,Prospect means a possibility or expected chance.,approved
+3,province,a region or area of responsibility,lack of region or area of responsibility,a long-term result caused by region or area of responsibility,1,Province means a region or area of responsibility.,approved
+3,provisional,temporary until final approval,lack of temporary until final approval,a careful judgment involving temporary until final approval,1,Provisional means temporary until final approval.,approved
+3,provoke,to cause a reaction,to prevent or reverse that action,a reason someone may cause a reaction,1,Provoke means to cause a reaction.,approved
+3,prudent,careful and sensible,lack of careful and sensible,a rule used when dealing with careful and sensible,1,Prudent means careful and sensible.,approved
+3,punctual,on time,lack of on time,a public discussion about on time,1,Punctual means on time.,approved
+3,puncture,to make a small hole in,to prevent or reverse that action,a situation that makes people make a small hole in,1,Puncture means to make a small hole in.,approved
+3,questionable,doubtful or uncertain,lack of doubtful or uncertain,a written record concerning doubtful or uncertain,1,Questionable means doubtful or uncertain.,approved
+3,rational,based on reason,lack of based on reason,a social situation shaped by based on reason,1,Rational means based on reason.,approved
+3,rebel,to resist authority,to prevent or reverse that action,a situation that makes people resist authority,1,Rebel means to resist authority.,approved
+3,reckless,careless about danger,lack of careless about danger,a careful judgment involving careless about danger,1,Reckless means careless about danger.,approved
+3,reconcilable,able to be made consistent or friendly again,lack of able to be made consistent or friendly again,a personal reaction connected to able to be made consistent or friendly again,1,Reconcilable means able to be made consistent or friendly again.,approved
+3,reconcile,to restore agreement or make consistent,to prevent or reverse that action,a rule about when to restore agreement or make consistent,1,Reconcile means to restore agreement or make consistent.,approved
+3,recurrent,happening repeatedly,lack of happening repeatedly,a personal reaction connected to happening repeatedly,1,Recurrent means happening repeatedly.,approved
+3,redundant,unnecessary because more than enough exists,lack of unnecessary because more than enough exists,a public discussion about unnecessary because more than enough exists,1,Redundant means unnecessary because more than enough exists.,approved
+3,quench,to satisfy thirst or put out fire,to prevent or reverse that action,a rule about when to satisfy thirst or put out fire,1,Quench means to satisfy thirst or put out fire.,approved
+3,initiate,to begin or start,to stop or finish,a result that may follow when people begin or start,1,Initiate means to begin or start.,approved
+3,inmate,a person confined in prison or an institution,lack of person confined in prison or an institution,a formal decision about person confined in prison or an institution,1,Inmate means a person confined in prison or an institution.,approved
+3,inscribe,to write or carve words on something,to prevent or reverse that action,a situation that makes people write or carve words on something,1,Inscribe means to write or carve words on something.,approved
+3,inscription,words written or carved on a surface,lack of words written or carved on a surface,a formal decision about words written or carved on a surface,1,Inscription means words written or carved on a surface.,approved
+3,insoluble,impossible to dissolve or solve,lack of impossible to dissolve or solve,a written record concerning impossible to dissolve or solve,1,Insoluble means impossible to dissolve or solve.,approved
+3,insolvent,unable to pay debts,lack of unable to pay debts,a careful judgment involving unable to pay debts,1,Insolvent means unable to pay debts.,approved
+3,integrate,to combine into a whole,to prevent or reverse that action,a rule about when to combine into a whole,1,Integrate means to combine into a whole.,approved
+3,intensify,to make stronger,to prevent or reverse that action,a person responsible for deciding whether to make stronger,1,Intensify means to make stronger.,approved
+3,intercept,to stop or catch before arrival,to prevent or reverse that action,a plan made before people stop or catch before arrival,1,Intercept means to stop or catch before arrival.,approved
+3,intermittent,stopping and starting at intervals,lack of stopping and starting at intervals,a careful judgment involving stopping and starting at intervals,1,Intermittent means stopping and starting at intervals.,approved
+3,intersect,to cross or meet at a point,to prevent or reverse that action,a result that may follow when people cross or meet at a point,1,Intersect means to cross or meet at a point.,approved
+3,interstate,between states,lack of between states,a careful judgment involving between states,1,Interstate means between states.,approved
+3,intimidate,to frighten or pressure someone,to prevent or reverse that action,a reason someone may frighten or pressure someone,1,Intimidate means to frighten or pressure someone.,approved
+3,intravenous,going into a vein,lack of going into a vein,a personal reaction connected to going into a vein,1,Intravenous means going into a vein.,approved
+3,invisible,unable to be seen,lack of unable to be seen,a careful judgment involving unable to be seen,1,Invisible means unable to be seen.,approved
+3,invoke,to call upon or cite as authority,to prevent or reverse that action,a situation that makes people call upon or cite as authority,1,Invoke means to call upon or cite as authority.,approved
+3,irrelevant,not connected to the matter,lack of not connected to the matter,a long-term result caused by not connected to the matter,1,Irrelevant means not connected to the matter.,approved
+3,isolate,to separate from others,to join or combine,a person responsible for deciding whether to separate from others,1,Isolate means to separate from others.,approved
+3,isolated,separated from others,lack of separated from others,a careful judgment involving separated from others,1,Isolated means separated from others.,approved
+3,isolation,the state of being separated,lack of state of being separated,a careful judgment involving state of being separated,1,Isolation means the state of being separated.,approved
+3,journalist,a person who reports news,lack of person who reports news,a written record concerning person who reports news,1,Journalist means a person who reports news.,approved
+3,jeopardize,to put at risk,to prevent or reverse that action,a reason someone may put at risk,1,Jeopardize means to put at risk.,approved
+3,insignificant,too small or unimportant to matter,important enough to matter,a minor detail in a larger issue,1,Insignificant means too small or unimportant to matter.,approved
+3,intermission,a pause between parts of a performance,lack of pause between parts of a performance,a public discussion about pause between parts of a performance,1,Intermission means a pause between parts of a performance.,approved
+3,interval,a period of time between events,lack of period of time between events,a social situation shaped by period of time between events,1,Interval means a period of time between events.,approved
+3,jeopardy,danger or risk of loss,lack of danger or risk of loss,a written record concerning danger or risk of loss,1,Jeopardy means danger or risk of loss.,approved
+3,intricate,complicated and detailed,lack of complicated and detailed,a rule used when dealing with complicated and detailed,1,Intricate means complicated and detailed.,approved
+3,invincible,impossible to defeat,lack of impossible to defeat,a formal decision about impossible to defeat,1,Invincible means impossible to defeat.,approved
+3,involve,to include as a necessary part,to leave out or exclude,a reason someone may include as a necessary part,1,Involve means to include as a necessary part.,approved
+3,intrinsic,belonging naturally to something,lack of belonging naturally to something,a public discussion about belonging naturally to something,1,Intrinsic means belonging naturally to something.,approved
+3,irrevocable,not able to be changed or cancelled,lack of not able to be changed or cancelled,a long-term result caused by not able to be changed or cancelled,1,Irrevocable means not able to be changed or cancelled.,approved
+3,intrude,to enter or interrupt without invitation,to leave or stay outside,a situation that makes people enter or interrupt without invitation,1,Intrude means to enter or interrupt without invitation.,approved
+3,abandon,to leave behind completely,to prevent or reverse that action,a reason someone may leave behind completely,1,Abandon means to leave behind completely.,approved
+3,abate,to become less intense,to prevent or reverse that action,a plan made before people become less intense,1,Abate means to become less intense.,approved
+3,abnormal,not usual or typical,lack of not usual or typical,a public discussion about not usual or typical,1,Abnormal means not usual or typical.,approved
+3,abroad,in or to another country,lack of in or to another country,a public discussion about in or to another country,1,Abroad means in or to another country.,approved
+3,accede,to agree to a request or take office,to refuse or disagree,a situation that makes people agree to a request or take office,1,Accede means to agree to a request or take office.,approved
+3,accessible,easy to reach or use,lack of easy to reach or use,a social situation shaped by easy to reach or use,1,Accessible means easy to reach or use.,approved
+3,accommodate,to provide room for or adjust to,to prevent or reverse that action,a person responsible for deciding whether to provide room for or adjust to,1,Accommodate means to provide room for or adjust to.,approved
+3,accord,agreement or harmony,clear disagreement or refusal to cooperate,a written record concerning agreement or harmony,1,Accord means agreement or harmony.,approved
+3,accumulate,to collect gradually,to prevent or reverse that action,a reason someone may collect gradually,1,Accumulate means to collect gradually.,approved
+3,acquired,gained through effort or experience,lack of gained through effort or experience,a social situation shaped by gained through effort or experience,1,Acquired means gained through effort or experience.,approved
+3,adapt,to change for new conditions,to prevent or reverse that action,a rule about when to change for new conditions,1,Adapt means to change for new conditions.,approved
+3,adaptable,able to fit new conditions,lack of able to fit new conditions,a careful judgment involving able to fit new conditions,1,Adaptable means able to fit new conditions.,approved
+3,addicted,unable to stop using or doing something,lack of unable to stop using or doing something,a public discussion about unable to stop using or doing something,1,Addicted means unable to stop using or doing something.,approved
+3,adequate,good enough for a purpose,lack of good enough for a purpose,a long-term result caused by good enough for a purpose,1,Adequate means good enough for a purpose.,approved
+3,adhere,to stick firmly or follow closely,to prevent or reverse that action,a result that may follow when people stick firmly or follow closely,1,Adhere means to stick firmly or follow closely.,approved
+3,adjacent,next to or nearby,lack of next to or nearby,a rule used when dealing with next to or nearby,1,Adjacent means next to or nearby.,approved
+3,advantageous,helpful or favorable,lack of helpful or favorable,a long-term result caused by helpful or favorable,1,Advantageous means helpful or favorable.,approved
+3,advocate,to publicly support or a supporter,to prevent or reverse that action,a situation that makes people publicly support or a supporter,1,Advocate means to publicly support or a supporter.,approved
+3,affirm,to state firmly as true,to prevent or reverse that action,a person responsible for deciding whether to state firmly as true,1,Affirm means to state firmly as true.,approved
+3,aggregate,to combine into a total,to prevent or reverse that action,a person responsible for deciding whether to combine into a total,1,Aggregate means to combine into a total.,approved
+3,agitation,public unrest or emotional disturbance,lack of public unrest or emotional disturbance,a long-term result caused by public unrest or emotional disturbance,1,Agitation means public unrest or emotional disturbance.,approved
+3,alias,a false or additional name,lack of false or additional name,a public discussion about false or additional name,1,Alias means a false or additional name.,approved
+3,alien,foreign or unfamiliar,lack of foreign or unfamiliar,a personal reaction connected to foreign or unfamiliar,1,Alien means foreign or unfamiliar.,approved
+3,ally,a partner who gives support,lack of partner who gives support,a personal reaction connected to partner who gives support,1,Ally means a partner who gives support.,approved
+3,alternative,another possible choice,lack of another possible choice,a written record concerning another possible choice,1,Alternative means another possible choice.,approved
+3,altitude,height above sea level,lack of height above sea level,a written record concerning height above sea level,1,Altitude means height above sea level.,approved
+3,abrupt,sudden and unexpected,lack of sudden and unexpected,a long-term result caused by sudden and unexpected,1,Abrupt means sudden and unexpected.,approved
+3,affluence,great wealth,lack of great wealth,a careful judgment involving great wealth,1,Affluence means great wealth.,approved
+3,affluent,wealthy and prosperous,lack of wealthy and prosperous,a written record concerning wealthy and prosperous,1,Affluent means wealthy and prosperous.,approved

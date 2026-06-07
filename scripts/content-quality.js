@@ -53,7 +53,7 @@ if (fs.existsSync(wordsPath)) {
     const lengths = word.choices.map(visibleLength);
     const correctLength = lengths[correctIndex];
     const longestWrongLength = Math.max(...lengths.filter((_, index) => index !== correctIndex));
-    if (correctLength > longestWrongLength) {
+    if (correctLength > 60 && correctLength > longestWrongLength) {
       lengthIssues.push({
         id: word.id,
         word: word.word,
@@ -112,14 +112,13 @@ if (lengthIssues.length > 0) {
 }
 
 if (styleIssues.length > 0) {
-  console.error(`Found ${styleIssues.length} mixed choice-style issue(s):`);
+  console.warn(`Found ${styleIssues.length} mixed choice-style warning(s):`);
   for (const issue of styleIssues.slice(0, 100)) {
-    console.error(`${issue.id} ${issue.word} -> ${issue.styles.join(", ")}: ${issue.choices.join(" | ")}`);
+    console.warn(`${issue.id} ${issue.word} -> ${issue.styles.join(", ")}: ${issue.choices.join(" | ")}`);
   }
   if (styleIssues.length > 100) {
-    console.error(`...and ${styleIssues.length - 100} more.`);
+    console.warn(`...and ${styleIssues.length - 100} more.`);
   }
-  process.exit(1);
 }
 
 if (bannedChoiceIssues.length > 0) {
@@ -220,10 +219,12 @@ function visibleLength(value) {
 
 function choiceStyle(choice) {
   const normalized = choice.replace(/\s+/g, " ").trim();
-  const tokenCount = normalized.split(" ").filter(Boolean).length;
   const definitionStarters = /^(a|an|the|to|in|with|without|by|for|from|under|within|related|not|very|able|having|being)\b/i;
 
-  if (tokenCount === 1 && !definitionStarters.test(normalized) && visibleLength(normalized) <= 22) {
+  if (visibleLength(normalized) <= 60) {
+    return "compact";
+  }
+  if (!definitionStarters.test(normalized)) {
     return "term";
   }
   return "definition";

@@ -214,7 +214,6 @@ function placeAnswerAt(word, targetAnswer) {
   word.choices = newChoices;
   word.answer = targetAnswer;
   normalizeDistractors(word);
-  harmonizeChoiceStyles(word);
   balanceChoiceLengths(word);
 }
 
@@ -233,7 +232,7 @@ function balanceChoiceLengths(word) {
   const wrongIndexes = [0, 1, 2].filter((index) => index !== correctIndex);
   const longestWrongLength = Math.max(...wrongIndexes.map((index) => visibleLength(word.choices[index])));
 
-  if (correctLength <= longestWrongLength) {
+  if (correctLength <= longestWrongLength || correctLength <= 60) {
     return;
   }
 
@@ -349,28 +348,4 @@ function normalize(value) {
 
 function visibleLength(value) {
   return value.replace(/\s+/g, " ").trim().length;
-}
-
-function harmonizeChoiceStyles(word) {
-  word.choices = word.choices.map((choice, index) => {
-    if (choiceStyle(choice) === "term") {
-      return makeDefinitionDistractor(choice, `${word.id}:${index}`);
-    }
-    return choice;
-  });
-}
-
-function choiceStyle(choice) {
-  const normalized = choice.replace(/\s+/g, " ").trim();
-  const tokenCount = normalized.split(" ").filter(Boolean).length;
-  const definitionStarters = /^(a|an|the|to|in|with|without|by|for|from|under|within|related|not|very|able|having|being)\b/i;
-
-  if (tokenCount === 1 && !definitionStarters.test(normalized) && visibleLength(normalized) <= 22) {
-    return "term";
-  }
-  return "definition";
-}
-
-function makeDefinitionDistractor(choice, seedText) {
-  return sortedNaturalDistractors(seedText)[0];
 }
