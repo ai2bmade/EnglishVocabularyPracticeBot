@@ -10,6 +10,9 @@ const freeQuizLimit = Number(process.env.FREE_QUIZ_LIMIT || 10);
 const limitWindowMs = 24 * 60 * 60 * 1000;
 const buyMeCoffeeUrl = process.env.BUY_ME_COFFEE_URL || "Buy me a coffee";
 const premiumDays = Number(process.env.PREMIUM_DAYS || 31);
+const premiumLongDays = Number(process.env.PREMIUM_LONG_DAYS || 93);
+const premiumMonthlyPrice = process.env.PREMIUM_MONTHLY_PRICE || "$3";
+const premiumLongPrice = process.env.PREMIUM_LONG_PRICE || "$5";
 const freeReferralGoal = Number(process.env.FREE_REFERRAL_GOAL || 3);
 const paidReferralExtensionDays = Number(process.env.PAID_REFERRAL_EXTENSION_DAYS || 5);
 const botUsername = process.env.BOT_USERNAME || "EnglishVocabularyPracticeBot";
@@ -119,6 +122,20 @@ async function handleMessage(message) {
 
   if (text === "/premium" || text === "Buy Premium") {
     await sendMessage(chatId, premiumInfoText(user), premiumKeyboard());
+    return;
+  }
+
+  if (text === `${premiumMonthlyPrice} / 1 Month`) {
+    user.pendingPremiumDays = premiumDays;
+    saveUsers();
+    await sendMessage(chatId, premiumCheckoutText(user, premiumMonthlyPrice, premiumDays), premiumCheckoutKeyboard());
+    return;
+  }
+
+  if (text === `${premiumLongPrice} / 3 Months`) {
+    user.pendingPremiumDays = premiumLongDays;
+    saveUsers();
+    await sendMessage(chatId, premiumCheckoutText(user, premiumLongPrice, premiumLongDays), premiumCheckoutKeyboard());
     return;
   }
 
@@ -268,7 +285,6 @@ async function startDailyChallenge(chatId, user) {
     [
       "Daily Challenge",
       "10 words total: #1 from Level 2, #2-3 from Level 3, #4-8 from Level 4, and #9-10 from Level 5.",
-      "Duplicate words are checked and replaced before the challenge starts.",
       "",
       quizText(challengeWords[0])
     ].join("\n"),
@@ -396,7 +412,11 @@ function wrongWordsKeyboard(wrongWords) {
 }
 
 function premiumKeyboard() {
-  return keyboard([["I Paid", "Invite Friends"], ["Status", "Next Word"], ["Daily Challenge"]]);
+  return keyboard([[`${premiumMonthlyPrice} / 1 Month`, `${premiumLongPrice} / 3 Months`], ["Invite Friends", "Status"], ["Next Word", "Daily Challenge"]]);
+}
+
+function premiumCheckoutKeyboard() {
+  return keyboard([["I Paid", "Buy Premium"], ["Status", "Next Word"], ["Daily Challenge"]]);
 }
 
 function inviteKeyboard() {
@@ -491,6 +511,7 @@ function getUser(chatId) {
       practiceStartedAt: 0,
       referredBy: null,
       referralCreditedAt: 0,
+      pendingPremiumDays: premiumDays,
       referralStats: {
         freeInvitees: [],
         freeRewardGrantedAt: 0,
@@ -510,6 +531,7 @@ function getUser(chatId) {
   users[key].practiceStartedAt ||= 0;
   users[key].referredBy ||= null;
   users[key].referralCreditedAt ||= 0;
+  users[key].pendingPremiumDays ||= premiumDays;
   users[key].referralStats ||= {};
   users[key].referralStats.freeInvitees ||= [];
   users[key].referralStats.freeRewardGrantedAt ||= 0;
@@ -682,7 +704,8 @@ async function notifyAdminsOfPayment(chatId, user, message) {
     return;
   }
 
-  const expiresAt = Date.now() + Math.round(premiumDays * limitWindowMs);
+  const selectedPremiumDays = Number(user.pendingPremiumDays || premiumDays);
+  const expiresAt = Date.now() + Math.round(selectedPremiumDays * limitWindowMs);
   grantPremium(chatId, expiresAt, {
     grantedBy: "self_paid_button",
     status: "pending_payment_check"
@@ -691,7 +714,7 @@ async function notifyAdminsOfPayment(chatId, user, message) {
   if (adminTelegramIds.size === 0) {
     await sendMessage(chatId, [
       "Welcome to Premium!",
-      `You now have unlimited word practice for ${premiumDays} days.`,
+      `You now have unlimited word practice for ${selectedPremiumDays} days.`,
       `Telegram ID: ${user.chatId}`,
       `Expires: ${formatDate(expiresAt)}`,
       "",
@@ -706,6 +729,7 @@ async function notifyAdminsOfPayment(chatId, user, message) {
     "Premium payment notice",
     `Student: ${name} (${username})`,
     `Telegram ID: ${user.chatId}`,
+    `Selected plan: ${selectedPremiumDays} days`,
     `Premium is already active until ${formatDate(expiresAt)}.`,
     "",
     `If payment is valid, no action is needed.`,
@@ -716,7 +740,7 @@ async function notifyAdminsOfPayment(chatId, user, message) {
 
   await sendMessage(chatId, [
     "Welcome to Premium!",
-    `You now have unlimited word practice for ${premiumDays} days.`,
+    `You now have unlimited word practice for ${selectedPremiumDays} days.`,
     `Expires: ${formatDate(expiresAt)}`,
     "You can start studying immediately."
   ].join("\n"), mainKeyboard());
@@ -744,8 +768,19 @@ function premiumInfoText(user) {
 
   return [
     "Premium",
-    `$5 gives you ${premiumDays} days of study.`,
-    `After payment, tap I Paid to start ${premiumDays} days of unlimited word practice.`,
+    `${premiumMonthlyPrice} gives you 1 month of unlimited word practice.`,
+    `${premiumLongPrice} gives you 3 months of unlimited word practice.`,
+    "Choose a plan below, then pay and tap I Paid.",
+    "",
+    `Your Telegram ID: ${user.chatId}`,
+  ].join("\n");
+}
+
+function premiumCheckoutText(user, price, days) {
+  return [
+    "Premium Checkout",
+    `${price} gives you ${days} days of unlimited word practice.`,
+    "After payment, tap I Paid.",
     "",
     `Your Telegram ID: ${user.chatId}`,
     buyMeCoffeeUrl

@@ -30,6 +30,69 @@ const stopWords = new Set([
   "with",
   "without"
 ]);
+const bannedDistractorPatterns = [
+  /unrelated/i,
+  /distractor/i,
+  /different advanced concept/i,
+  /different academic idea/i,
+  /scholarly meaning/i,
+  /semantic category/i,
+  /incorrect meaning/i,
+  /concrete household object/i,
+  /brief practical task/i,
+  /practical concept/i
+];
+const naturalDistractors = [
+  "a temporary pause caused by a scheduling problem",
+  "a formal request made through an official process",
+  "a small change in the condition of a system",
+  "a careful record kept for later reference",
+  "a short period of rest after repeated effort",
+  "a public message shared with a large group",
+  "a personal choice made after considering options",
+  "a measured increase in cost or quantity",
+  "a written plan prepared before an activity",
+  "a quiet response to pressure or difficulty",
+  "a standard rule used to guide behavior",
+  "a useful supply kept for future need",
+  "a detailed report about recent events",
+  "a simple method for organizing information",
+  "a sudden change in direction or position",
+  "a shared agreement between several people",
+  "a limited amount available for use",
+  "a careful attempt to reduce possible risk",
+  "a regular pattern repeated over time",
+  "a private opinion based on personal judgment",
+  "a clear sign that action may be needed",
+  "a basic tool used to measure progress",
+  "a local service provided for daily needs",
+  "a minor problem that delays completion",
+  "a strong preference for one possible option",
+  "a planned meeting for discussing a topic",
+  "a gradual improvement in skill or performance",
+  "a short explanation given before a decision",
+  "a stable condition that does not change quickly",
+  "a careful comparison between two choices",
+  "a formal decision made after reviewing several possible courses of action",
+  "a temporary arrangement used until a more complete solution is ready",
+  "a detailed record of changes made during a long administrative process",
+  "a gradual increase in responsibility within a structured organization",
+  "a public disagreement caused by competing interests and limited information",
+  "a written explanation prepared to clarify a complicated practical situation",
+  "a repeated pattern of behavior that affects future planning and decisions",
+  "a careful effort to prevent mistakes before they create larger problems",
+  "a measurable difference between expected results and actual performance",
+  "a shared procedure used by several groups to coordinate their work",
+  "a long-term plan designed to improve results under changing conditions",
+  "a serious delay caused by confusion about roles and responsibilities",
+  "a controlled process for checking whether a plan works as expected",
+  "a broad change in policy that affects many people at the same time",
+  "a specific requirement that must be satisfied before work can continue",
+  "a complicated situation in which several conditions must change before any result can be accepted",
+  "a long explanation about how several parts of a system depend on one another over time",
+  "a formal belief about authority responsibility and the proper order of important institutions",
+  "a careful description of how one condition may influence another under strict limits"
+];
 
 const rows = [];
 for (const fileName of fs.readdirSync(sourceDir).sort()) {
@@ -150,6 +213,7 @@ function placeAnswerAt(word, targetAnswer) {
 
   word.choices = newChoices;
   word.answer = targetAnswer;
+  normalizeDistractors(word);
   harmonizeChoiceStyles(word);
   balanceChoiceLengths(word);
 }
@@ -181,26 +245,106 @@ function balanceChoiceLengths(word) {
     return hash(`${word.id}:${left}`) - hash(`${word.id}:${right}`);
   })[0];
 
-  word.choices[targetIndex] = extendDistractor(word.choices[targetIndex], correctLength, `${word.id}:${targetIndex}`);
+  word.choices[targetIndex] = lengthMatchedDistractor(word, targetIndex, correctLength);
 }
 
-function extendDistractor(choice, targetLength, seedText) {
-  const endings = [
-    "as a separate unrelated concept",
-    "in a different semantic category",
-    "as another possible but incorrect meaning",
-    "in a context unrelated to the word",
-    "as a distractor from another topic",
-    "within a different area of meaning"
-  ].sort((left, right) => hash(`${seedText}:${left}`) - hash(`${seedText}:${right}`));
+function lengthMatchedDistractor(word, choiceIndex, targetLength) {
+  const candidates = sortedNaturalDistractors(`${word.id}:${choiceIndex}`)
+    .filter((choice) => !sharesMeaningCue(word.word, choice));
+  return candidates.find((choice) => visibleLength(choice) >= targetLength) || candidates[0];
+}
 
-  let result = choice;
-  let endingIndex = 0;
-  while (visibleLength(result) < targetLength && endingIndex < endings.length) {
-    result = `${result} ${endings[endingIndex]}`;
-    endingIndex += 1;
+function normalizeDistractors(word) {
+  word.choices = word.choices.map((choice, index) => {
+    if (index === word.answer - 1) {
+      return choice;
+    }
+    if (isBannedDistractor(choice)) {
+      return naturalDistractor(word, index);
+    }
+    return choice;
+  });
+}
+
+function isBannedDistractor(choice) {
+  return bannedDistractorPatterns.some((pattern) => pattern.test(choice));
+}
+
+function naturalDistractor(word, choiceIndex) {
+  return sortedNaturalDistractors(`${word.id}:${choiceIndex}`)
+    .find((choice) => !sharesMeaningCue(word.word, choice)) || naturalDistractors[0];
+}
+
+function sortedNaturalDistractors(seedText) {
+  return [...naturalDistractors].sort((left, right) => hash(`${seedText}:${left}`) - hash(`${seedText}:${right}`));
+}
+
+function sharesMeaningCue(word, choice) {
+  const wordForms = forms(word);
+  const choiceForms = new Set(normalize(choice).split(/\s+/).flatMap((token) => forms(token)));
+  return wordForms.some((form) => form.length >= 4 && choiceForms.has(form));
+}
+
+function forms(value) {
+  const normalized = normalize(value);
+  const result = new Set([normalized]);
+  const suffixes = [
+    "ability",
+    "ibility",
+    "ization",
+    "isation",
+    "ational",
+    "fulness",
+    "iveness",
+    "lessly",
+    "ically",
+    "ation",
+    "ition",
+    "sion",
+    "tion",
+    "ment",
+    "ness",
+    "ance",
+    "ence",
+    "ity",
+    "ism",
+    "ist",
+    "ive",
+    "ous",
+    "ful",
+    "less",
+    "able",
+    "ible",
+    "ical",
+    "ic",
+    "al",
+    "ly",
+    "ed",
+    "ing",
+    "es",
+    "s"
+  ];
+
+  for (const suffix of suffixes) {
+    if (normalized.endsWith(suffix) && normalized.length > suffix.length + 3) {
+      result.add(normalized.slice(0, -suffix.length));
+    }
   }
-  return result;
+
+  if (normalized.endsWith("y") && normalized.length > 4) {
+    result.add(normalized.slice(0, -1));
+  }
+
+  return [...result].filter((item) => item.length >= 3);
+}
+
+function normalize(value) {
+  return String(value)
+    .toLowerCase()
+    .normalize("NFKD")
+    .replace(/[\u0300-\u036f]/g, "")
+    .replace(/[^a-z0-9]+/g, " ")
+    .trim();
 }
 
 function visibleLength(value) {
@@ -228,12 +372,5 @@ function choiceStyle(choice) {
 }
 
 function makeDefinitionDistractor(choice, seedText) {
-  const templates = [
-    `a different concept related to ${choice}`,
-    `an unrelated idea involving ${choice}`,
-    `a separate meaning connected with ${choice}`,
-    `another category associated with ${choice}`
-  ].sort((left, right) => hash(`${seedText}:${left}`) - hash(`${seedText}:${right}`));
-
-  return templates[0];
+  return sortedNaturalDistractors(seedText)[0];
 }

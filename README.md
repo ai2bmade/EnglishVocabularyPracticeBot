@@ -69,6 +69,8 @@ Only `status: "approved"` words are loaded by the bot.
 
 The production target is 39,000 questions. See `content/CONTENT_PRODUCTION.md` and run `npm run content:report` to track progress by level.
 
+Choice-writing rules live in `content/OPTION_RULES.md`. Each item should use: correct synonym or same-meaning description, one antonym or opposite-meaning option, and one related-but-not-same option.
+
 ## CSV Workflow
 
 Source CSV files can be edited in `content/source`:
@@ -114,6 +116,9 @@ Optional environment variables:
 ```text
 FREE_QUIZ_LIMIT=10
 PREMIUM_DAYS=31
+PREMIUM_LONG_DAYS=93
+PREMIUM_MONTHLY_PRICE=$3
+PREMIUM_LONG_PRICE=$5
 FREE_REFERRAL_GOAL=3
 PAID_REFERRAL_EXTENSION_DAYS=5
 BOT_USERNAME=EnglishVocabularyPracticeBot
@@ -125,10 +130,11 @@ PREMIUM_TELEGRAM_IDS=123456789,987654321
 Recommended premium flow:
 
 1. Students tap `Buy Premium`.
-2. The bot shows the Buy Me a Coffee link and the student's Telegram numeric ID.
-3. After payment, the student taps `I Paid`.
-4. Premium starts immediately so the student can continue studying without waiting.
-5. The bot sends the admin a payment-check notice.
+2. The bot offers `$3 / 1 Month` and `$5 / 3 Months`.
+3. The bot shows the Buy Me a Coffee link and the student's Telegram numeric ID.
+4. After payment, the student taps `I Paid`.
+5. Premium starts immediately so the student can continue studying without waiting.
+6. The bot sends the admin a payment-check notice.
 
 The admin usually does nothing after confirming the payment. If there is a payment problem, revoke the account:
 
@@ -160,6 +166,7 @@ Referral rewards:
 - Premium students can earn one weekly invite reward.
 - If 1 invited friend starts practice in that week, the inviter gets a 5-day extension.
 - The same invited Telegram ID is counted only once.
+- Referral rewards do not change when paid pricing changes.
 
 4. Deploy. No exposed port is required because the bot uses Telegram long polling.
 

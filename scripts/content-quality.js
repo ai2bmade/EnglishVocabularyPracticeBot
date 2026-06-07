@@ -5,6 +5,19 @@ const sourceDir = process.argv[2] || "content/source";
 const issues = [];
 const lengthIssues = [];
 const styleIssues = [];
+const bannedChoiceIssues = [];
+const bannedChoicePatterns = [
+  /unrelated/i,
+  /distractor/i,
+  /different advanced concept/i,
+  /different academic idea/i,
+  /scholarly meaning/i,
+  /semantic category/i,
+  /incorrect meaning/i,
+  /concrete household object/i,
+  /brief practical task/i,
+  /practical concept/i
+];
 
 for (const fileName of fs.readdirSync(sourceDir).sort()) {
   if (!fileName.endsWith(".csv")) {
@@ -59,6 +72,18 @@ if (fs.existsSync(wordsPath)) {
         choices: word.choices
       });
     }
+
+    for (const choice of word.choices) {
+      const pattern = bannedChoicePatterns.find((candidate) => candidate.test(choice));
+      if (pattern) {
+        bannedChoiceIssues.push({
+          id: word.id,
+          word: word.word,
+          choice,
+          pattern: pattern.toString()
+        });
+      }
+    }
   }
 }
 
@@ -93,6 +118,17 @@ if (styleIssues.length > 0) {
   }
   if (styleIssues.length > 100) {
     console.error(`...and ${styleIssues.length - 100} more.`);
+  }
+  process.exit(1);
+}
+
+if (bannedChoiceIssues.length > 0) {
+  console.error(`Found ${bannedChoiceIssues.length} low-quality placeholder choice issue(s):`);
+  for (const issue of bannedChoiceIssues.slice(0, 100)) {
+    console.error(`${issue.id} ${issue.word} -> "${issue.choice}" (${issue.pattern})`);
+  }
+  if (bannedChoiceIssues.length > 100) {
+    console.error(`...and ${bannedChoiceIssues.length - 100} more.`);
   }
   process.exit(1);
 }

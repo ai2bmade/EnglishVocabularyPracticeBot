@@ -316,8 +316,8 @@ for (const [word, definition] of Object.entries(definitions)) {
       3,
       word,
       definition,
-      "a different academic idea",
-      "an unrelated practical concept",
+      "a formal request made through an official process",
+      "a short period of rest after repeated effort",
       1,
       `${capitalize(word)} means ${definition}.`,
       "approved"
