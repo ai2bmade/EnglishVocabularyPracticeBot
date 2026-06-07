@@ -19,7 +19,7 @@ Students choose a level, answer one word at a time, and get immediate feedback. 
 - Wrong-word list that stores missed words and lets students tap a word to retry it
 - Per-chat progress: level, completed count, correct count, accuracy
 - Free practice limit: 10 regular quiz words every 24 hours
-- Premium unlock by Telegram numeric ID through `PREMIUM_TELEGRAM_IDS`
+- Premium unlock by Telegram numeric ID through admin bot commands or `PREMIUM_TELEGRAM_IDS`
 - Approved-only content from `content/words.json`
 - CSV-to-JSON build script for content operations
 - Docker and Coolify-ready long polling deployment
@@ -112,11 +112,42 @@ Optional environment variables:
 
 ```text
 FREE_QUIZ_LIMIT=10
+PREMIUM_DAYS=31
 BUY_ME_COFFEE_URL=https://buymeacoffee.com/your-page
+ADMIN_TELEGRAM_IDS=111111111
 PREMIUM_TELEGRAM_IDS=123456789,987654321
 ```
 
-Students can open `Status` in the bot to see their Telegram numeric ID. After payment, add that ID to `PREMIUM_TELEGRAM_IDS` in Coolify and redeploy.
+Recommended premium flow:
+
+1. Students tap `Buy Premium`.
+2. The bot shows the Buy Me a Coffee link and the student's Telegram numeric ID.
+3. After payment, the student taps `I Paid`.
+4. Premium starts immediately so the student can continue studying without waiting.
+5. The bot sends the admin a payment-check notice.
+
+The admin usually does nothing after confirming the payment. If there is a payment problem, revoke the account:
+
+```text
+/revoke STUDENT_TELEGRAM_ID
+```
+
+If a previously revoked student pays again, the bot will not auto-activate that account. The admin can manually restore it after checking payment:
+
+```text
+/grant STUDENT_TELEGRAM_ID 31
+```
+
+Useful admin commands:
+
+```text
+/grant 123456789 31
+/revoke 123456789
+```
+
+`PREMIUM_TELEGRAM_IDS` is still available for manually managed permanent IDs, but the admin command flow is faster for normal monthly payments.
+
+The admin is your own Telegram account inside the same bot. No separate admin bot is needed. Put your Telegram numeric ID in `ADMIN_TELEGRAM_IDS`, then send admin commands directly to `@EnglishVocabularyPracticeBot`.
 
 4. Deploy. No exposed port is required because the bot uses Telegram long polling.
 

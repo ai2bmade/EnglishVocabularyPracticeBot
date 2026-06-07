@@ -4,12 +4,20 @@ import path from "node:path";
 const token = process.env.TELEGRAM_BOT_TOKEN;
 const wordsPath = process.env.WORDS_PATH || "content/words.json";
 const userDataPath = process.env.USER_DATA_PATH || "data/users.json";
+const premiumDataPath = process.env.PREMIUM_DATA_PATH || "data/premium.json";
 const pollTimeoutSeconds = Number(process.env.POLL_TIMEOUT_SECONDS || 30);
 const freeQuizLimit = Number(process.env.FREE_QUIZ_LIMIT || 10);
 const limitWindowMs = 24 * 60 * 60 * 1000;
 const buyMeCoffeeUrl = process.env.BUY_ME_COFFEE_URL || "Buy me a coffee";
+const premiumDays = Number(process.env.PREMIUM_DAYS || 31);
 const premiumTelegramIds = new Set(
   (process.env.PREMIUM_TELEGRAM_IDS || "")
+    .split(",")
+    .map((id) => id.trim())
+    .filter(Boolean)
+);
+const adminTelegramIds = new Set(
+  (process.env.ADMIN_TELEGRAM_IDS || "")
     .split(",")
     .map((id) => id.trim())
     .filter(Boolean)
@@ -31,6 +39,7 @@ if (!token) {
 const apiBase = `https://api.telegram.org/bot${token}`;
 const words = loadWords(wordsPath);
 const users = loadUsers(userDataPath);
+const premiumAccess = loadPremiumAccess(premiumDataPath);
 let offset = 0;
 
 console.log(`Loaded ${words.length} approved words.`);
@@ -66,6 +75,16 @@ async function handleMessage(message) {
   const text = (message.text || "").trim();
   const user = getUser(chatId);
 
+  if (text.startsWith("/grant")) {
+    await handleGrantCommand(chatId, text);
+    return;
+  }
+
+  if (text.startsWith("/revoke")) {
+    await handleRevokeCommand(chatId, text);
+    return;
+  }
+
   if (text === "/start") {
     await sendMessage(chatId, [
       "English Vocabulary Choice",
@@ -90,6 +109,16 @@ async function handleMessage(message) {
 
   if (text === "/challenge" || text === "Daily Challenge") {
     await startDailyChallenge(chatId, user);
+    return;
+  }
+
+  if (text === "/premium" || text === "Buy Premium") {
+    await sendMessage(chatId, premiumInfoText(user), premiumKeyboard());
+    return;
+  }
+
+  if (text === "/paid" || text === "I Paid") {
+    await notifyAdminsOfPayment(chatId, user, message);
     return;
   }
 
@@ -321,6 +350,7 @@ function levelPrompt() {
 
 function statusText(user) {
   const accuracy = user.completed === 0 ? 0 : Math.round((user.correct / user.completed) * 100);
+  const plan = premiumStatus(user.chatId);
   return [
     "Status",
     `Level: ${levels[user.level]}`,
@@ -328,12 +358,13 @@ function statusText(user) {
     `Correct: ${user.correct}`,
     `Accuracy: ${accuracy}%`,
     `Telegram ID: ${user.chatId || "unknown"}`,
-    `Plan: ${isPremium(user.chatId) ? "Premium" : "Free"}`
+    `Plan: ${plan.label}`,
+    plan.expiresText
   ].join("\n");
 }
 
 function mainKeyboard() {
-  return keyboard([["Next Word", "Daily Challenge"], ["Change Level", "Wrong Words"], ["Status", "Reset"]]);
+  return keyboard([["Next Word", "Daily Challenge"], ["Change Level", "Wrong Words"], ["Status", "Buy Premium"], ["Reset"]]);
 }
 
 function levelKeyboard() {
@@ -346,8 +377,12 @@ function answerKeyboard() {
 
 function wrongWordsKeyboard(wrongWords) {
   const rows = wrongWords.map((word) => [word.word]);
-  rows.push(["Next Word", "Daily Challenge"], ["Change Level", "Status"], ["Reset"]);
+  rows.push(["Next Word", "Daily Challenge"], ["Change Level", "Status"], ["Buy Premium", "Reset"]);
   return keyboard(rows);
+}
+
+function premiumKeyboard() {
+  return keyboard([["I Paid", "Status"], ["Next Word", "Daily Challenge"]]);
 }
 
 function keyboard(rows) {
@@ -410,6 +445,15 @@ function loadUsers(filePath) {
   return raw.trim() ? JSON.parse(raw) : {};
 }
 
+function loadPremiumAccess(filePath) {
+  ensureParentDir(filePath);
+  if (!fs.existsSync(filePath)) {
+    return {};
+  }
+  const raw = fs.readFileSync(filePath, "utf8").replace(/^\uFEFF/, "");
+  return raw.trim() ? JSON.parse(raw) : {};
+}
+
 function getUser(chatId) {
   const key = String(chatId);
   if (!users[key]) {
@@ -462,6 +506,13 @@ function saveUsers() {
   const tempPath = `${userDataPath}.tmp`;
   fs.writeFileSync(tempPath, `${JSON.stringify(users, null, 2)}\n`);
   fs.renameSync(tempPath, userDataPath);
+}
+
+function savePremiumAccess() {
+  ensureParentDir(premiumDataPath);
+  const tempPath = `${premiumDataPath}.tmp`;
+  fs.writeFileSync(tempPath, `${JSON.stringify(premiumAccess, null, 2)}\n`);
+  fs.renameSync(tempPath, premiumDataPath);
 }
 
 function ensureParentDir(filePath) {
@@ -523,6 +574,144 @@ function dailyChallengeLimitText(user) {
   ].join("\n");
 }
 
+async function handleGrantCommand(chatId, text) {
+  if (!isAdmin(chatId)) {
+    await sendMessage(chatId, "Admin only.", mainKeyboard());
+    return;
+  }
+
+  const [, targetId, daysText] = text.split(/\s+/);
+  const days = Number(daysText || premiumDays);
+  if (!targetId || !Number.isFinite(days) || days <= 0) {
+    await sendMessage(chatId, "Use: /grant TELEGRAM_ID DAYS", mainKeyboard());
+    return;
+  }
+
+  const expiresAt = Date.now() + Math.round(days * limitWindowMs);
+  grantPremium(targetId, expiresAt, {
+    grantedBy: String(chatId),
+    status: "verified"
+  });
+
+  await sendMessage(chatId, `Premium granted to ${targetId} until ${formatDate(expiresAt)}.`, mainKeyboard());
+  await sendMessage(targetId, `Premium is active until ${formatDate(expiresAt)}. Enjoy your study.`, mainKeyboard());
+}
+
+async function handleRevokeCommand(chatId, text) {
+  if (!isAdmin(chatId)) {
+    await sendMessage(chatId, "Admin only.", mainKeyboard());
+    return;
+  }
+
+  const [, targetId] = text.split(/\s+/);
+  if (!targetId) {
+    await sendMessage(chatId, "Use: /revoke TELEGRAM_ID", mainKeyboard());
+    return;
+  }
+
+  premiumAccess[String(targetId)] = {
+    expiresAt: 0,
+    revokedAt: Date.now(),
+    revokedBy: String(chatId),
+    status: "revoked"
+  };
+  savePremiumAccess();
+  await sendMessage(chatId, `Premium revoked for ${targetId}.`, mainKeyboard());
+}
+
+async function notifyAdminsOfPayment(chatId, user, message) {
+  if (isPremium(chatId)) {
+    await sendMessage(chatId, "Your Premium is already active.", mainKeyboard());
+    return;
+  }
+
+  const currentAccess = premiumAccess[String(chatId)];
+  if (currentAccess?.status === "revoked") {
+    await notifyAdmins([
+      "Manual premium review needed",
+      `Telegram ID: ${user.chatId}`,
+      "This account was previously revoked, so it was not auto-activated.",
+      "",
+      `If payment is valid, send: /grant ${user.chatId} ${premiumDays}`
+    ].join("\n"));
+    await sendMessage(chatId, [
+      "Thanks. Your payment notice was sent for manual review.",
+      `Your Telegram ID: ${user.chatId}`,
+      "Premium will be activated soon."
+    ].join("\n"), mainKeyboard());
+    return;
+  }
+
+  const expiresAt = Date.now() + Math.round(premiumDays * limitWindowMs);
+  grantPremium(chatId, expiresAt, {
+    grantedBy: "self_paid_button",
+    status: "pending_payment_check"
+  });
+
+  if (adminTelegramIds.size === 0) {
+    await sendMessage(chatId, [
+      "Welcome to Premium!",
+      `You now have unlimited word practice for ${premiumDays} days.`,
+      `Telegram ID: ${user.chatId}`,
+      `Expires: ${formatDate(expiresAt)}`,
+      "",
+      buyMeCoffeeUrl
+    ].join("\n"), mainKeyboard());
+    return;
+  }
+
+  const name = [message.from?.first_name, message.from?.last_name].filter(Boolean).join(" ") || "Unknown";
+  const username = message.from?.username ? `@${message.from.username}` : "no username";
+  const notice = [
+    "Premium payment notice",
+    `Student: ${name} (${username})`,
+    `Telegram ID: ${user.chatId}`,
+    `Premium is already active until ${formatDate(expiresAt)}.`,
+    "",
+    `If payment is valid, no action is needed.`,
+    `If there is a problem, send: /revoke ${user.chatId}`
+  ].join("\n");
+
+  await notifyAdmins(notice);
+
+  await sendMessage(chatId, [
+    "Welcome to Premium!",
+    `You now have unlimited word practice for ${premiumDays} days.`,
+    `Expires: ${formatDate(expiresAt)}`,
+    "You can start studying immediately."
+  ].join("\n"), mainKeyboard());
+}
+
+async function notifyAdmins(text) {
+  if (adminTelegramIds.size === 0) {
+    return;
+  }
+  for (const adminId of adminTelegramIds) {
+    await sendMessage(adminId, text, mainKeyboard());
+  }
+}
+
+function premiumInfoText(user) {
+  const plan = premiumStatus(user.chatId);
+  if (plan.active) {
+    return [
+      "Premium",
+      `Your plan is active until ${formatDate(plan.expiresAt)}.`,
+      "",
+      "Premium removes the regular 10-word free practice limit."
+    ].join("\n");
+  }
+
+  return [
+    "Premium",
+    `$5 gives you ${premiumDays} days of study.`,
+    `After payment, tap I Paid to start ${premiumDays} days of unlimited word practice.`,
+    "",
+    `Your Telegram ID: ${user.chatId}`,
+    buyMeCoffeeUrl
+  ].join("\n");
+}
+
 function makeDailyChallengeWords() {
   const plan = [2, 3, 3, 4, 4, 4, 4, 4, 5, 5];
   let picked = [];
@@ -579,7 +768,52 @@ function dailyChallengeResultText(score) {
 }
 
 function isPremium(chatId) {
-  return premiumTelegramIds.has(String(chatId));
+  const key = String(chatId);
+  if (premiumTelegramIds.has(key)) {
+    return true;
+  }
+  const access = premiumAccess[key];
+  return Boolean(access && Number(access.expiresAt) > Date.now());
+}
+
+function grantPremium(chatId, expiresAt, details = {}) {
+  premiumAccess[String(chatId)] = {
+    expiresAt,
+    grantedAt: Date.now(),
+    ...details
+  };
+  savePremiumAccess();
+}
+
+function premiumStatus(chatId) {
+  const key = String(chatId);
+  if (premiumTelegramIds.has(key)) {
+    return {
+      active: true,
+      label: "Premium",
+      expiresAt: null,
+      expiresText: "Expires: manually managed"
+    };
+  }
+  const access = premiumAccess[key];
+  if (access && Number(access.expiresAt) > Date.now()) {
+    return {
+      active: true,
+      label: "Premium",
+      expiresAt: Number(access.expiresAt),
+      expiresText: `Expires: ${formatDate(access.expiresAt)}`
+    };
+  }
+  return {
+    active: false,
+    label: "Free",
+    expiresAt: null,
+    expiresText: `Free limit: ${freeQuizLimit} regular words every 24 hours`
+  };
+}
+
+function isAdmin(chatId) {
+  return adminTelegramIds.has(String(chatId));
 }
 
 function formatRemaining(ms) {
@@ -595,6 +829,10 @@ function formatRemaining(ms) {
 
 function randomInt(min, max) {
   return Math.floor(Math.random() * (max - min + 1)) + min;
+}
+
+function formatDate(value) {
+  return new Date(Number(value)).toISOString().slice(0, 10);
 }
 
 function sleep(ms) {
